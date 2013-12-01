@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF401BFB184A70FE0026171A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFA184A70FE0026171A /* Foundation.framework */; };
+		AF401BFD184A70FE0026171A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFC184A70FE0026171A /* CoreGraphics.framework */; };
+		AF401BFF184A70FE0026171A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFE184A70FE0026171A /* UIKit.framework */; };
+		AF401C05184A70FE0026171A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF401C03184A70FE0026171A /* InfoPlist.strings */; };
+		AF401C07184A70FE0026171A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C06184A70FE0026171A /* main.m */; };
+		AF401C0B184A70FE0026171A /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C0A184A70FE0026171A /* ESAppDelegate.m */; };
+		AF401C0E184A70FE0026171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF401C0C184A70FE0026171A /* Main.storyboard */; };
+		AF401C11184A70FE0026171A /* ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C10184A70FE0026171A /* ESViewController.m */; };
+		AF401C13184A70FE0026171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF401C12184A70FE0026171A /* Images.xcassets */; };
+		AF401C1A184A70FE0026171A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401C19184A70FE0026171A /* XCTest.framework */; };
+		AF401C1B184A70FE0026171A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFA184A70FE0026171A /* Foundation.framework */; };
+		AF401C1C184A70FE0026171A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFE184A70FE0026171A /* UIKit.framework */; };
+		AF401C24184A70FE0026171A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF401C22184A70FE0026171A /* InfoPlist.strings */; };
+		AF401C26184A70FE0026171A /* etConnect_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C25184A70FE0026171A /* etConnect_DemoTests.m */; };
+		AFC1D506184A72EB0043204A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AFC1D504184A72EB0043204A /* LICENSE */; };
+		AFC1D507184A72EB0043204A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AFC1D505184A72EB0043204A /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF401C1D184A70FE0026171A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF401BEF184A70FE0026171A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF401BF6184A70FE0026171A;
+			remoteInfo = "etConnect-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF401BF7184A70FE0026171A /* etConnect-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "etConnect-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF401BFA184A70FE0026171A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF401BFC184A70FE0026171A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AF401BFE184A70FE0026171A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF401C02184A70FE0026171A /* etConnect-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "etConnect-Demo-Info.plist"; sourceTree = "<group>"; };
+		AF401C04184A70FE0026171A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF401C06184A70FE0026171A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF401C08184A70FE0026171A /* etConnect-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "etConnect-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		AF401C09184A70FE0026171A /* ESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
+		AF401C0A184A70FE0026171A /* ESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
+		AF401C0D184A70FE0026171A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF401C0F184A70FE0026171A /* ESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESViewController.h; sourceTree = "<group>"; };
+		AF401C10184A70FE0026171A /* ESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESViewController.m; sourceTree = "<group>"; };
+		AF401C12184A70FE0026171A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF401C18184A70FE0026171A /* etConnect-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "etConnect-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF401C19184A70FE0026171A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF401C21184A70FE0026171A /* etConnect-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "etConnect-DemoTests-Info.plist"; sourceTree = "<group>"; };
+		AF401C23184A70FE0026171A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF401C25184A70FE0026171A /* etConnect_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = etConnect_DemoTests.m; sourceTree = "<group>"; };
+		AFC1D504184A72EB0043204A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AFC1D505184A72EB0043204A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF401BF4184A70FE0026171A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF401BFD184A70FE0026171A /* CoreGraphics.framework in Frameworks */,
+				AF401BFF184A70FE0026171A /* UIKit.framework in Frameworks */,
+				AF401BFB184A70FE0026171A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF401C15184A70FE0026171A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF401C1A184A70FE0026171A /* XCTest.framework in Frameworks */,
+				AF401C1C184A70FE0026171A /* UIKit.framework in Frameworks */,
+				AF401C1B184A70FE0026171A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF401BEE184A70FE0026171A = {
+			isa = PBXGroup;
+			children = (
+				AFC1D504184A72EB0043204A /* LICENSE */,
+				AFC1D505184A72EB0043204A /* README.md */,
+				AF401C00184A70FE0026171A /* etConnect-Demo */,
+				AF401C1F184A70FE0026171A /* etConnect-DemoTests */,
+				AF401BF9184A70FE0026171A /* Frameworks */,
+				AF401BF8184A70FE0026171A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF401BF8184A70FE0026171A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF401BF7184A70FE0026171A /* etConnect-Demo.app */,
+				AF401C18184A70FE0026171A /* etConnect-DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF401BF9184A70FE0026171A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF401BFA184A70FE0026171A /* Foundation.framework */,
+				AF401BFC184A70FE0026171A /* CoreGraphics.framework */,
+				AF401BFE184A70FE0026171A /* UIKit.framework */,
+				AF401C19184A70FE0026171A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF401C00184A70FE0026171A /* etConnect-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AF401C09184A70FE0026171A /* ESAppDelegate.h */,
+				AF401C0A184A70FE0026171A /* ESAppDelegate.m */,
+				AF401C0C184A70FE0026171A /* Main.storyboard */,
+				AF401C0F184A70FE0026171A /* ESViewController.h */,
+				AF401C10184A70FE0026171A /* ESViewController.m */,
+				AF401C12184A70FE0026171A /* Images.xcassets */,
+				AF401C01184A70FE0026171A /* Supporting Files */,
+			);
+			path = "etConnect-Demo";
+			sourceTree = "<group>";
+		};
+		AF401C01184A70FE0026171A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF401C02184A70FE0026171A /* etConnect-Demo-Info.plist */,
+				AF401C03184A70FE0026171A /* InfoPlist.strings */,
+				AF401C06184A70FE0026171A /* main.m */,
+				AF401C08184A70FE0026171A /* etConnect-Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF401C1F184A70FE0026171A /* etConnect-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF401C25184A70FE0026171A /* etConnect_DemoTests.m */,
+				AF401C20184A70FE0026171A /* Supporting Files */,
+			);
+			path = "etConnect-DemoTests";
+			sourceTree = "<group>";
+		};
+		AF401C20184A70FE0026171A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF401C21184A70FE0026171A /* etConnect-DemoTests-Info.plist */,
+				AF401C22184A70FE0026171A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF401BF6184A70FE0026171A /* etConnect-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF401C29184A70FE0026171A /* Build configuration list for PBXNativeTarget "etConnect-Demo" */;
+			buildPhases = (
+				AF401BF3184A70FE0026171A /* Sources */,
+				AF401BF4184A70FE0026171A /* Frameworks */,
+				AF401BF5184A70FE0026171A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "etConnect-Demo";
+			productName = "etConnect-Demo";
+			productReference = AF401BF7184A70FE0026171A /* etConnect-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF401C17184A70FE0026171A /* etConnect-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF401C2C184A70FE0026171A /* Build configuration list for PBXNativeTarget "etConnect-DemoTests" */;
+			buildPhases = (
+				AF401C14184A70FE0026171A /* Sources */,
+				AF401C15184A70FE0026171A /* Frameworks */,
+				AF401C16184A70FE0026171A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF401C1E184A70FE0026171A /* PBXTargetDependency */,
+			);
+			name = "etConnect-DemoTests";
+			productName = "etConnect-DemoTests";
+			productReference = AF401C18184A70FE0026171A /* etConnect-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF401BEF184A70FE0026171A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ES;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "eitap Technologies GmbH";
+				TargetAttributes = {
+					AF401C17184A70FE0026171A = {
+						TestTargetID = AF401BF6184A70FE0026171A;
+					};
+				};
+			};
+			buildConfigurationList = AF401BF2184A70FE0026171A /* Build configuration list for PBXProject "etConnect-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF401BEE184A70FE0026171A;
+			productRefGroup = AF401BF8184A70FE0026171A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF401BF6184A70FE0026171A /* etConnect-Demo */,
+				AF401C17184A70FE0026171A /* etConnect-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF401BF5184A70FE0026171A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF401C13184A70FE0026171A /* Images.xcassets in Resources */,
+				AF401C05184A70FE0026171A /* InfoPlist.strings in Resources */,
+				AFC1D507184A72EB0043204A /* README.md in Resources */,
+				AFC1D506184A72EB0043204A /* LICENSE in Resources */,
+				AF401C0E184A70FE0026171A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF401C16184A70FE0026171A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF401C24184A70FE0026171A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF401BF3184A70FE0026171A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF401C11184A70FE0026171A /* ESViewController.m in Sources */,
+				AF401C0B184A70FE0026171A /* ESAppDelegate.m in Sources */,
+				AF401C07184A70FE0026171A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF401C14184A70FE0026171A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF401C26184A70FE0026171A /* etConnect_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF401C1E184A70FE0026171A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF401BF6184A70FE0026171A /* etConnect-Demo */;
+			targetProxy = AF401C1D184A70FE0026171A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF401C03184A70FE0026171A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF401C04184A70FE0026171A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF401C0C184A70FE0026171A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF401C0D184A70FE0026171A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF401C22184A70FE0026171A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF401C23184A70FE0026171A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF401C27184A70FE0026171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF401C28184A70FE0026171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF401C2A184A70FE0026171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
+				INFOPLIST_FILE = "etConnect-Demo/etConnect-Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF401C2B184A70FE0026171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
+				INFOPLIST_FILE = "etConnect-Demo/etConnect-Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF401C2D184A70FE0026171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/etConnect-Demo.app/etConnect-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "etConnect-DemoTests/etConnect-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF401C2E184A70FE0026171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/etConnect-Demo.app/etConnect-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
+				INFOPLIST_FILE = "etConnect-DemoTests/etConnect-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF401BF2184A70FE0026171A /* Build configuration list for PBXProject "etConnect-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF401C27184A70FE0026171A /* Debug */,
+				AF401C28184A70FE0026171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF401C29184A70FE0026171A /* Build configuration list for PBXNativeTarget "etConnect-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF401C2A184A70FE0026171A /* Debug */,
+				AF401C2B184A70FE0026171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF401C2C184A70FE0026171A /* Build configuration list for PBXNativeTarget "etConnect-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF401C2D184A70FE0026171A /* Debug */,
+				AF401C2E184A70FE0026171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF401BEF184A70FE0026171A /* Project object */;
+}
