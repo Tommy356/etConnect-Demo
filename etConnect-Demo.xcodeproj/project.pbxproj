@@ -21,8 +21,6 @@
 		AF401C1C184A70FE0026171A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFE184A70FE0026171A /* UIKit.framework */; };
 		AF401C24184A70FE0026171A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF401C22184A70FE0026171A /* InfoPlist.strings */; };
 		AF401C26184A70FE0026171A /* etConnect_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C25184A70FE0026171A /* etConnect_DemoTests.m */; };
-		AFC1D506184A72EB0043204A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AFC1D504184A72EB0043204A /* LICENSE */; };
-		AFC1D507184A72EB0043204A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AFC1D505184A72EB0043204A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,8 +235,6 @@
 			files = (
 				AF401C13184A70FE0026171A /* Images.xcassets in Resources */,
 				AF401C05184A70FE0026171A /* InfoPlist.strings in Resources */,
-				AFC1D507184A72EB0043204A /* README.md in Resources */,
-				AFC1D506184A72EB0043204A /* LICENSE in Resources */,
 				AF401C0E184A70FE0026171A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
