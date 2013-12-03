@@ -6,7 +6,9 @@ Demo App for iOS and OSX, demonstrating the basic usage of Distributed Objects u
 
 The project contains the binaries of the etConnect framework (ver. alpha 0.9) and the sopiurces to build an iOS version and it's OSX counterpart.
 
-
+The iOS Version
+===============
+The iOS version provides a screen monitoring the local domain for available hosts.
 
 
 Notes:
