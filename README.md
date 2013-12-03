@@ -1,7 +1,12 @@
 etConnect-Demo
 ==============
 
-Demo Apps using the etConnect Objective-C++ framework  (Distributed Objects on iOS and OSX)
+Demo App for iOS and OSX, demonstrating the basic usage of Distributed Objects using the etConnect Objective-C++ framework
+(Distributed Objects on iOS and OSX). 
+
+The project contains the binaries of the etConnect framework (ver. alpha 0.9) and the sopiurces to build an iOS version and it's OSX counterpart.
+
+
 
 
 Notes:

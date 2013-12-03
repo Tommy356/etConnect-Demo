@@ -16,6 +16,8 @@
 		AF401C0E184A70FE0026171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF401C0C184A70FE0026171A /* Main.storyboard */; };
 		AF401C11184A70FE0026171A /* ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C10184A70FE0026171A /* ESViewController.m */; };
 		AF401C13184A70FE0026171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF401C12184A70FE0026171A /* Images.xcassets */; };
+		AFDB61C6184DE2E200B1C6E9 /* ETBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDB61C4184DE2E200B1C6E9 /* ETBase.framework */; };
+		AFDB61C7184DE2E200B1C6E9 /* ETConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDB61C5184DE2E200B1C6E9 /* ETConnect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		AF401C19184A70FE0026171A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AFC1D504184A72EB0043204A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AFC1D505184A72EB0043204A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		AFDB61C4184DE2E200B1C6E9 /* ETBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETBase.framework; sourceTree = "<group>"; };
+		AFDB61C5184DE2E200B1C6E9 /* ETConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETConnect.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,9 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDB61C6184DE2E200B1C6E9 /* ETBase.framework in Frameworks */,
 				AF401BFD184A70FE0026171A /* CoreGraphics.framework in Frameworks */,
 				AF401BFF184A70FE0026171A /* UIKit.framework in Frameworks */,
 				AF401BFB184A70FE0026171A /* Foundation.framework in Frameworks */,
+				AFDB61C7184DE2E200B1C6E9 /* ETConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,8 @@
 		AF401BF9184A70FE0026171A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFDB61C4184DE2E200B1C6E9 /* ETBase.framework */,
+				AFDB61C5184DE2E200B1C6E9 /* ETConnect.framework */,
 				AF401BFA184A70FE0026171A /* Foundation.framework */,
 				AF401BFC184A70FE0026171A /* CoreGraphics.framework */,
 				AF401BFE184A70FE0026171A /* UIKit.framework */,
@@ -278,6 +286,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Developer/Projects/pr-public-projects/etConnect-Demo",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
 				INFOPLIST_FILE = "etConnect-Demo/etConnect-Demo-Info.plist";
@@ -291,6 +303,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Developer/Projects/pr-public-projects/etConnect-Demo",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
 				INFOPLIST_FILE = "etConnect-Demo/etConnect-Demo-Info.plist";
