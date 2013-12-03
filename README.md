@@ -3,15 +3,21 @@ etConnect-Demo
 
 Demo Apps using the etConnect Objective-C++ framework  (Distributed Objects on iOS and OSX)
 
-NOTE: This is currently under development - no real contents are added yet. The project is
+
+Notes:
+------
+This is currently under development - no real contents are added yet. The project is
 due to be published as a first Beta soon.
 
+General Comments:
+-----------------
 
-Note:
------
+This project is an XCode5 workspace, holding several targets:
+
+- etConnect-Demo is the demo app for iOS devices (iOS 6.0 or higher)
+- etConnect-Demo-OSX implements a version for OSX
 
 
-- Hint 1
-- Hint 2
+
 
 

@@ -16,22 +16,7 @@
 		AF401C0E184A70FE0026171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF401C0C184A70FE0026171A /* Main.storyboard */; };
 		AF401C11184A70FE0026171A /* ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C10184A70FE0026171A /* ESViewController.m */; };
 		AF401C13184A70FE0026171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF401C12184A70FE0026171A /* Images.xcassets */; };
-		AF401C1A184A70FE0026171A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401C19184A70FE0026171A /* XCTest.framework */; };
-		AF401C1B184A70FE0026171A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFA184A70FE0026171A /* Foundation.framework */; };
-		AF401C1C184A70FE0026171A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFE184A70FE0026171A /* UIKit.framework */; };
-		AF401C24184A70FE0026171A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF401C22184A70FE0026171A /* InfoPlist.strings */; };
-		AF401C26184A70FE0026171A /* etConnect_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C25184A70FE0026171A /* etConnect_DemoTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AF401C1D184A70FE0026171A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF401BEF184A70FE0026171A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF401BF6184A70FE0026171A;
-			remoteInfo = "etConnect-Demo";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AF401BF7184A70FE0026171A /* etConnect-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "etConnect-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +33,7 @@
 		AF401C0F184A70FE0026171A /* ESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESViewController.h; sourceTree = "<group>"; };
 		AF401C10184A70FE0026171A /* ESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESViewController.m; sourceTree = "<group>"; };
 		AF401C12184A70FE0026171A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AF401C18184A70FE0026171A /* etConnect-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "etConnect-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF401C19184A70FE0026171A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AF401C21184A70FE0026171A /* etConnect-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "etConnect-DemoTests-Info.plist"; sourceTree = "<group>"; };
-		AF401C23184A70FE0026171A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF401C25184A70FE0026171A /* etConnect_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = etConnect_DemoTests.m; sourceTree = "<group>"; };
 		AFC1D504184A72EB0043204A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AFC1D505184A72EB0043204A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,16 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF401C15184A70FE0026171A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF401C1A184A70FE0026171A /* XCTest.framework in Frameworks */,
-				AF401C1C184A70FE0026171A /* UIKit.framework in Frameworks */,
-				AF401C1B184A70FE0026171A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +58,6 @@
 				AFC1D504184A72EB0043204A /* LICENSE */,
 				AFC1D505184A72EB0043204A /* README.md */,
 				AF401C00184A70FE0026171A /* etConnect-Demo */,
-				AF401C1F184A70FE0026171A /* etConnect-DemoTests */,
 				AF401BF9184A70FE0026171A /* Frameworks */,
 				AF401BF8184A70FE0026171A /* Products */,
 			);
@@ -97,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				AF401BF7184A70FE0026171A /* etConnect-Demo.app */,
-				AF401C18184A70FE0026171A /* etConnect-DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,24 +107,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AF401C1F184A70FE0026171A /* etConnect-DemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				AF401C25184A70FE0026171A /* etConnect_DemoTests.m */,
-				AF401C20184A70FE0026171A /* Supporting Files */,
-			);
-			path = "etConnect-DemoTests";
-			sourceTree = "<group>";
-		};
-		AF401C20184A70FE0026171A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF401C21184A70FE0026171A /* etConnect-DemoTests-Info.plist */,
-				AF401C22184A70FE0026171A /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,24 +127,6 @@
 			productReference = AF401BF7184A70FE0026171A /* etConnect-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AF401C17184A70FE0026171A /* etConnect-DemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF401C2C184A70FE0026171A /* Build configuration list for PBXNativeTarget "etConnect-DemoTests" */;
-			buildPhases = (
-				AF401C14184A70FE0026171A /* Sources */,
-				AF401C15184A70FE0026171A /* Frameworks */,
-				AF401C16184A70FE0026171A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF401C1E184A70FE0026171A /* PBXTargetDependency */,
-			);
-			name = "etConnect-DemoTests";
-			productName = "etConnect-DemoTests";
-			productReference = AF401C18184A70FE0026171A /* etConnect-DemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,11 +136,6 @@
 				CLASSPREFIX = ES;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "eitap Technologies GmbH";
-				TargetAttributes = {
-					AF401C17184A70FE0026171A = {
-						TestTargetID = AF401BF6184A70FE0026171A;
-					};
-				};
 			};
 			buildConfigurationList = AF401BF2184A70FE0026171A /* Build configuration list for PBXProject "etConnect-Demo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -223,7 +151,6 @@
 			projectRoot = "";
 			targets = (
 				AF401BF6184A70FE0026171A /* etConnect-Demo */,
-				AF401C17184A70FE0026171A /* etConnect-DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,14 +163,6 @@
 				AF401C13184A70FE0026171A /* Images.xcassets in Resources */,
 				AF401C05184A70FE0026171A /* InfoPlist.strings in Resources */,
 				AF401C0E184A70FE0026171A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AF401C16184A70FE0026171A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF401C24184A70FE0026171A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,23 +179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF401C14184A70FE0026171A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF401C26184A70FE0026171A /* etConnect_DemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AF401C1E184A70FE0026171A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AF401BF6184A70FE0026171A /* etConnect-Demo */;
-			targetProxy = AF401C1D184A70FE0026171A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF401C03184A70FE0026171A /* InfoPlist.strings */ = {
@@ -293,14 +196,6 @@
 				AF401C0D184A70FE0026171A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AF401C22184A70FE0026171A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF401C23184A70FE0026171A /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -404,48 +299,6 @@
 			};
 			name = Release;
 		};
-		AF401C2D184A70FE0026171A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/etConnect-Demo.app/etConnect-Demo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "etConnect-DemoTests/etConnect-DemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AF401C2E184A70FE0026171A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/etConnect-Demo.app/etConnect-Demo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
-				INFOPLIST_FILE = "etConnect-DemoTests/etConnect-DemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,15 +316,6 @@
 			buildConfigurations = (
 				AF401C2A184A70FE0026171A /* Debug */,
 				AF401C2B184A70FE0026171A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF401C2C184A70FE0026171A /* Build configuration list for PBXNativeTarget "etConnect-DemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF401C2D184A70FE0026171A /* Debug */,
-				AF401C2E184A70FE0026171A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
