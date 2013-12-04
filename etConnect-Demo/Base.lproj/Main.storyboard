@@ -1,23 +1,223 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ESViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bte-FI-t2R"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgS-zL-zyY"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="I1U-SB-wys">
+                                <rect key="frame" x="20" y="201" width="300" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="rBk-Xb-WCM"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="V29-tT-M0i"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eiShare Icon_0120 transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="RtW-ao-WiO">
+                                <rect key="frame" x="20" y="20" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="32w-Bd-sqA"/>
+                                    <constraint firstAttribute="height" constant="48" id="cDG-xJ-HtQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="etConnect Framework" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dM-1o-U6x">
+                                <rect key="frame" x="76" y="20" width="171" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Demo (C) eitap Technologies 2013" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-sK-PtZ">
+                                <rect key="frame" x="76" y="47" width="215" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publish Remote Object" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20B-wC-DBW">
+                                <rect key="frame" x="20" y="87" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Bluetooth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v21-W0-JfK">
+                                <rect key="frame" x="20" y="126" width="132" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Active Hosts (tap for details):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCj-XH-lLS">
+                                <rect key="frame" x="20" y="172" width="221" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JPp-fC-Vnl">
+                                <rect key="frame" x="251" y="82" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="publish:" destination="vXZ-lx-hvc" eventType="valueChanged" id="aqS-jv-giF"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PCv-AZ-LrP">
+                                <rect key="frame" x="251" y="121" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="enableBluetooth:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JUe-Bm-0GR"/>
+                                </connections>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2dM-1o-U6x" firstAttribute="top" secondItem="RtW-ao-WiO" secondAttribute="top" id="1gE-vj-Wbf"/>
+                            <constraint firstItem="Eog-sK-PtZ" firstAttribute="leading" secondItem="RtW-ao-WiO" secondAttribute="trailing" constant="8" id="9Fx-Us-ben"/>
+                            <constraint firstAttribute="trailing" secondItem="I1U-SB-wys" secondAttribute="trailing" id="9TH-aK-uvw"/>
+                            <constraint firstItem="20B-wC-DBW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Bff-gQ-BSd"/>
+                            <constraint firstItem="I1U-SB-wys" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="C6P-sV-7LD"/>
+                            <constraint firstItem="PCv-AZ-LrP" firstAttribute="centerY" secondItem="v21-W0-JfK" secondAttribute="centerY" id="Du4-3w-pHb"/>
+                            <constraint firstAttribute="trailing" secondItem="PCv-AZ-LrP" secondAttribute="trailing" constant="20" id="Gaq-2t-eG6"/>
+                            <constraint firstItem="v21-W0-JfK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="HMa-GR-0ac"/>
+                            <constraint firstItem="I1U-SB-wys" firstAttribute="top" secondItem="LCj-XH-lLS" secondAttribute="bottom" constant="8" id="Ho2-Pc-mes"/>
+                            <constraint firstItem="20B-wC-DBW" firstAttribute="centerY" secondItem="JPp-fC-Vnl" secondAttribute="centerY" id="JO8-mh-rYg"/>
+                            <constraint firstItem="2dM-1o-U6x" firstAttribute="leading" secondItem="RtW-ao-WiO" secondAttribute="trailing" constant="8" id="PMH-X0-id9"/>
+                            <constraint firstItem="wgS-zL-zyY" firstAttribute="top" secondItem="I1U-SB-wys" secondAttribute="bottom" id="XBb-pU-GuK"/>
+                            <constraint firstItem="v21-W0-JfK" firstAttribute="top" secondItem="20B-wC-DBW" secondAttribute="bottom" constant="18" id="a85-dQ-Hwh"/>
+                            <constraint firstItem="20B-wC-DBW" firstAttribute="top" secondItem="Eog-sK-PtZ" secondAttribute="bottom" constant="25" id="cHH-Ov-5nT"/>
+                            <constraint firstItem="RtW-ao-WiO" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="d3B-Xg-cvD"/>
+                            <constraint firstAttribute="trailing" secondItem="JPp-fC-Vnl" secondAttribute="trailing" constant="20" id="jUH-7B-HcM"/>
+                            <constraint firstItem="RtW-ao-WiO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="pGZ-qr-Vih"/>
+                            <constraint firstItem="Eog-sK-PtZ" firstAttribute="top" secondItem="2dM-1o-U6x" secondAttribute="bottom" constant="6" id="tBB-Pl-nQo"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="swBluetooth" destination="PCv-AZ-LrP" id="vNi-pE-e3a"/>
+                        <outlet property="swPublish" destination="JPp-fC-Vnl" id="0iQ-7K-fMm"/>
+                        <outlet property="tvHosts" destination="I1U-SB-wys" id="4eM-Fl-gwz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="tqb-yP-7E2">
+            <objects>
+                <viewController storyboardIdentifier="DetailDeviceView" id="o01-2k-m9x" customClass="ESDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iAF-hB-Iyv"/>
+                        <viewControllerLayoutGuide type="bottom" id="mV7-SG-2Ng"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QHP-q9-6XO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eiShare Icon_0120 transparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="xeD-wd-ORf">
+                                <rect key="frame" x="20" y="40" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="BjY-ZF-2nR"/>
+                                    <constraint firstAttribute="height" constant="48" id="WuS-rJ-fzl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The Detail View Controller" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-0P-hzn">
+                                <rect key="frame" x="102" y="20" width="198" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBe-TU-6cA">
+                                <rect key="frame" x="254" y="518" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDoneSelected:" destination="o01-2k-m9x" eventType="touchUpInside" id="pGV-aA-WOb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remote Host Information:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypu-bb-WWd">
+                                <rect key="frame" x="20" y="104" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="WOs-7G-Acj">
+                                <rect key="frame" x="20" y="148" width="280" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqD-J9-LmK">
+                                <rect key="frame" x="99" y="269" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap To Connect ...">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="connect:" destination="o01-2k-m9x" eventType="touchUpInside" id="4QA-Lx-Ge0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXO-Vc-SPR">
+                                <rect key="frame" x="99" y="331" width="124" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap for Ping-Pong">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pingPong:" destination="o01-2k-m9x" eventType="touchUpInside" id="6Kg-ay-0LZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WOs-7G-Acj" secondAttribute="trailing" constant="20" id="0m4-0V-THK"/>
+                            <constraint firstItem="rqD-J9-LmK" firstAttribute="top" secondItem="WOs-7G-Acj" secondAttribute="bottom" constant="22" id="6fv-4l-m9J"/>
+                            <constraint firstAttribute="centerX" secondItem="KXO-Vc-SPR" secondAttribute="centerX" id="6qw-WK-SGz"/>
+                            <constraint firstAttribute="trailing" secondItem="Ypu-bb-WWd" secondAttribute="trailing" constant="20" id="9fa-wd-jgP"/>
+                            <constraint firstAttribute="trailing" secondItem="VBe-TU-6cA" secondAttribute="trailing" constant="29" id="G9g-9r-IJZ"/>
+                            <constraint firstItem="Ypu-bb-WWd" firstAttribute="top" secondItem="xeD-wd-ORf" secondAttribute="bottom" constant="16" id="LdN-w4-HcM"/>
+                            <constraint firstItem="WOs-7G-Acj" firstAttribute="leading" secondItem="QHP-q9-6XO" secondAttribute="leading" constant="20" id="PDS-aV-Old"/>
+                            <constraint firstAttribute="centerX" secondItem="rqD-J9-LmK" secondAttribute="centerX" id="SLD-sT-Ii9"/>
+                            <constraint firstItem="Ypu-bb-WWd" firstAttribute="leading" secondItem="QHP-q9-6XO" secondAttribute="leading" constant="20" id="XyP-bb-MLk"/>
+                            <constraint firstItem="mV7-SG-2Ng" firstAttribute="top" secondItem="VBe-TU-6cA" secondAttribute="bottom" constant="20" id="gXw-H0-g2E"/>
+                            <constraint firstAttribute="trailing" secondItem="mPa-0P-hzn" secondAttribute="trailing" constant="20" id="gcd-mX-ap4"/>
+                            <constraint firstItem="xeD-wd-ORf" firstAttribute="leading" secondItem="QHP-q9-6XO" secondAttribute="leading" constant="20" id="ohm-tA-Mzb"/>
+                            <constraint firstItem="WOs-7G-Acj" firstAttribute="top" secondItem="Ypu-bb-WWd" secondAttribute="bottom" constant="23" id="p7J-Z3-cEJ"/>
+                            <constraint firstItem="KXO-Vc-SPR" firstAttribute="top" secondItem="rqD-J9-LmK" secondAttribute="bottom" constant="32" id="sA1-Lt-RG5"/>
+                            <constraint firstItem="xeD-wd-ORf" firstAttribute="top" secondItem="iAF-hB-Iyv" secondAttribute="bottom" constant="20" id="sGo-TR-pzm"/>
+                            <constraint firstAttribute="centerX" secondItem="KXO-Vc-SPR" secondAttribute="centerX" id="zQt-Oa-g7P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnConnect" destination="rqD-J9-LmK" id="ouj-P3-L6M"/>
+                        <outlet property="btnPingPong" destination="KXO-Vc-SPR" id="98I-p4-ptD"/>
+                        <outlet property="lblInfo" destination="WOs-7G-Acj" id="miM-Jr-SQZ"/>
+                        <outlet property="lblTitle" destination="mPa-0P-hzn" id="SdZ-Ds-pcD"/>
+                        <outlet property="titleIcon" destination="xeD-wd-ORf" id="2MN-tG-gv3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8oJ-cU-8bf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582" y="140"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="eiShare Icon_0120 transparent.png" width="120" height="120"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

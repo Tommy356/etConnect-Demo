@@ -23,6 +23,8 @@
 #define EIServiceDictKey        @"serviceDict"
 #define EIDeviceDictKey         @"deviceDict"
 
+#import "ETConnectServerNotifications.h"
+
 @class ETConnectServer;
 @protocol TCPServerDelegate;
 
@@ -49,7 +51,7 @@ typedef NS_OPTIONS(UInt16, ETHostConnectionTypes)
 };
 
 /**
- *  The protocol for the ETConnectServer delegate. Thge delegate will be notified
+ *  The protocol for the ETConnectServer delegate. The delegate will be notified
  *  if new hosts are added, removed or updated, and after publishing services on the
  *  local machine.
  */
@@ -67,24 +69,49 @@ typedef NS_OPTIONS(UInt16, ETHostConnectionTypes)
 - (void) eiConnectionServer:(ETConnectServer*)server didNotPublish:(NSString*)hostName;
 @end
 
-/** ETConnectServer
- *  Originally based on NSPortNameServer, which is not available
- *  on iOS.
- *  FIXME: remove the references to NSPortNameServer, as we use
- *  streamed connections now.
+/** ETConnectServer provides a functionality similiar to NSPortNameServer. 
+ *  However, as the NSPortNameServer class is not available on iOS and etConnect
+ *  relies on NSStream classes rather than ports, implementation and API differes in
+ *  several parts from what NSPortNameServer has been designed for.
+ *
+ *  There's a single shared in stance of ETConnectServer for every app - no need to create
+ *  more than one instance.
  */
-//@interface ETConnectServer : NSPortNameServer
 @interface ETConnectServer : NSObject
 
 #pragma mark - CLASS METHODS -
+/**---------------------------------------------------------------------------------------
+ * @name Creating and starting the server
+ *  ---------------------------------------------------------------------------------------
+ */
 
+/** Returns the shared instance of the <b>ETConnectServer</b>. If no instance has been
+ *  created yet, a call to this method will automatically create it.
+ @param none
+ @return the shared instance of the ETConnectServer
+ */
 + (id)sharedInstance;
+
+/** Starts the server with the options supplied.
+
+ The following options may be supplied, when starting the server:
+ 
+ - <b>ETServerOptionSearch</b>: The server will also start to discover other hosts on the network
+ - <b>ETServerOptionPublish</b>: The server will publish the general ETConnect service
+ - <b>ETServerOptionPublishService</b>: The server will publish its management service (requires ETServerOptionPublish)
+ - <b>ETServerOptionPeerToPeer</b>: Enables bluetooth communication (IOS7 only)
+ 
+ @param options: a combination of one or more ETServerOptions values.
+ @return TRUE, if the server is starting, FALSE if an error occured.
+ */
+- (BOOL) startWithOptions:(ETServerOptions)options;
+
+
 + (ETServerPlatformType) platformType;
 + (void) dumpAll;
 - (void) dumpAll;
 
 #pragma mark - SERVICE MANAGEMENT -
-- (BOOL) startWithOptions:(ETServerOptions)options;
 
 #pragma mark - required NSPortNameServer overwrites:
 
@@ -104,20 +131,36 @@ typedef NS_OPTIONS(UInt16, ETHostConnectionTypes)
 - (NSArray*) connectionNamesForService:(EINetService*)eiSvc;
 - (NSArray*) connectionNamesForHost:(NSString*)hostName;
 
-/** returns an array of known hosts */
+/** @name Retrieving service information */
+
+/** Returns an array of strings with all hosts currently available. The
+ *  hosts may vary depending on whether new hosts are discovered or not.
+ *  Clients may set a delegate to get a notification, whenever new hosts
+ *  have been found (or removed).
+ */
 - (NSArray*) hosts;
+
 /** returns the EINetService for a named host or 'nil', if the host is not found */
 - (EINetService*) eiNetServiceForHost:(NSString*)hostName;
 /** returns the EINetService machting the socket data provided */
 - (EINetService*) eiNetServiceForAddress:(NSData*)sockAddrData;
-/** checks, whether the service named is available on the host passed */
+
+/** checks, whether the service named is available on the host passed 
+ 
+ @param hostName: a valid host name for a host in the current domain.
+ @param serviceName: the name of the service to be queried
+ @return TRUE, if the host provides the service, FALSE if the host is not found or the host does not provice the service specified.
+ */
 - (BOOL) host:(NSString*)hostName providesService:(NSString*)serviceName;
+
 /** returns the TXTRecordDictionary for a given host, or nil if the host could not be found */
 - (NSDictionary*) serviceDictForHost:(NSString*)hostName;
 /** returns the connection type for a host */
 - (ETHostConnectionTypes) hostConnectionType:(NSString*)hostName;
 
-#pragma mark - SERVICE SEARCH CONFIGURATION
+#pragma mark - PROPERTIES
+/** @name Properties */
+
 /** TRUE (default), is sevices need to be suspended in background mode (iOS only) */
 @property (nonatomic, assign) BOOL suspendInBackground;
 
@@ -130,16 +173,17 @@ typedef NS_OPTIONS(UInt16, ETHostConnectionTypes)
 /** the service types to search for - aUtomatically configured */
 @property (nonatomic, retain) NSString* searchServiceType;
 
-/** our (optional) delegate ... */
+/** The ETConnectionServer delegate to receive notification
+ *  on host changes (must implement the EIConnectionServerDelegate protocol). */
 @property (nonatomic, retain) id<EIConnectionServerDelegate> delegate;
 
-/** holds an array of CANetService objects */
+/** Holds an array of EINetService objects for every service found in the currewnt domain */
 @property (nonatomic, retain) NSMutableArray *registeredServices;
 
-/** our own published service name, if published, 'nil' otherwise */
+/** Our own published service name, if published, 'nil' otherwise */
 @property (nonatomic, readonly) NSString* publishedName;
 
-/** our own service, if we're published */
+/** Our own service, if we're published */
 @property (nonatomic, retain) NSNetService* service;
 
 @end

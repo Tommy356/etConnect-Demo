@@ -85,6 +85,6 @@
 // Methods which rely on undocumented methods of UIColor
 @interface UIColor (UIColor_Undocumented_Expanded)
 - (NSString *)fetchStyleString;
-- (UIColor *)rgbColor; // Via Poltras
+- (UIColor *)rgbColor;
 @end
 #endif // SUPPORTS_UNDOCUMENTED_API

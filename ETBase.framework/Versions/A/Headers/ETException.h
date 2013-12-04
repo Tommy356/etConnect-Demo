@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-//#define ETSAppException(class,r)     [ETSStackDB etsExceptionFrom:class func:__func__ line:__LINE__ reason:r]
-
-// raises an exception, if a condition is not met. Reason must be supplied, info maybe nil
-// TBD: this needs to be implemented, but maybe already used in code
+/**
+ *  Several macro definitions to raise exceptions with extended error information:
+ */
 #define RAISE_IF(cond,r,i)      [ETException raiseIf:(cond)  cls:[self class] func:__func__ line:__LINE__ reason:(r) info:(i)]
 #define RAISE_IFNOT(cond,r,i)   [ETException raiseIf:!(cond) cls:[self class] func:__func__ line:__LINE__ reason:(r) info:(i)]
 #define RAISE(r)                [ETException raiseIf:TRUE    cls:[self class] func:__func__ line:__LINE__ reason:(r) info:nil]
@@ -19,7 +18,9 @@
 #define IsETException(ex)       [ETException isETSException:ex]
 #define ETExceptionReason(ex)   [ETException reasonID:ex]
 
-/** Database exception definitions */
+/** 
+ *  Predefined exception definitions for various system components.
+ */
 typedef NS_ENUM(NSInteger, RGExceptionReason) {
     
     RGXUndefined = 0,               // undefined exception
@@ -67,7 +68,7 @@ typedef NS_ENUM(NSInteger, RGExceptionReason) {
     RGXParamLast = RGXImgDuplicateReference,
     
     RGXLast
-} NS_ENUM_AVAILABLE(10_8,5_0);
+};
 
 @interface ETException : NSException
 + (void) raiseIf:(BOOL)condition

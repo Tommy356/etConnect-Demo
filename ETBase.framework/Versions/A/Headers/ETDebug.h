@@ -9,7 +9,6 @@
 #ifndef ETBase_ETDebug_included
 #define ETBase_ETDebug_included
 
-// Show full path of filename?
 #define DEBUG_SHOW_FULLPATH NO
 #define DEBUG_SHOW_THREAD   YES
 
@@ -19,11 +18,7 @@
 #define debug(format,...)
 #endif
 
-#if 1 //DEBUG
 #define NSLog(format,...) [[ETDebugOutput sharedDebug] output:__FILE__ lineNumber:__LINE__ input:(format), ##__VA_ARGS__]
-#else
-#define NSLog(format,...)
-#endif
 
 #if DEBUG
 #define ETSAssert(cond,format,...)  [[ETDebugOutput sharedDebug] assert:(cond) file:__FILE__ lineNumber:__LINE__ input:(format), ##__VA_ARGS__]
@@ -34,12 +29,7 @@
 // Super definitions for the special cases below:
 #define LOGIT(format,...)                   [[ETDebugOutput sharedDebug] output:__FILE__ lineNumber:__LINE__ input:(format), ##__VA_ARGS__]
 #define NOLOG(format,...)
-
-// Dynamic logging: produce log output depending on the state of
-// 32 logging bits (client defineable)
 #define LOGIF(condition,format,...)         if((condition)){[[ETDebugOutput sharedDebug] output:__FILE__ lineNumber:__LINE__ input:(format), ##__VA_ARGS__]}
-
-
 
 /* general log statements */
 #define NSLogWarning    LOGIT

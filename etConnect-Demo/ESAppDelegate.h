@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ESAppDelegate : UIResponder <UIApplicationDelegate>
+/* import ETCopnnect.h for all declarations required to use the framework */
+#import <ETConnect/ETConnect.h>
+
+@interface ESAppDelegate : UIResponder
+<UIApplicationDelegate, EIConnectionServerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

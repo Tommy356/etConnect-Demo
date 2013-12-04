@@ -16,9 +16,21 @@
 		AF401C0E184A70FE0026171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF401C0C184A70FE0026171A /* Main.storyboard */; };
 		AF401C11184A70FE0026171A /* ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C10184A70FE0026171A /* ESViewController.m */; };
 		AF401C13184A70FE0026171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF401C12184A70FE0026171A /* Images.xcassets */; };
-		AFDB61C6184DE2E200B1C6E9 /* ETBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDB61C4184DE2E200B1C6E9 /* ETBase.framework */; };
-		AFDB61C7184DE2E200B1C6E9 /* ETConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDB61C5184DE2E200B1C6E9 /* ETConnect.framework */; };
-		AFDB61C9184DE5B500B1C6E9 /* README.docx in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61C8184DE5B500B1C6E9 /* README.docx */; };
+		AF6B9A30184F30B500926842 /* ETBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9A2E184F30B500926842 /* ETBase.framework */; };
+		AF6B9A31184F30B500926842 /* ETConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9A2F184F30B500926842 /* ETConnect.framework */; };
+		AFDB61CC184DE70C00B1C6E9 /* ESRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB61CB184DE70C00B1C6E9 /* ESRemoteObject.m */; };
+		AFDB61FC184E0EC300B1C6E9 /* eiShare Icon_0029.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F3184E0EC300B1C6E9 /* eiShare Icon_0029.png */; };
+		AFDB61FD184E0EC300B1C6E9 /* eiShare Icon_0057.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F4184E0EC300B1C6E9 /* eiShare Icon_0057.png */; };
+		AFDB61FE184E0EC300B1C6E9 /* eiShare Icon_0058.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F5184E0EC300B1C6E9 /* eiShare Icon_0058.png */; };
+		AFDB61FF184E0EC300B1C6E9 /* eiShare Icon_0080.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F6184E0EC300B1C6E9 /* eiShare Icon_0080.png */; };
+		AFDB6200184E0EC300B1C6E9 /* eiShare Icon_0114.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F7184E0EC300B1C6E9 /* eiShare Icon_0114.png */; };
+		AFDB6201184E0EC300B1C6E9 /* eiShare Icon_0120 transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F8184E0EC300B1C6E9 /* eiShare Icon_0120 transparent.png */; };
+		AFDB6202184E0EC300B1C6E9 /* eiShare Icon_0120.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F9184E0EC300B1C6E9 /* eiShare Icon_0120.png */; };
+		AFDB6203184E0EC300B1C6E9 /* eiShare Icon_0512.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61FA184E0EC300B1C6E9 /* eiShare Icon_0512.png */; };
+		AFDB6204184E0EC300B1C6E9 /* eiShare Icon_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61FB184E0EC300B1C6E9 /* eiShare Icon_1024.png */; };
+		AFDB6207184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB6205184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png */; };
+		AFDB6208184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB6206184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png */; };
+		AFDB620B184E1FC800B1C6E9 /* ESDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB620A184E1FC800B1C6E9 /* ESDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +49,25 @@
 		AF401C10184A70FE0026171A /* ESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESViewController.m; sourceTree = "<group>"; };
 		AF401C12184A70FE0026171A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF401C19184A70FE0026171A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF6B9A2E184F30B500926842 /* ETBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETBase.framework; sourceTree = "<group>"; };
+		AF6B9A2F184F30B500926842 /* ETConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETConnect.framework; sourceTree = "<group>"; };
 		AFC1D504184A72EB0043204A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AFC1D505184A72EB0043204A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		AFDB61C4184DE2E200B1C6E9 /* ETBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETBase.framework; sourceTree = "<group>"; };
-		AFDB61C5184DE2E200B1C6E9 /* ETConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETConnect.framework; sourceTree = "<group>"; };
-		AFDB61C8184DE5B500B1C6E9 /* README.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = README.docx; sourceTree = "<group>"; };
+		AFDB61CA184DE70C00B1C6E9 /* ESRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRemoteObject.h; sourceTree = "<group>"; };
+		AFDB61CB184DE70C00B1C6E9 /* ESRemoteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESRemoteObject.m; sourceTree = "<group>"; };
+		AFDB61F3184E0EC300B1C6E9 /* eiShare Icon_0029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_0029.png"; sourceTree = "<group>"; };
+		AFDB61F4184E0EC300B1C6E9 /* eiShare Icon_0057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_0057.png"; sourceTree = "<group>"; };
+		AFDB61F5184E0EC300B1C6E9 /* eiShare Icon_0058.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_0058.png"; sourceTree = "<group>"; };
+		AFDB61F6184E0EC300B1C6E9 /* eiShare Icon_0080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_0080.png"; sourceTree = "<group>"; };
+		AFDB61F7184E0EC300B1C6E9 /* eiShare Icon_0114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_0114.png"; sourceTree = "<group>"; };
+		AFDB61F8184E0EC300B1C6E9 /* eiShare Icon_0120 transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_0120 transparent.png"; sourceTree = "<group>"; };
+		AFDB61F9184E0EC300B1C6E9 /* eiShare Icon_0120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_0120.png"; sourceTree = "<group>"; };
+		AFDB61FA184E0EC300B1C6E9 /* eiShare Icon_0512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_0512.png"; sourceTree = "<group>"; };
+		AFDB61FB184E0EC300B1C6E9 /* eiShare Icon_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eiShare Icon_1024.png"; sourceTree = "<group>"; };
+		AFDB6205184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "etDemo Icon_0120 transparent_off.png"; sourceTree = "<group>"; };
+		AFDB6206184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "etDemo Icon_0120 transparent_on.png"; sourceTree = "<group>"; };
+		AFDB6209184E1FC800B1C6E9 /* ESDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDetailViewController.h; sourceTree = "<group>"; };
+		AFDB620A184E1FC800B1C6E9 /* ESDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,11 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFDB61C6184DE2E200B1C6E9 /* ETBase.framework in Frameworks */,
+				AF6B9A30184F30B500926842 /* ETBase.framework in Frameworks */,
 				AF401BFD184A70FE0026171A /* CoreGraphics.framework in Frameworks */,
 				AF401BFF184A70FE0026171A /* UIKit.framework in Frameworks */,
 				AF401BFB184A70FE0026171A /* Foundation.framework in Frameworks */,
-				AFDB61C7184DE2E200B1C6E9 /* ETConnect.framework in Frameworks */,
+				AF6B9A31184F30B500926842 /* ETConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +89,6 @@
 		AF401BEE184A70FE0026171A = {
 			isa = PBXGroup;
 			children = (
-				AFDB61C8184DE5B500B1C6E9 /* README.docx */,
 				AFC1D504184A72EB0043204A /* LICENSE */,
 				AFC1D505184A72EB0043204A /* README.md */,
 				AF401C00184A70FE0026171A /* etConnect-Demo */,
@@ -83,8 +108,8 @@
 		AF401BF9184A70FE0026171A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFDB61C4184DE2E200B1C6E9 /* ETBase.framework */,
-				AFDB61C5184DE2E200B1C6E9 /* ETConnect.framework */,
+				AF6B9A2E184F30B500926842 /* ETBase.framework */,
+				AF6B9A2F184F30B500926842 /* ETConnect.framework */,
 				AF401BFA184A70FE0026171A /* Foundation.framework */,
 				AF401BFC184A70FE0026171A /* CoreGraphics.framework */,
 				AF401BFE184A70FE0026171A /* UIKit.framework */,
@@ -96,9 +121,14 @@
 		AF401C00184A70FE0026171A /* etConnect-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				AFDB61F2184E0E6700B1C6E9 /* Resources */,
+				AFDB61CA184DE70C00B1C6E9 /* ESRemoteObject.h */,
+				AFDB61CB184DE70C00B1C6E9 /* ESRemoteObject.m */,
 				AF401C09184A70FE0026171A /* ESAppDelegate.h */,
 				AF401C0A184A70FE0026171A /* ESAppDelegate.m */,
 				AF401C0C184A70FE0026171A /* Main.storyboard */,
+				AFDB6209184E1FC800B1C6E9 /* ESDetailViewController.h */,
+				AFDB620A184E1FC800B1C6E9 /* ESDetailViewController.m */,
 				AF401C0F184A70FE0026171A /* ESViewController.h */,
 				AF401C10184A70FE0026171A /* ESViewController.m */,
 				AF401C12184A70FE0026171A /* Images.xcassets */,
@@ -116,6 +146,24 @@
 				AF401C08184A70FE0026171A /* etConnect-Demo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFDB61F2184E0E6700B1C6E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFDB6205184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png */,
+				AFDB6206184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png */,
+				AFDB61F3184E0EC300B1C6E9 /* eiShare Icon_0029.png */,
+				AFDB61F4184E0EC300B1C6E9 /* eiShare Icon_0057.png */,
+				AFDB61F5184E0EC300B1C6E9 /* eiShare Icon_0058.png */,
+				AFDB61F6184E0EC300B1C6E9 /* eiShare Icon_0080.png */,
+				AFDB61F7184E0EC300B1C6E9 /* eiShare Icon_0114.png */,
+				AFDB61F8184E0EC300B1C6E9 /* eiShare Icon_0120 transparent.png */,
+				AFDB61F9184E0EC300B1C6E9 /* eiShare Icon_0120.png */,
+				AFDB61FA184E0EC300B1C6E9 /* eiShare Icon_0512.png */,
+				AFDB61FB184E0EC300B1C6E9 /* eiShare Icon_1024.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,10 +219,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDB6204184E0EC300B1C6E9 /* eiShare Icon_1024.png in Resources */,
+				AFDB61FC184E0EC300B1C6E9 /* eiShare Icon_0029.png in Resources */,
+				AFDB6201184E0EC300B1C6E9 /* eiShare Icon_0120 transparent.png in Resources */,
+				AFDB6203184E0EC300B1C6E9 /* eiShare Icon_0512.png in Resources */,
+				AFDB61FD184E0EC300B1C6E9 /* eiShare Icon_0057.png in Resources */,
 				AF401C13184A70FE0026171A /* Images.xcassets in Resources */,
-				AFDB61C9184DE5B500B1C6E9 /* README.docx in Resources */,
+				AFDB6202184E0EC300B1C6E9 /* eiShare Icon_0120.png in Resources */,
+				AFDB6207184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png in Resources */,
 				AF401C05184A70FE0026171A /* InfoPlist.strings in Resources */,
+				AFDB6208184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png in Resources */,
+				AFDB61FE184E0EC300B1C6E9 /* eiShare Icon_0058.png in Resources */,
+				AFDB61FF184E0EC300B1C6E9 /* eiShare Icon_0080.png in Resources */,
 				AF401C0E184A70FE0026171A /* Main.storyboard in Resources */,
+				AFDB6200184E0EC300B1C6E9 /* eiShare Icon_0114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +245,9 @@
 			files = (
 				AF401C11184A70FE0026171A /* ESViewController.m in Sources */,
 				AF401C0B184A70FE0026171A /* ESAppDelegate.m in Sources */,
+				AFDB61CC184DE70C00B1C6E9 /* ESRemoteObject.m in Sources */,
 				AF401C07184A70FE0026171A /* main.m in Sources */,
+				AFDB620B184E1FC800B1C6E9 /* ESDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -279,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -288,16 +348,25 @@
 		AF401C2A184A70FE0026171A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_WARNINGS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Developer/Projects/pr-public-projects/etConnect-Demo",
+					"/Developer/Projects/pr-frameworks/Debug",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
+				IBSC_ERRORS = YES;
+				IBSC_NOTICES = NO;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = "etConnect-Demo/etConnect-Demo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -305,16 +374,25 @@
 		AF401C2B184A70FE0026171A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_WARNINGS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Developer/Projects/pr-public-projects/etConnect-Demo",
+					"/Developer/Projects/pr-frameworks/Debug",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "etConnect-Demo/etConnect-Demo-Prefix.pch";
+				IBSC_ERRORS = YES;
+				IBSC_NOTICES = NO;
+				IBSC_WARNINGS = NO;
 				INFOPLIST_FILE = "etConnect-Demo/etConnect-Demo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
