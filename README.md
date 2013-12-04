@@ -22,7 +22,7 @@ About etConnect:
 ----------------
 
 Other than the original approach using the NSConnection/NSDistantObject classes found on OSX, etConnect provides similiar
-functionality on both platforms in a mre straigfoward approach and a redesigned archtitecture, which allows customization and
+functionality on both platforms in a more straigfoward approach and a redesigned architecture, which allows customization and
 the addition of several security layers to protect the interchange of secure information through connected clients.
 
 The base code of etConnect is highly platform independent and offers (with minor internal changes) the same functionality and API
@@ -32,7 +32,7 @@ for iOS devices and iOS simulator, while the OSX counterpart (ETConnect-OSX) off
 
 About the Demo Version:
 -----------------------
-The public demo version utilizies the compiled binaries of the etConnect framework in a little demo application.
+This public demo version utilizies the compiled binaries of the etConnect framework in a little demo application.
 The Demo-App monitors all etConnect devices available within a network domain and shows how to 'vend' objects as a service as well as to subscribe to 
 objects vended by other devices and to remotely call their public methods.  
 
@@ -41,7 +41,7 @@ The current project shows this for iOS; the OSX counterpart will be added to the
 Compile & Run:
 --------------
 Just check out the complete project and compile it. To make most use of it, you'll require at least two devices (one of
-may be simulated in iOS simulator). I tried to keep the project as simple as possible and the sourcesd are well documented; 
+may be simulated in iOS simulator). I tried to keep the project as simple as possible and the sources are well documented; 
 however, at a first glance you might walk through the following classes:
 
 <b>ESAppDelegate:</b></br>
@@ -98,7 +98,7 @@ This will not work (without protocol), when called from 64-bit OSX to 32-bit iOS
 
 Reason for this is found in the coding protocol, which is an integral part of the compiler, and the different #define statements for NSInteger (and anything else,
 relying on this). The etConnect framework can compensate this, but it requires a protocol on both sides to be able to deal with it. So, it will just throw an
-exception, whenever you try to pass an NSInteger/NSUInteger or any structure containing such a value. The workarounbd is, to define a protocol and to assign it to the proxy
+exception, whenever you try to pass an NSInteger/NSUInteger or any structure containing such a value. The workaround is to define a protocol and to assign it to the proxy
 as soon as you acquired it (see comments in the Demo App).  
 
 Notes:
@@ -113,7 +113,8 @@ I'll add the OSX app + framework soon.
 
 
 Notes for Building & Compiling:
-------------------------------_
+------------------------------
+
 Make sure, you add the 'ObjC' flag to 'Other Linker Options' in order to link the framework correctly. If this
 flag is NOT set, the etConnect framework will not link correctly (because some extended categories are not
 recognized) and you'll get runtime errors after starting your App.
