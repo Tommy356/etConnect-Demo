@@ -66,8 +66,8 @@ demonstrating additional functionality (see 'ESDetailViewController', below).
 The detail view controller demonstrates how to retrieve additional information of a remote device, how
 to create a proxy and how to remotely call methods on the other device. It provides two buttons:
 
-    (1) <b>Tap To Connect</b>: Tap this, to make the remote device display an alert message.
-    (2) <b>Tap for Ping-Pong</b>: Tap this, to make the remote device connecting back. You won't get visual feedback, just follow the log output in XCode and check out the code ;-)  
+    (1) Tap To Connect: Tap this, to make the remote device display an alert message.
+    (2) Tap for Ping-Pong: Tap this, to make the remote device connecting back. You won't get visual feedback, just follow the log output in XCode and check out the code ;-)  
 
 
 <b>ESRemoteObject:</b></br>
@@ -78,7 +78,12 @@ Check out the code, it's documented.
 
 <b>One word about protocols:</b></br>
 
- 
+In general, it's a good practice to define a protocol for all methods you intend to access with remote calls.
+Having (and assigning) a protocol has two benefits:
+
+(1) It reduces the network traffic, as for unknown methods distant objects will always query the remote side to match and code the required data when calling a method,
+(2) Once doing cross platform calls (32 -> 64 bit or vice versa) the coding of some Cocoa values (i.e. NSInteger, NSUInteger) are defined differently.
+To assure correct value coding,   
 
 
 Notes:
