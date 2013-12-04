@@ -96,22 +96,20 @@ This will not work (without protocol), when called from 64-bit OSX to 32-bit iOS
     NSInteger someNumber = 4711;
     [someRemoteProxy setNumber:someNumber]; 
 
-
-
-
+Reason for this is found in the coding protocol, which is an integral part of the compiler, and the different #define statements for NSInteger (and anything else,
+relying on this). The etConnect framework can compensate this, but it requires a protocol on both sides to be able to deal with it. So, it will just throw an
+exception, whenever you try to pass an NSInteger/NSUInteger or any structure containing such a value. The workarounbd is, to define a protocol and to assign it to the proxy
+as soon as you acquired it (see comments in the Demo App).  
 
 Notes:
 ------
 This is currently under development - the functionality descibed covers only a basic part. However, I'll add
 some more possible applications to the Demo App over time - you're well invited, to contribute your ideas! 
 
-General Comments:
------------------
 
-This project is an XCode5 workspace, holding several targets:
-
-- etConnect-Demo is the demo app for iOS devices (iOS 6.0 or higher)
-- etConnect-Demo-OSX implements a version for OSX
+Next Steps:
+------------
+I'll add the OSX app + framework soon.
 
 
 Notes for Building & Compiling:
