@@ -49,17 +49,42 @@ however, at a first glance you might walk through the following classes:
 Upon startup time, we'll start up a shared instance of the ETConnectServer class, which will
 
     (1) publish the device on the current domain, so other clients apps can find it, and
-    
     (2) start monitoring the current domain for other devices running the etConnect Demo App.    
 
+<b>ESViewController:</b></br>
+
+The main view controller: this view controller monitors other client on the domain and provides
+controls to publish/unpublish a demo service and to enable/disable peer-to-peer functionality (iOS 7.x only). 
+ 
+It provides an UITableView which is updated every time, a new device is found or the services of a
+device have been changed. When tapping an entry of a table view, the demo app will switch to a detail view
+demonstrating additional functionality (see 'ESDetailViewController', below).
 
 
+<b>ESDetailViewController:</b></br>
+
+The detail view controller demonstrates how to retrieve additional information of a remote device, how
+to create a proxy and how to remotely call methods on the other device. It provides two buttons:
+
+    (1) <b>Tap To Connect</b>: Tap this, to make the remote device display an alert message.
+    (2) <b>Tap for Ping-Pong</b>: Tap this, to make the remote device connecting back. You won't get visual feedback, just follow the log output in XCode and check out the code ;-)  
+
+
+<b>ESRemoteObject:</b></br>
+
+This is a sample implementation of an object 'vended' over etConnect. Currently, it provides the 
+Ping-Pong and Alert methods; however it's a good starting point to discover, what etConnect can do for you.
+Check out the code, it's documented.
+
+<b>One word about protocols:</b></br>
+
+ 
 
 
 Notes:
 ------
-This is currently under development - no real contents are added yet. The project is
-due to be published as a first Beta soon.
+This is currently under development - the functionality descibed covers only a basic part. However, I'll add
+some more possible applications to the Demo App over time - you're well invited, to contribute your ideas! 
 
 General Comments:
 -----------------
