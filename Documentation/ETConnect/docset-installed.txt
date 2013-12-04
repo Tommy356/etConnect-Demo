@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/krauttert/Library/Developer/Shared/Documentation/DocSets/com.eitap.ETConnect.docset
+Time: 2013-12-04 09:39:30 +0000

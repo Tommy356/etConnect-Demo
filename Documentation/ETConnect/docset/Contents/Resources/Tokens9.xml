@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/EINetConnectionInStreamDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/EINetConnectionInStreamDelegate</TokenIdentifier>
+			<Abstract type="html">The EINetConnectionInStreamDelegate protocol allows the monitoring of network transport
+layer. You&apos;ll use this to get notifications on the network transport progress while calling remote
+methods that generate a large amount of data (i.e. transferring images or sound files).
+Typically you would set a delegate before calling such a method on the client side and implement
+the connectionDidRead: method to get notified about the data to be transmitted.
+It is NOT recommended to generally set a delegate, as this methods adds additional overhead
+to the time-critical network tranbsport.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/EINetConnectionInStreamDelegate/connectionDidRead:</TokenIdentifier>
+			<Abstract type="html">Passes up a range where length holds the number of bytes expected, and location
+*  indicates the number of bytes actually read.
+*  You may use this to implement a progress indicator while transferring large data objects
+*  from a remote host.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connectionDidRead:(NSRange)dataRange</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dataRange:</Name>
+					<Abstract type="html">the length value of the range holds the total number of bytes expected to be received; the location member holds the amount of bytes actually received.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/connectionDidRead:</Anchor>
+            
+		</Token>
+		
+        
+	</File>
+</Tokens>

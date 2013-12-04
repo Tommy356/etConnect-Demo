@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/EIConnectionDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/EIConnectionDelegate</TokenIdentifier>
+			<Abstract type="html">This protocol may be implemented by classes using EIConnection objects and to control
+the creation and authentication of connections and assiciated communication channels.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EIConnectionServer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EIConnectionServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/registerPort:name:</TokenIdentifier>
+			<Abstract type="html">register &amp;amp; remove ports for the local service</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)registerPort:(NSPort *)port name:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/registerPort:name:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/hosts</TokenIdentifier>
+			<Abstract type="html">returns an array of known hosts</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)hosts</Declaration>
+			
+			
+			<Anchor>//api/name/hosts</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/eiNetServiceForHost:</TokenIdentifier>
+			<Abstract type="html">returns the EINetService for a named host or &apos;nil&apos;, if the host is not found</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (EINetService *)eiNetServiceForHost:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/eiNetServiceForHost:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/eiNetServiceForAddress:</TokenIdentifier>
+			<Abstract type="html">returns the EINetService machting the socket data provided</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (EINetService *)eiNetServiceForAddress:(NSData *)sockAddrData</Declaration>
+			
+			
+			<Anchor>//api/name/eiNetServiceForAddress:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/host:providesService:</TokenIdentifier>
+			<Abstract type="html">checks, whether  the service named is available on the host passed</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)host:(NSString *)hostName providesService:(NSString *)serviceName</Declaration>
+			
+			
+			<Anchor>//api/name/host:providesService:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setSuspendInBackground:</TokenIdentifier>
+			<Abstract type="html">TRUE (default), is sevices need to be suspended in background mode (iOS only)</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL suspendInBackground</Declaration>
+			
+			
+			<Anchor>//api/name/suspendInBackground</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/suspendInBackground</TokenIdentifier>
+			<Abstract type="html">TRUE (default), is sevices need to be suspended in background mode (iOS only)</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL suspendInBackground</Declaration>
+			
+			
+			<Anchor>//api/name/suspendInBackground</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setProtocolName:</TokenIdentifier>
+			<Abstract type="html">The name we&apos;ll publish (and search) services for</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *protocolName</Declaration>
+			
+			
+			<Anchor>//api/name/protocolName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/protocolName</TokenIdentifier>
+			<Abstract type="html">The name we&apos;ll publish (and search) services for</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *protocolName</Declaration>
+			
+			
+			<Anchor>//api/name/protocolName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setPublishName:</TokenIdentifier>
+			<Abstract type="html">The name we&apos;ll publish (and search) services for</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *publishName</Declaration>
+			
+			
+			<Anchor>//api/name/publishName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/publishName</TokenIdentifier>
+			<Abstract type="html">The name we&apos;ll publish (and search) services for</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *publishName</Declaration>
+			
+			
+			<Anchor>//api/name/publishName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setSearchServiceType:</TokenIdentifier>
+			<Abstract type="html">the service types to search for - aUtomatically configured</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *searchServiceType</Declaration>
+			
+			
+			<Anchor>//api/name/searchServiceType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/searchServiceType</TokenIdentifier>
+			<Abstract type="html">the service types to search for - aUtomatically configured</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *searchServiceType</Declaration>
+			
+			
+			<Anchor>//api/name/searchServiceType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setDelegate:</TokenIdentifier>
+			<Abstract type="html">our (optional) delegate ...</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/delegate</TokenIdentifier>
+			<Abstract type="html">our (optional) delegate ...</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setRegisteredServices:</TokenIdentifier>
+			<Abstract type="html">holds an array of CANetService objects</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *registeredServices</Declaration>
+			
+			
+			<Anchor>//api/name/registeredServices</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/registeredServices</TokenIdentifier>
+			<Abstract type="html">holds an array of CANetService objects</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *registeredServices</Declaration>
+			
+			
+			<Anchor>//api/name/registeredServices</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setNetServiceBrowser:</TokenIdentifier>
+			<Abstract type="html">the service browser - up all time</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNetServiceBrowser *netServiceBrowser</Declaration>
+			
+			
+			<Anchor>//api/name/netServiceBrowser</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/netServiceBrowser</TokenIdentifier>
+			<Abstract type="html">the service browser - up all time</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNetServiceBrowser *netServiceBrowser</Declaration>
+			
+			
+			<Anchor>//api/name/netServiceBrowser</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setServiceDict:</TokenIdentifier>
+			<Abstract type="html">the service dictionary - holds all published connections</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *serviceDict</Declaration>
+			
+			
+			<Anchor>//api/name/serviceDict</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/serviceDict</TokenIdentifier>
+			<Abstract type="html">the service dictionary - holds all published connections</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableDictionary *serviceDict</Declaration>
+			
+			
+			<Anchor>//api/name/serviceDict</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setPublishedName:</TokenIdentifier>
+			<Abstract type="html">our own published service name, if published, &apos;nil&apos; otherwise</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *publishedName</Declaration>
+			
+			
+			<Anchor>//api/name/publishedName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/publishedName</TokenIdentifier>
+			<Abstract type="html">our own published service name, if published, &apos;nil&apos; otherwise</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *publishedName</Declaration>
+			
+			
+			<Anchor>//api/name/publishedName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnectionServer/setService:</TokenIdentifier>
+			<Abstract type="html">our own service, if we&apos;re published</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNetService *service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnectionServer/service</TokenIdentifier>
+			<Abstract type="html">our own service, if we&apos;re published</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNetService *service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,1710 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>EIConnection Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ETConnect </a></h1>
+				<a id="developerHome" href="../index.html">eitap Technologies</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">EIConnection Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/connName">&nbsp;&nbsp;&nbsp;&nbsp;connName</option>
+	
+	<option value="//api/name/connType">&nbsp;&nbsp;&nbsp;&nbsp;connType</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/multipleThreadsEnabled">&nbsp;&nbsp;&nbsp;&nbsp;multipleThreadsEnabled</option>
+	
+	<option value="//api/name/rootObject">&nbsp;&nbsp;&nbsp;&nbsp;rootObject</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/allConnections">&nbsp;&nbsp;&nbsp;&nbsp;+ allConnections</option>
+	
+	<option value="//api/name/connectionWithReceivePort:sendPort:">&nbsp;&nbsp;&nbsp;&nbsp;+ connectionWithReceivePort:sendPort:</option>
+	
+	<option value="//api/name/connectionWithRegisteredName:host:">&nbsp;&nbsp;&nbsp;&nbsp;+ connectionWithRegisteredName:host:</option>
+	
+	<option value="//api/name/connectionWithRegisteredName:host:usingNameServer:">&nbsp;&nbsp;&nbsp;&nbsp;+ connectionWithRegisteredName:host:usingNameServer:</option>
+	
+	<option value="//api/name/currentConversation">&nbsp;&nbsp;&nbsp;&nbsp;+ currentConversation</option>
+	
+	<option value="//api/name/getDebug">&nbsp;&nbsp;&nbsp;&nbsp;+ getDebug</option>
+	
+	<option value="//api/name/rootProxyForConnectionWithRegisteredName:host:">&nbsp;&nbsp;&nbsp;&nbsp;+ rootProxyForConnectionWithRegisteredName:host:</option>
+	
+	<option value="//api/name/rootProxyForConnectionWithRegisteredName:host:usingNameServer:">&nbsp;&nbsp;&nbsp;&nbsp;+ rootProxyForConnectionWithRegisteredName:host:usingNameServer:</option>
+	
+	<option value="//api/name/serviceConnectionWithName:rootObject:">&nbsp;&nbsp;&nbsp;&nbsp;+ serviceConnectionWithName:rootObject:</option>
+	
+	<option value="//api/name/serviceConnectionWithName:rootObject:usingNameServer:">&nbsp;&nbsp;&nbsp;&nbsp;+ serviceConnectionWithName:rootObject:usingNameServer:</option>
+	
+	<option value="//api/name/setDebug:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDebug:</option>
+	
+	<option value="//api/name/startVending:rootObject:">&nbsp;&nbsp;&nbsp;&nbsp;+ startVending:rootObject:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/connectRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- connectRequest:</option>
+	
+	<option value="//api/name/connectionIsInvalid:">&nbsp;&nbsp;&nbsp;&nbsp;- connectionIsInvalid:</option>
+	
+	<option value="//api/name/enableMultipleThreads">&nbsp;&nbsp;&nbsp;&nbsp;- enableMultipleThreads</option>
+	
+	<option value="//api/name/initWithParent:andNetConnection:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithParent:andNetConnection:</option>
+	
+	<option value="//api/name/invalidate">&nbsp;&nbsp;&nbsp;&nbsp;- invalidate</option>
+	
+	<option value="//api/name/isValid">&nbsp;&nbsp;&nbsp;&nbsp;- isValid</option>
+	
+	<option value="//api/name/rootProxy">&nbsp;&nbsp;&nbsp;&nbsp;- rootProxy</option>
+	
+	<option value="//api/name/statistics">&nbsp;&nbsp;&nbsp;&nbsp;- statistics</option>
+	
+	<option value="//api/name/stopVending">&nbsp;&nbsp;&nbsp;&nbsp;- stopVending</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Vending Objects">Vending Objects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Subscribing to Services">Subscribing to Services</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connName">connName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connType">connType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/multipleThreadsEnabled">multipleThreadsEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rootObject">rootObject</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allConnections">allConnections</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionWithReceivePort:sendPort:">connectionWithReceivePort:sendPort:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionWithRegisteredName:host:">connectionWithRegisteredName:host:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionWithRegisteredName:host:usingNameServer:">connectionWithRegisteredName:host:usingNameServer:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentConversation">currentConversation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDebug">getDebug</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rootProxyForConnectionWithRegisteredName:host:">rootProxyForConnectionWithRegisteredName:host:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rootProxyForConnectionWithRegisteredName:host:usingNameServer:">rootProxyForConnectionWithRegisteredName:host:usingNameServer:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serviceConnectionWithName:rootObject:">serviceConnectionWithName:rootObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serviceConnectionWithName:rootObject:usingNameServer:">serviceConnectionWithName:rootObject:usingNameServer:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDebug:">setDebug:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startVending:rootObject:">startVending:rootObject:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectRequest:">connectRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectionIsInvalid:">connectionIsInvalid:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableMultipleThreads">enableMultipleThreads</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithParent:andNetConnection:">initWithParent:andNetConnection:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidate">invalidate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isValid">isValid</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rootProxy">rootProxy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/statistics">statistics</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopVending">stopVending</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="EIConnection Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">EIConnection Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">EIConnection.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The main class to vend objects or to subscribe to objects vended by other hosts.</p>
+
+<p>This class provides functionality similiar to the <b>NSConnection</b> class provided on OSX, however
+due to architectural differences the API and implementation differs from the original class implementation.
+You&rsquo;ll use this class to &lsquo;vend&rsquo; services and to subscribe to services vended by other hosts.</p>
+
+<h2>Publishing Services:</h2>
+
+<p>To publish a service, make sure, the shared instance of <a href="../Classes/ETConnectServer.html">ETConnectServer</a> has been started by your App correctly.
+Once the <a href="../Classes/ETConnectServer.html">ETConnectServer</a> has been started, you&rsquo;ll need to:</p>
+
+<ul>
+<li>Create an instance of the object you want to make available for remote calls</li>
+<li>Call the <a href="#//api/name/startVending:rootObject:">startVending:rootObject:</a> method to create a new EIConnection to hanbdle remote calls to the instance of this object</li>
+</ul>
+
+
+<h2>Subscribing to Services:</h2>
+
+<p>To subscribe to a service published by another App or another deivice, make sure, the shared instance of <a href="../Classes/ETConnectServer.html">ETConnectServer</a> has
+been started by your App correctly. You&rsquo;ll need to specify the ETServerOptionSearch option, when starting the service.
+Once the <a href="../Classes/ETConnectServer.html">ETConnectServer</a> is running, you&rsquo;ll need to:</p>
+
+<ul>
+<li>Pick up an available host name from ETConnectServer&rsquo;s hosts array</li>
+<li>Call the subscribeTo:onHost subscribeTo:onHost:usingProtocol method to receive a proxy to the remote object</li>
+<li>Call any method published by the remote object</li>
+</ul>
+
+
+<h2>Unsubscribing from a service:</h2>
+
+<p>To unsubscribe fromn a service, just release the proxy obtained in the step described above. This will release the proxy and,
+if it&rsquo;s not retained otherwise, close all communication streams to the remote host and release the underlying EIConnection instance.</p>
+
+<h2>Unpublishing Services:</h2>
+
+<p>To stop publishing a service, release the EIConnection instance returned by the call to startVending:<a href="#//api/name/rootObject">rootObject</a> described previously.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Vending Objects" name="task_Vending Objects"></a>
+						<h3 class="subsubtitle task-title">Vending Objects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startVending:rootObject:">+&nbsp;startVending:rootObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopVending">&ndash;&nbsp;stopVending</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Subscribing to Services" name="task_Subscribing to Services"></a>
+						<h3 class="subsubtitle task-title">Subscribing to Services</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionWithReceivePort:sendPort:">+&nbsp;connectionWithReceivePort:sendPort:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionWithRegisteredName:host:">+&nbsp;connectionWithRegisteredName:host:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rootProxyForConnectionWithRegisteredName:host:">+&nbsp;rootProxyForConnectionWithRegisteredName:host:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rootProxyForConnectionWithRegisteredName:host:usingNameServer:">+&nbsp;rootProxyForConnectionWithRegisteredName:host:usingNameServer:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serviceConnectionWithName:rootObject:">+&nbsp;serviceConnectionWithName:rootObject:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serviceConnectionWithName:rootObject:usingNameServer:">+&nbsp;serviceConnectionWithName:rootObject:usingNameServer:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithParent:andNetConnection:">&ndash;&nbsp;initWithParent:andNetConnection:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectRequest:">&ndash;&nbsp;connectRequest:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/statistics">&ndash;&nbsp;statistics</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidate">&ndash;&nbsp;invalidate</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isValid">&ndash;&nbsp;isValid</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rootObject">&nbsp;&nbsp;rootObject</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/multipleThreadsEnabled">&nbsp;&nbsp;multipleThreadsEnabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connName">&nbsp;&nbsp;connName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connType">&nbsp;&nbsp;connType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rootProxy">&ndash;&nbsp;rootProxy</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allConnections">+&nbsp;allConnections</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionWithRegisteredName:host:usingNameServer:">+&nbsp;connectionWithRegisteredName:host:usingNameServer:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableMultipleThreads">&ndash;&nbsp;enableMultipleThreads</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentConversation">+&nbsp;currentConversation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectionIsInvalid:">&ndash;&nbsp;connectionIsInvalid:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDebug:">+&nbsp;setDebug:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDebug">+&nbsp;getDebug</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connName" title="connName"></a>
+	<h3 class="subsubtitle method-title">connName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An (optional) name for a connection. Clients may use this property to identify
+connections.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *connName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connType" title="connType"></a>
+	<h3 class="subsubtitle method-title">connType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The type of the connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) ETConnectionTypes connType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The following types are defined:</p>
+
+<ul>
+<li><i>ETConnectionTypeUndefined</i>: No type assigned for this connection</li>
+<li><i>ETConnectionTypeRoot</i>: A root connection vending a local root object</li>
+<li><i>ETConnectionTypeService</i>: A connection to a remote root object</li>
+<li><i>ETConnectionTypeProxy</i>: A proxy connection established through a remote call to a vended service</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The delegate for this connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id&lt;&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/multipleThreadsEnabled" title="multipleThreadsEnabled"></a>
+	<h3 class="subsubtitle method-title">multipleThreadsEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>TRUE, if the connection is enabled to serve multple threads.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL multipleThreadsEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rootObject" title="rootObject"></a>
+	<h3 class="subsubtitle method-title">rootObject</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The root object associated to this connection. If the connection refewrs to a locally
+published service, the local object is returned. If the coinnection refers to a remote service,
+a proxy to the remote service is returned.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id rootObject</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allConnections" title="allConnections"></a>
+	<h3 class="subsubtitle method-title">allConnections</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an array containing all the EIConnection objects known to
+the system. These connections will be valid at the time that the
+array was created, but may be invalidated by other threads
+before you get to examine the array.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)allConnections</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionWithReceivePort:sendPort:" title="connectionWithReceivePort:sendPort:"></a>
+	<h3 class="subsubtitle method-title">connectionWithReceivePort:sendPort:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a connection initialised using -initWithReceivePort:sendPort:<br />
+Both ports must be of the same type.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (EIConnection *)connectionWithReceivePort:(NSPort *)<em>r</em> sendPort:(NSPort *)<em>s</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionWithRegisteredName:host:" title="connectionWithRegisteredName:host:"></a>
+	<h3 class="subsubtitle method-title">connectionWithRegisteredName:host:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an EIConnection object whose send port is that of the
+EIConnection registered under the name n on the host h
+</p>
+
+
+<p>This method calls [connectionWithRegisteredName:host:usingNameServer:](#//api/name/connectionWithRegisteredName:host:usingNameServer:)
+using the default system name server.
+</p>
+
+
+<p>Use [ETConnectServer] for connections to remote hosts.
+</p>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (EIConnection *)connectionWithRegisteredName:(NSString *)<em>n</em> host:(NSString *)<em>h</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionWithRegisteredName:host:usingNameServer:" title="connectionWithRegisteredName:host:usingNameServer:"></a>
+	<h3 class="subsubtitle method-title">connectionWithRegisteredName:host:usingNameServer:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>
+Returns an EIConnection object whose send port is that of the
+EIConnection registered under <em>name</em> on <em>host</em>.
+</p>
+
+
+<p>
+The nameserver <em>server</em> is used to look up the send
+port to be used for the connection.<br />
+Use [ETConnectServer+sharedInstance]
+for connections to remote hosts.
+</p>
+
+
+<p>
+If <em>host</em> is <code>nil</code> or an empty string,
+the host is taken to be the local machine.<br />
+If it is an asterisk ('*') then the nameserver checks all
+hosts on the local subnet (unless the nameserver is one
+that only manages local ports).<br />
+In the GNUstep implementation, the local host is searched before
+any other hosts.<br />
+NB. if the nameserver does not support connections to remote hosts
+(the default situation) the host argument should be omitted.
+</p>
+
+
+<p>
+If no EIConnection can be found for <em>name</em> and
+<em>host</em>host, the method returns <code>nil</code>.
+</p>
+
+
+<p>
+The returned object has the default EIConnection of the
+current thread as its parent (it has the same receive port
+as the default connection).
+</p>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (EIConnection *)connectionWithRegisteredName:(NSString *)<em>n</em> host:(NSString *)<em>h</em> usingNameServer:(ETConnectServer *)<em>s</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentConversation" title="currentConversation"></a>
+	<h3 class="subsubtitle method-title">currentConversation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Return the current conversation &hellip; not implemented in GNUstep</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)currentConversation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDebug" title="getDebug"></a>
+	<h3 class="subsubtitle method-title">getDebug</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Debug only:
+returns the common debug level for all connection objects&hellip;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (int)getDebug</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rootProxyForConnectionWithRegisteredName:host:" title="rootProxyForConnectionWithRegisteredName:host:"></a>
+	<h3 class="subsubtitle method-title">rootProxyForConnectionWithRegisteredName:host:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method calls
+<a href="#//api/name/rootProxyForConnectionWithRegisteredName:host:usingNameServer:">rootProxyForConnectionWithRegisteredName:host:usingNameServer:</a>
+to return a proxy for a root object on the remote connection with
+the send port registered under name n on host h.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (EIDistantObject *)rootProxyForConnectionWithRegisteredName:(NSString *)<em>n</em> host:(NSString *)<em>h</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rootProxyForConnectionWithRegisteredName:host:usingNameServer:" title="rootProxyForConnectionWithRegisteredName:host:usingNameServer:"></a>
+	<h3 class="subsubtitle method-title">rootProxyForConnectionWithRegisteredName:host:usingNameServer:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method calls
+<a href="#//api/name/connectionWithRegisteredName:host:usingNameServer:">connectionWithRegisteredName:host:usingNameServer:</a>
+to get a connection, then sends it a <a href="#//api/name/rootProxy">rootProxy</a> message to get
+a proxy for the root object being vended by the remote connection.
+Returns the proxy or nil if it couldn&rsquo;t find a connection or if
+the root object for the connection has not been set.<br />
+Use [ETConnectServer+sharedInstance]
+for connections to remote hosts.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (EIDistantObject *)rootProxyForConnectionWithRegisteredName:(NSString *)<em>n</em> host:(NSString *)<em>h</em> usingNameServer:(ETConnectServer *)<em>s</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serviceConnectionWithName:rootObject:" title="serviceConnectionWithName:rootObject:"></a>
+	<h3 class="subsubtitle method-title">serviceConnectionWithName:rootObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a service connection with a specified root object and a specified name.
+*
+* Deprecated: you should use &lsquo;startVending:root&rsquo; instead.
+*</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)serviceConnectionWithName:(NSString *)<em>name</em> rootObject:(id)<em>root</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name:</em></dt>
+			<dd><p>a unique name, which will be used to announce the vending service oin the current domain</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>root:</em></dt>
+			<dd><p>an instance of an NSObject-based class, which will serve as the root object for the service</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a new EIConnection instance, responsible to handle &amp; dispatch incoming connection requests and route them to the root object specified</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serviceConnectionWithName:rootObject:usingNameServer:" title="serviceConnectionWithName:rootObject:usingNameServer:"></a>
+	<h3 class="subsubtitle method-title">serviceConnectionWithName:rootObject:usingNameServer:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a service connection with a specified root object and a specified name using a
+*  specified instance of <a href="../Classes/ETConnectServer.html">ETConnectServer</a>.
+*
+* Deprecated: you should use &lsquo;startVending:root&rsquo; instead.
+*</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)serviceConnectionWithName:(NSString *)<em>name</em> rootObject:(id)<em>root</em> usingNameServer:(ETConnectServer *)<em>server</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name:</em></dt>
+			<dd><p>a unique name, which will be used to announce the vending service oin the current domain</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>root:</em></dt>
+			<dd><p>an instance of an NSObject-based class, which will serve as the root object for the service</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>usingNameServer:</em></dt>
+			<dd><p>an instance of <a href="../Classes/ETConnectServer.html">ETConnectServer</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a new EIConnection instance, responsible to handle &amp; dispatch incoming connection requests and route them to the root object specified</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDebug:" title="setDebug:"></a>
+	<h3 class="subsubtitle method-title">setDebug:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Debug only:
+sets/gets the common debug level for all connection objects&hellip;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (int)setDebug:(int)<em>val</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startVending:rootObject:" title="startVending:rootObject:"></a>
+	<h3 class="subsubtitle method-title">startVending:rootObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<ul>
+<li>we might implemenent a clone protocol, which allows a &lsquo;duplicate&rsquo; root</li>
+<li>object once a connection is made &ndash; given, this does not work with root class &hellip;
+*</li>
+</ul>
+
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)startVending:(NSString *)<em>name</em> rootObject:(id)<em>root</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name:</em></dt>
+			<dd><p>a unique name, which will be used to announce the vending service oin the current domain</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>root:</em></dt>
+			<dd><p>an instance of an NSObject-based class, which will serve as the root object for the service</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>a new EIConnection instance, responsible to handle &amp; dispatch incoming connection requests and route them to the root object specified</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connectRequest:" title="connectRequest:"></a>
+	<h3 class="subsubtitle method-title">connectRequest:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>called by <a href="../Classes/EINetConnection.html">EINetConnection</a>, if a new port connect message has been received. The <a href="../Classes/EINetConnection.html">EINetConnection</a>
+expects a child connection to be created, which will act as message handler for
+incoming messages. The <a href="#//api/name/netConnection">netConnection</a> passed will be responsible toi handle all traffic
+for this EIConnection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (EIConnection *)connectRequest:(EINetConnection *)<em>netConnection</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectionIsInvalid:" title="connectionIsInvalid:"></a>
+	<h3 class="subsubtitle method-title">connectionIsInvalid:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>called, once an EINetConnections becomes invalid</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)connectionIsInvalid:(EINetConnection *)<em>netConnection</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableMultipleThreads" title="enableMultipleThreads"></a>
+	<h3 class="subsubtitle method-title">enableMultipleThreads</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the EIConnection configuration so that multiple threads may
+use the connection to send requests to the remote connection.<br />
+This option is inherited by child connections.<br />
+NB. A connection with multiple threads enabled will run slower than
+a normal connection.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enableMultipleThreads</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithParent:andNetConnection:" title="initWithParent:andNetConnection:"></a>
+	<h3 class="subsubtitle method-title">initWithParent:andNetConnection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>initializes a new child connection for a vended object &hellip;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithParent:(EIConnection *)<em>parent</em> andNetConnection:(EINetConnection *)<em>netConnection</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidate" title="invalidate"></a>
+	<h3 class="subsubtitle method-title">invalidate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invalidates an existing EIConnection instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)invalidate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Internal management only; there should be no reason, to call this routine externally. To
+Release a service connection, call &lsquo;stopVending&rsquo; and release the reference to the EIConnection.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isValid" title="isValid"></a>
+	<h3 class="subsubtitle method-title">isValid</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns TRUE, if an EIConnection is valid, FALSE, if a connection is shutting down due to local
+or remote requests.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)isValid</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rootProxy" title="rootProxy"></a>
+	<h3 class="subsubtitle method-title">rootProxy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the proxy for the root object of the remote EIConnection.<br />
+Generally you will wish to call [EIDistantObject-setProtocolForProxy:]
+immediately after obtaining such a root proxy.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (EIDistantObject *)rootProxy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/statistics" title="statistics"></a>
+	<h3 class="subsubtitle method-title">statistics</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a dictionary with some statistical information about an EIConnection instance.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)statistics</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopVending" title="stopVending"></a>
+	<h3 class="subsubtitle method-title">stopVending</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops vending an object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)stopVending</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@returns: TRUE, if the vending has been stopped, FALSE, if an error occured.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnection.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 eitap Technologies. All rights reserved. (Last updated: 2013-12-04)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

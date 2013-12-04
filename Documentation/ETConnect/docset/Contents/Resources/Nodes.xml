@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>ETConnect</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+            <Name>EIConnection</Name>
+            <Path>Classes/EIConnection.html</Path>
+            
+        </Node>
+		<Node id="2">
+            <Name>EIConnectionServer</Name>
+            <Path>Classes/EIConnectionServer.html</Path>
+            
+        </Node>
+		<Node id="3">
+            <Name>EIDistantObject</Name>
+            <Path>Classes/EIDistantObject.html</Path>
+            
+        </Node>
+		<Node id="4">
+            <Name>EINetConnection</Name>
+            <Path>Classes/EINetConnection.html</Path>
+            
+        </Node>
+		<Node id="5">
+            <Name>ETConnectServer</Name>
+            <Path>Classes/ETConnectServer.html</Path>
+            
+        </Node>
+		
+		
+        <Node id="6">
+            <Name>EIConnectionDelegate</Name>
+            <Path>Protocols/EIConnectionDelegate.html</Path>
+            
+        </Node>
+		<Node id="7">
+            <Name>EIConnectionServerDelegate</Name>
+            <Path>Protocols/EIConnectionServerDelegate.html</Path>
+            
+        </Node>
+		<Node id="8">
+            <Name>EINetConnectionDelegate</Name>
+            <Path>Protocols/EINetConnectionDelegate.html</Path>
+            
+        </Node>
+		<Node id="9">
+            <Name>EINetConnectionInStreamDelegate</Name>
+            <Path>Protocols/EINetConnectionInStreamDelegate.html</Path>
+            
+        </Node>
+		<Node id="10">
+            <Name>ETConnectServerNotificationsDelegate</Name>
+            <Path>Protocols/ETConnectServerNotificationsDelegate.html</Path>
+            
+        </Node>
+		
+        
+	</Library>
+</DocSetNodes>

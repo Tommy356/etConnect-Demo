@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EIConnection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EIConnection</TokenIdentifier>
+			<Abstract type="html">The main class to vend objects or to subscribe to objects vended by other hosts.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/startVending:rootObject:</TokenIdentifier>
+			<Abstract type="html">*  we might implemenent a clone protocol, which allows a &apos;duplicate&apos; root
+*  object once a connection is made - given, this does not work with root class ...
+*</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (id)startVending:(NSString *)name rootObject:(id)root</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name:</Name>
+					<Abstract type="html">a unique name, which will be used to announce the vending service oin the current domain</Abstract>
+				</Parameter><Parameter>
+					<Name>root:</Name>
+					<Abstract type="html">an instance of an NSObject-based class, which will serve as the root object for the service</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a new EIConnection instance, responsible to handle &amp;amp; dispatch incoming connection requests and route them to the root object specified</Abstract></ReturnValue>
+			<Anchor>//api/name/startVending:rootObject:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/stopVending</TokenIdentifier>
+			<Abstract type="html">Stops vending an object.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)stopVending</Declaration>
+			
+			
+			<Anchor>//api/name/stopVending</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/connectionWithReceivePort:sendPort:</TokenIdentifier>
+			<Abstract type="html">Returns a connection initialised using -initWithReceivePort:sendPort:&lt;br /&gt;
+Both ports must be of the same type.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (EIConnection *)connectionWithReceivePort:(NSPort *)r sendPort:(NSPort *)s</Declaration>
+			
+			
+			<Anchor>//api/name/connectionWithReceivePort:sendPort:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/connectionWithRegisteredName:host:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Returns an EIConnection object whose send port is that of the
+EIConnection registered under the name n on the host h
+&lt;/p&gt;
+&lt;p&gt;This method calls connectionWithRegisteredName:host:usingNameServer:
+using the default system name server.
+&lt;/p&gt;
+&lt;p&gt;Use [ETConnectServer] for connections to remote hosts.
+&lt;/p&gt;</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (EIConnection *)connectionWithRegisteredName:(NSString *)n host:(NSString *)h</Declaration>
+			
+			
+			<Anchor>//api/name/connectionWithRegisteredName:host:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/rootProxyForConnectionWithRegisteredName:host:</TokenIdentifier>
+			<Abstract type="html">This method calls
+rootProxyForConnectionWithRegisteredName:host:usingNameServer:
+to return a proxy for a root object on the remote connection with
+the send port registered under name n on host h.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (EIDistantObject *)rootProxyForConnectionWithRegisteredName:(NSString *)n host:(NSString *)h</Declaration>
+			
+			
+			<Anchor>//api/name/rootProxyForConnectionWithRegisteredName:host:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/rootProxyForConnectionWithRegisteredName:host:usingNameServer:</TokenIdentifier>
+			<Abstract type="html">This method calls
+connectionWithRegisteredName:host:usingNameServer:
+to get a connection, then sends it a rootProxy message to get
+a proxy for the root object being vended by the remote connection.
+Returns the proxy or nil if it couldn&apos;t find a connection or if
+the root object for the connection has not been set.&lt;br /&gt;
+Use [ETConnectServer+sharedInstance]
+for connections to remote hosts.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (EIDistantObject *)rootProxyForConnectionWithRegisteredName:(NSString *)n host:(NSString *)h usingNameServer:(ETConnectServer *)s</Declaration>
+			
+			
+			<Anchor>//api/name/rootProxyForConnectionWithRegisteredName:host:usingNameServer:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/serviceConnectionWithName:rootObject:</TokenIdentifier>
+			<Abstract type="html">Creates a service connection with a specified root object and a specified name.
+*
+* Deprecated: you should use &apos;startVending:root&apos; instead.
+*</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (id)serviceConnectionWithName:(NSString *)name rootObject:(id)root</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name:</Name>
+					<Abstract type="html">a unique name, which will be used to announce the vending service oin the current domain</Abstract>
+				</Parameter><Parameter>
+					<Name>root:</Name>
+					<Abstract type="html">an instance of an NSObject-based class, which will serve as the root object for the service</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a new EIConnection instance, responsible to handle &amp;amp; dispatch incoming connection requests and route them to the root object specified</Abstract></ReturnValue>
+			<Anchor>//api/name/serviceConnectionWithName:rootObject:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/serviceConnectionWithName:rootObject:usingNameServer:</TokenIdentifier>
+			<Abstract type="html">Creates a service connection with a specified root object and a specified name using a
+*  specified instance of ETConnectServer.
+*
+* Deprecated: you should use &apos;startVending:root&apos; instead.
+*</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (id)serviceConnectionWithName:(NSString *)name rootObject:(id)root usingNameServer:(ETConnectServer *)server</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name:</Name>
+					<Abstract type="html">a unique name, which will be used to announce the vending service oin the current domain</Abstract>
+				</Parameter><Parameter>
+					<Name>root:</Name>
+					<Abstract type="html">an instance of an NSObject-based class, which will serve as the root object for the service</Abstract>
+				</Parameter><Parameter>
+					<Name>usingNameServer:</Name>
+					<Abstract type="html">an instance of ETConnectServer</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a new EIConnection instance, responsible to handle &amp;amp; dispatch incoming connection requests and route them to the root object specified</Abstract></ReturnValue>
+			<Anchor>//api/name/serviceConnectionWithName:rootObject:usingNameServer:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/initWithParent:andNetConnection:</TokenIdentifier>
+			<Abstract type="html">initializes a new child connection for a vended object ...</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithParent:(EIConnection *)parent andNetConnection:(EINetConnection *)netConnection</Declaration>
+			
+			
+			<Anchor>//api/name/initWithParent:andNetConnection:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/connectRequest:</TokenIdentifier>
+			<Abstract type="html">called by EINetConnection, if a new port connect message has been received. The EINetConnection
+expects a child connection to be created, which will act as message handler for
+incoming messages. The netConnection passed will be responsible toi handle all traffic
+for this EIConnection.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (EIConnection *)connectRequest:(EINetConnection *)netConnection</Declaration>
+			
+			
+			<Anchor>//api/name/connectRequest:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/statistics</TokenIdentifier>
+			<Abstract type="html">Returns a dictionary with some statistical information about an EIConnection instance.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)statistics</Declaration>
+			
+			
+			<Anchor>//api/name/statistics</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/invalidate</TokenIdentifier>
+			<Abstract type="html">Invalidates an existing EIConnection instance.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)invalidate</Declaration>
+			
+			
+			<Anchor>//api/name/invalidate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/isValid</TokenIdentifier>
+			<Abstract type="html">Returns TRUE, if an EIConnection is valid, FALSE, if a connection is shutting down due to local
+or remote requests.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/setRootObject:</TokenIdentifier>
+			<Abstract type="html">The root object associated to this connection. If the connection refewrs to a locally
+published service, the local object is returned. If the coinnection refers to a remote service,
+a proxy to the remote service is returned.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id rootObject</Declaration>
+			
+			
+			<Anchor>//api/name/rootObject</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnection/rootObject</TokenIdentifier>
+			<Abstract type="html">The root object associated to this connection. If the connection refewrs to a locally
+published service, the local object is returned. If the coinnection refers to a remote service,
+a proxy to the remote service is returned.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id rootObject</Declaration>
+			
+			
+			<Anchor>//api/name/rootObject</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate for this connection.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnection/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate for this connection.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/setMultipleThreadsEnabled:</TokenIdentifier>
+			<Abstract type="html">TRUE, if the connection is enabled to serve multple threads.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL multipleThreadsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/multipleThreadsEnabled</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnection/multipleThreadsEnabled</TokenIdentifier>
+			<Abstract type="html">TRUE, if the connection is enabled to serve multple threads.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL multipleThreadsEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/multipleThreadsEnabled</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/setConnName:</TokenIdentifier>
+			<Abstract type="html">An (optional) name for a connection. Clients may use this property to identify
+connections.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *connName</Declaration>
+			
+			
+			<Anchor>//api/name/connName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnection/connName</TokenIdentifier>
+			<Abstract type="html">An (optional) name for a connection. Clients may use this property to identify
+connections.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *connName</Declaration>
+			
+			
+			<Anchor>//api/name/connName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/setConnType:</TokenIdentifier>
+			<Abstract type="html">The type of the connection.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ETConnectionTypes connType</Declaration>
+			
+			
+			<Anchor>//api/name/connType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIConnection/connType</TokenIdentifier>
+			<Abstract type="html">The type of the connection.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ETConnectionTypes connType</Declaration>
+			
+			
+			<Anchor>//api/name/connType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/rootProxy</TokenIdentifier>
+			<Abstract type="html">Returns the proxy for the root object of the remote EIConnection.&lt;br /&gt;
+Generally you will wish to call [EIDistantObject-setProtocolForProxy:]
+immediately after obtaining such a root proxy.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (EIDistantObject *)rootProxy</Declaration>
+			
+			
+			<Anchor>//api/name/rootProxy</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/allConnections</TokenIdentifier>
+			<Abstract type="html">Returns an array containing all the EIConnection objects known to
+the system. These connections will be valid at the time that the
+array was created, but may be invalidated by other threads
+before you get to examine the array.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (NSArray *)allConnections</Declaration>
+			
+			
+			<Anchor>//api/name/allConnections</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/connectionWithRegisteredName:host:usingNameServer:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;
+Returns an EIConnection object whose send port is that of the
+EIConnection registered under &lt;em&gt;name&lt;/em&gt; on &lt;em&gt;host&lt;/em&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+The nameserver &lt;em&gt;server&lt;/em&gt; is used to look up the send
+port to be used for the connection.&lt;br /&gt;
+Use [ETConnectServer+sharedInstance]
+for connections to remote hosts.
+&lt;/p&gt;
+&lt;p&gt;
+If &lt;em&gt;host&lt;/em&gt; is &lt;code&gt;nil&lt;/code&gt; or an empty string,
+the host is taken to be the local machine.&lt;br /&gt;
+If it is an asterisk (&apos;*&apos;) then the nameserver checks all
+hosts on the local subnet (unless the nameserver is one
+that only manages local ports).&lt;br /&gt;
+In the GNUstep implementation, the local host is searched before
+any other hosts.&lt;br /&gt;
+NB. if the nameserver does not support connections to remote hosts
+(the default situation) the host argument should be omitted.
+&lt;/p&gt;
+&lt;p&gt;
+If no EIConnection can be found for &lt;em&gt;name&lt;/em&gt; and
+&lt;em&gt;host&lt;/em&gt;host, the method returns &lt;code&gt;nil&lt;/code&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+The returned object has the default EIConnection of the
+current thread as its parent (it has the same receive port
+as the default connection).
+&lt;/p&gt;</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (EIConnection *)connectionWithRegisteredName:(NSString *)n host:(NSString *)h usingNameServer:(ETConnectServer *)s</Declaration>
+			
+			
+			<Anchor>//api/name/connectionWithRegisteredName:host:usingNameServer:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/enableMultipleThreads</TokenIdentifier>
+			<Abstract type="html">Sets the EIConnection configuration so that multiple threads may
+use the connection to send requests to the remote connection.&lt;br /&gt;
+This option is inherited by child connections.&lt;br /&gt;
+NB. A connection with multiple threads enabled will run slower than
+a normal connection.</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)enableMultipleThreads</Declaration>
+			
+			
+			<Anchor>//api/name/enableMultipleThreads</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/currentConversation</TokenIdentifier>
+			<Abstract type="html">Return the current conversation ... not implemented in GNUstep</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (id)currentConversation</Declaration>
+			
+			
+			<Anchor>//api/name/currentConversation</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIConnection/connectionIsInvalid:</TokenIdentifier>
+			<Abstract type="html">called, once an EINetConnections becomes invalid</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)connectionIsInvalid:(EINetConnection *)netConnection</Declaration>
+			
+			
+			<Anchor>//api/name/connectionIsInvalid:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/setDebug:</TokenIdentifier>
+			<Abstract type="html">Debug only:
+sets/gets the common debug level for all connection objects...</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (int)setDebug:(int)val</Declaration>
+			
+			
+			<Anchor>//api/name/setDebug:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIConnection/getDebug</TokenIdentifier>
+			<Abstract type="html">Debug only:
+returns the common debug level for all connection objects...</Abstract>
+			<DeclaredIn>EIConnection.h</DeclaredIn>
+			
+			<Declaration>+ (int)getDebug</Declaration>
+			
+			
+			<Anchor>//api/name/getDebug</Anchor>
+            
+		</Token>
+		
+        
+	</File>
+</Tokens>

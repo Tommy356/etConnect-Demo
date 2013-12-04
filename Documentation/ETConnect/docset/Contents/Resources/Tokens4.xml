@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EINetConnection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EINetConnection</TokenIdentifier>
+			<Abstract type="html">This class provides the main functionality communicate with remote hosts.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/dumpAll</TokenIdentifier>
+			<Abstract type="html">if a response is expected, we&apos;ll start a timer for the case of no response...</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)dumpAll</Declaration>
+			
+			
+			<Anchor>//api/name/dumpAll</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setClientConnection:</TokenIdentifier>
+			<Abstract type="html">The EIConnection instance responsible to handle incoming messages. This entry
+will be validated after receiving a handshake message requesting a specific service.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EIConnection *clientConnection</Declaration>
+			
+			
+			<Anchor>//api/name/clientConnection</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/clientConnection</TokenIdentifier>
+			<Abstract type="html">The EIConnection instance responsible to handle incoming messages. This entry
+will be validated after receiving a handshake message requesting a specific service.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EIConnection *clientConnection</Declaration>
+			
+			
+			<Anchor>//api/name/clientConnection</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/netServiceInvalidates:</TokenIdentifier>
+			<Abstract type="html">called, when the parent service invalidates</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)netServiceInvalidates:(EINetService *)serice</Declaration>
+			
+			
+			<Anchor>//api/name/netServiceInvalidates:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/clientConnectionInvalidates:</TokenIdentifier>
+			<Abstract type="html">called, when a client connection invalidates</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)clientConnectionInvalidates:(EIConnection *)clientConnection</Declaration>
+			
+			
+			<Anchor>//api/name/clientConnectionInvalidates:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setInStreamDelegate:</TokenIdentifier>
+			<Abstract type="html">a delegate to receive notifications on lengthy messages</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; inStreamDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/inStreamDelegate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/inStreamDelegate</TokenIdentifier>
+			<Abstract type="html">a delegate to receive notifications on lengthy messages</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; inStreamDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/inStreamDelegate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setIsPortConnection:</TokenIdentifier>
+			<Abstract type="html">TRUE, if the connection was established by another client</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isPortConnection</Declaration>
+			
+			
+			<Anchor>//api/name/isPortConnection</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/isPortConnection</TokenIdentifier>
+			<Abstract type="html">TRUE, if the connection was established by another client</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isPortConnection</Declaration>
+			
+			
+			<Anchor>//api/name/isPortConnection</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setIsIncoming:</TokenIdentifier>
+			<Abstract type="html">TRUE, if the connection was established by another client</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isIncoming</Declaration>
+			
+			
+			<Anchor>//api/name/isIncoming</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/isIncoming</TokenIdentifier>
+			<Abstract type="html">TRUE, if the connection was established by another client</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL isIncoming</Declaration>
+			
+			
+			<Anchor>//api/name/isIncoming</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setAutoclose:</TokenIdentifier>
+			<Abstract type="html">TRUE, if the connection should close after all bytes had been sent</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoclose</Declaration>
+			
+			
+			<Anchor>//api/name/autoclose</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/autoclose</TokenIdentifier>
+			<Abstract type="html">TRUE, if the connection should close after all bytes had been sent</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL autoclose</Declaration>
+			
+			
+			<Anchor>//api/name/autoclose</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setService:</TokenIdentifier>
+			<Abstract type="html">the service, which had established the connection</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EINetService *service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/service</TokenIdentifier>
+			<Abstract type="html">the service, which had established the connection</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EINetService *service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setLocalService:</TokenIdentifier>
+			<Abstract type="html">the service, responsible to serve incoming requests</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EINetService *localService</Declaration>
+			
+			
+			<Anchor>//api/name/localService</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/localService</TokenIdentifier>
+			<Abstract type="html">the service, responsible to serve incoming requests</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) EINetService *localService</Declaration>
+			
+			
+			<Anchor>//api/name/localService</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setInMsg:</TokenIdentifier>
+			<Abstract type="html">a message object to receive input data</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) EINetMessage *inMsg</Declaration>
+			
+			
+			<Anchor>//api/name/inMsg</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/inMsg</TokenIdentifier>
+			<Abstract type="html">a message object to receive input data</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) EINetMessage *inMsg</Declaration>
+			
+			
+			<Anchor>//api/name/inMsg</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/setPlatformType:</TokenIdentifier>
+			<Abstract type="html">a message object to receive input data</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ETServerPlatformType platformType</Declaration>
+			
+			
+			<Anchor>//api/name/platformType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EINetConnection/platformType</TokenIdentifier>
+			<Abstract type="html">a message object to receive input data</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) ETServerPlatformType platformType</Declaration>
+			
+			
+			<Anchor>//api/name/platformType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/closeStreams</TokenIdentifier>
+			<Abstract type="html">served ports dictionary</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)closeStreams</Declaration>
+			
+			
+			<Anchor>//api/name/closeStreams</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/sendRequestMessage:withResponseHandler:</TokenIdentifier>
+			<Abstract type="html">Sends an EINetMessage to the remote host and calls the rsponse handler block after
+the remote hosts has reponded.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendRequestMessage:(EINetMessage *)msg withResponseHandler:(EINetResponseHandler)responseHandler</Declaration>
+			
+			
+			<Anchor>//api/name/sendRequestMessage:withResponseHandler:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/sendMessage:</TokenIdentifier>
+			<Abstract type="html">Sends an EINetMessage to the remote host without waiting for a reply.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendMessage:(EINetMessage *)msg</Declaration>
+			
+			
+			<Anchor>//api/name/sendMessage:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/sendMessage:autoclose:</TokenIdentifier>
+			<Abstract type="html">Sends an EINetMessage to the remote host without waiting for a reply and closes the
+connection automatically, after all message data have been transferred.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendMessage:(EINetMessage *)msg autoclose:(BOOL)autoclose</Declaration>
+			
+			
+			<Anchor>//api/name/sendMessage:autoclose:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EINetConnection/sendObject:</TokenIdentifier>
+			<Abstract type="html">Low level routine to send an object of type NSString, NSDictionary, or NSData to a
+remote host.</Abstract>
+			<DeclaredIn>EINetConnection.h</DeclaredIn>
+			
+			<Declaration>- (void)sendObject:(id)obj</Declaration>
+			
+			
+			<Anchor>//api/name/sendObject:</Anchor>
+            
+		</Token>
+		
+        
+	</File>
+</Tokens>

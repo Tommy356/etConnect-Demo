@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ETConnectServer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ETConnectServer</TokenIdentifier>
+			<Abstract type="html">ETConnectServer provides a functionality similiar to NSPortNameServer.
+However, as the NSPortNameServer class is not available on iOS and etConnect
+relies on NSStream classes rather than ports, implementation and API differes in
+several parts from what NSPortNameServer has been designed for.</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Returns the shared instance of the &lt;b&gt;ETConnectServer&lt;/b&gt;. If no instance has been
+*  created yet, a call to this method will automatically create it.
+@param none</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>- (id)sharedInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">the shared instance of the ETConnectServer</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/startWithOptions:</TokenIdentifier>
+			<Abstract type="html">Starts the server with the options supplied.</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)startWithOptions:(ETServerOptions)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options:</Name>
+					<Abstract type="html">a combination of one or more ETServerOptions values.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE, if the server is starting, FALSE if an error occured.</Abstract></ReturnValue>
+			<Anchor>//api/name/startWithOptions:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/hosts</TokenIdentifier>
+			<Abstract type="html">Returns an array of strings with all hosts currently available. The
+hosts may vary depending on whether new hosts are discovered or not.
+Clients may set a delegate to get a notification, whenever new hosts
+have been found (or removed).</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)hosts</Declaration>
+			
+			
+			<Anchor>//api/name/hosts</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/eiNetServiceForHost:</TokenIdentifier>
+			<Abstract type="html">returns the EINetService for a named host or &apos;nil&apos;, if the host is not found</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>- (EINetService *)eiNetServiceForHost:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/eiNetServiceForHost:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/eiNetServiceForAddress:</TokenIdentifier>
+			<Abstract type="html">returns the EINetService machting the socket data provided</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>- (EINetService *)eiNetServiceForAddress:(NSData *)sockAddrData</Declaration>
+			
+			
+			<Anchor>//api/name/eiNetServiceForAddress:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/host:providesService:</TokenIdentifier>
+			<Abstract type="html">checks, whether the service named is available on the host passed</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)host:(NSString *)hostName providesService:(NSString *)serviceName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hostName:</Name>
+					<Abstract type="html">a valid host name for a host in the current domain.</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceName:</Name>
+					<Abstract type="html">the name of the service to be queried</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TRUE, if the host provides the service, FALSE if the host is not found or the host does not provice the service specified.</Abstract></ReturnValue>
+			<Anchor>//api/name/host:providesService:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/serviceDictForHost:</TokenIdentifier>
+			<Abstract type="html">returns the TXTRecordDictionary for a given host, or nil if the host could not be found</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)serviceDictForHost:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/serviceDictForHost:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/hostConnectionType:</TokenIdentifier>
+			<Abstract type="html">returns the connection type for a host</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>- (ETHostConnectionTypes)hostConnectionType:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/hostConnectionType:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/setSuspendInBackground:</TokenIdentifier>
+			<Abstract type="html">TRUE (default), is sevices need to be suspended in background mode (iOS only)</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL suspendInBackground</Declaration>
+			
+			
+			<Anchor>//api/name/suspendInBackground</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ETConnectServer/suspendInBackground</TokenIdentifier>
+			<Abstract type="html">TRUE (default), is sevices need to be suspended in background mode (iOS only)</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL suspendInBackground</Declaration>
+			
+			
+			<Anchor>//api/name/suspendInBackground</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/setProtocolName:</TokenIdentifier>
+			<Abstract type="html">The name we&apos;ll publish (and search) services for</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *protocolName</Declaration>
+			
+			
+			<Anchor>//api/name/protocolName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ETConnectServer/protocolName</TokenIdentifier>
+			<Abstract type="html">The name we&apos;ll publish (and search) services for</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *protocolName</Declaration>
+			
+			
+			<Anchor>//api/name/protocolName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/setPublishName:</TokenIdentifier>
+			<Abstract type="html">The name we&apos;ll publish (and search) services for</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *publishName</Declaration>
+			
+			
+			<Anchor>//api/name/publishName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ETConnectServer/publishName</TokenIdentifier>
+			<Abstract type="html">The name we&apos;ll publish (and search) services for</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *publishName</Declaration>
+			
+			
+			<Anchor>//api/name/publishName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/setSearchServiceType:</TokenIdentifier>
+			<Abstract type="html">the service types to search for - aUtomatically configured</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *searchServiceType</Declaration>
+			
+			
+			<Anchor>//api/name/searchServiceType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ETConnectServer/searchServiceType</TokenIdentifier>
+			<Abstract type="html">the service types to search for - aUtomatically configured</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *searchServiceType</Declaration>
+			
+			
+			<Anchor>//api/name/searchServiceType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The ETConnectionServer delegate to receive notification
+on host changes (must implement the EIConnectionServerDelegate protocol).</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ETConnectServer/delegate</TokenIdentifier>
+			<Abstract type="html">The ETConnectionServer delegate to receive notification
+on host changes (must implement the EIConnectionServerDelegate protocol).</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/setRegisteredServices:</TokenIdentifier>
+			<Abstract type="html">Holds an array of EINetService objects for every service found in the currewnt domain</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *registeredServices</Declaration>
+			
+			
+			<Anchor>//api/name/registeredServices</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ETConnectServer/registeredServices</TokenIdentifier>
+			<Abstract type="html">Holds an array of EINetService objects for every service found in the currewnt domain</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *registeredServices</Declaration>
+			
+			
+			<Anchor>//api/name/registeredServices</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/setPublishedName:</TokenIdentifier>
+			<Abstract type="html">Our own published service name, if published, &apos;nil&apos; otherwise</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *publishedName</Declaration>
+			
+			
+			<Anchor>//api/name/publishedName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ETConnectServer/publishedName</TokenIdentifier>
+			<Abstract type="html">Our own published service name, if published, &apos;nil&apos; otherwise</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *publishedName</Declaration>
+			
+			
+			<Anchor>//api/name/publishedName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ETConnectServer/setService:</TokenIdentifier>
+			<Abstract type="html">Our own service, if we&apos;re published</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNetService *service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ETConnectServer/service</TokenIdentifier>
+			<Abstract type="html">Our own service, if we&apos;re published</Abstract>
+			<DeclaredIn>ETConnectServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSNetService *service</Declaration>
+			
+			
+			<Anchor>//api/name/service</Anchor>
+            
+		</Token>
+		
+        
+	</File>
+</Tokens>

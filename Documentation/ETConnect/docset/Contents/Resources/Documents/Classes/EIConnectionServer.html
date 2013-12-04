@@ -1,0 +1,953 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>EIConnectionServer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ETConnect </a></h1>
+				<a id="developerHome" href="../index.html">eitap Technologies</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">EIConnectionServer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/netServiceBrowser">&nbsp;&nbsp;&nbsp;&nbsp;netServiceBrowser</option>
+	
+	<option value="//api/name/protocolName">&nbsp;&nbsp;&nbsp;&nbsp;protocolName</option>
+	
+	<option value="//api/name/publishName">&nbsp;&nbsp;&nbsp;&nbsp;publishName</option>
+	
+	<option value="//api/name/publishedName">&nbsp;&nbsp;&nbsp;&nbsp;publishedName</option>
+	
+	<option value="//api/name/registeredServices">&nbsp;&nbsp;&nbsp;&nbsp;registeredServices</option>
+	
+	<option value="//api/name/searchServiceType">&nbsp;&nbsp;&nbsp;&nbsp;searchServiceType</option>
+	
+	<option value="//api/name/service">&nbsp;&nbsp;&nbsp;&nbsp;service</option>
+	
+	<option value="//api/name/serviceDict">&nbsp;&nbsp;&nbsp;&nbsp;serviceDict</option>
+	
+	<option value="//api/name/suspendInBackground">&nbsp;&nbsp;&nbsp;&nbsp;suspendInBackground</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/eiNetServiceForAddress:">&nbsp;&nbsp;&nbsp;&nbsp;- eiNetServiceForAddress:</option>
+	
+	<option value="//api/name/eiNetServiceForHost:">&nbsp;&nbsp;&nbsp;&nbsp;- eiNetServiceForHost:</option>
+	
+	<option value="//api/name/host:providesService:">&nbsp;&nbsp;&nbsp;&nbsp;- host:providesService:</option>
+	
+	<option value="//api/name/hosts">&nbsp;&nbsp;&nbsp;&nbsp;- hosts</option>
+	
+	<option value="//api/name/registerPort:name:">&nbsp;&nbsp;&nbsp;&nbsp;- registerPort:name:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/netServiceBrowser">netServiceBrowser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/protocolName">protocolName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/publishName">publishName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/publishedName">publishedName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registeredServices">registeredServices</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchServiceType">searchServiceType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/service">service</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/serviceDict">serviceDict</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/suspendInBackground">suspendInBackground</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eiNetServiceForAddress:">eiNetServiceForAddress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eiNetServiceForHost:">eiNetServiceForHost:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/host:providesService:">host:providesService:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hosts">hosts</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerPort:name:">registerPort:name:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="EIConnectionServer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">EIConnectionServer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSPortNameServer</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">EINetServiceDelegate<br />NSNetServiceBrowserDelegate<br />TCPServerDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">EIConnectionServer.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerPort:name:">&ndash;&nbsp;registerPort:name:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hosts">&ndash;&nbsp;hosts</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eiNetServiceForHost:">&ndash;&nbsp;eiNetServiceForHost:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eiNetServiceForAddress:">&ndash;&nbsp;eiNetServiceForAddress:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/host:providesService:">&ndash;&nbsp;host:providesService:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/suspendInBackground">&nbsp;&nbsp;suspendInBackground</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/protocolName">&nbsp;&nbsp;protocolName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/publishName">&nbsp;&nbsp;publishName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchServiceType">&nbsp;&nbsp;searchServiceType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registeredServices">&nbsp;&nbsp;registeredServices</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/netServiceBrowser">&nbsp;&nbsp;netServiceBrowser</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/serviceDict">&nbsp;&nbsp;serviceDict</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/publishedName">&nbsp;&nbsp;publishedName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/service">&nbsp;&nbsp;service</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>our (optional) delegate &hellip;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id&lt;&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/netServiceBrowser" title="netServiceBrowser"></a>
+	<h3 class="subsubtitle method-title">netServiceBrowser</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the <a href="#//api/name/service">service</a> browser &ndash; up all time</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNetServiceBrowser *netServiceBrowser</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/protocolName" title="protocolName"></a>
+	<h3 class="subsubtitle method-title">protocolName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name we&rsquo;ll publish (and search) services for</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *protocolName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/publishName" title="publishName"></a>
+	<h3 class="subsubtitle method-title">publishName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name we&rsquo;ll publish (and search) services for</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *publishName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/publishedName" title="publishedName"></a>
+	<h3 class="subsubtitle method-title">publishedName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>our own published <a href="#//api/name/service">service</a> name, if published, &lsquo;nil&rsquo; otherwise</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *publishedName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registeredServices" title="registeredServices"></a>
+	<h3 class="subsubtitle method-title">registeredServices</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>holds an array of CANetService objects</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *registeredServices</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchServiceType" title="searchServiceType"></a>
+	<h3 class="subsubtitle method-title">searchServiceType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the <a href="#//api/name/service">service</a> types to search for &ndash; aUtomatically configured</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *searchServiceType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/service" title="service"></a>
+	<h3 class="subsubtitle method-title">service</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>our own service, if we&rsquo;re published</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNetService *service</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/serviceDict" title="serviceDict"></a>
+	<h3 class="subsubtitle method-title">serviceDict</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>the <a href="#//api/name/service">service</a> dictionary &ndash; holds all published connections</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableDictionary *serviceDict</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/suspendInBackground" title="suspendInBackground"></a>
+	<h3 class="subsubtitle method-title">suspendInBackground</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>TRUE (default), is sevices need to be suspended in background mode (iOS only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL suspendInBackground</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/eiNetServiceForAddress:" title="eiNetServiceForAddress:"></a>
+	<h3 class="subsubtitle method-title">eiNetServiceForAddress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>returns the EINetService machting the socket data provided</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (EINetService *)eiNetServiceForAddress:(NSData *)<em>sockAddrData</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eiNetServiceForHost:" title="eiNetServiceForHost:"></a>
+	<h3 class="subsubtitle method-title">eiNetServiceForHost:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>returns the EINetService for a named host or &lsquo;nil&rsquo;, if the host is not found</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (EINetService *)eiNetServiceForHost:(NSString *)<em>hostName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/host:providesService:" title="host:providesService:"></a>
+	<h3 class="subsubtitle method-title">host:providesService:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>checks, whether  the <a href="#//api/name/service">service</a> named is available on the host passed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)host:(NSString *)<em>hostName</em> providesService:(NSString *)<em>serviceName</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hosts" title="hosts"></a>
+	<h3 class="subsubtitle method-title">hosts</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>returns an array of known hosts</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)hosts</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerPort:name:" title="registerPort:name:"></a>
+	<h3 class="subsubtitle method-title">registerPort:name:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>register &amp; remove ports for the local <a href="#//api/name/service">service</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)registerPort:(NSPort *)<em>port</em> name:(NSString *)<em>name</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">EIConnectionServer.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 eitap Technologies. All rights reserved. (Last updated: 2013-12-04)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

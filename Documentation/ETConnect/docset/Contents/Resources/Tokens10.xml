@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ETConnectServerNotificationsDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ETConnectServerNotificationsDelegate</TokenIdentifier>
+			<Abstract type="html">ETDemoNotificationsDelegate</Abstract>
+			<DeclaredIn>ETConnectServerNotifications.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ETConnectServerNotificationsDelegate/ETConnectServerDidAddHost:</TokenIdentifier>
+			<Abstract type="html">the server has added a new host</Abstract>
+			<DeclaredIn>ETConnectServerNotifications.h</DeclaredIn>
+			
+			<Declaration>- (void)ETConnectServerDidAddHost:(NSNotification *)note</Declaration>
+			
+			
+			<Anchor>//api/name/ETConnectServerDidAddHost:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ETConnectServerNotificationsDelegate/ETConnectServerDidRemoveHost:</TokenIdentifier>
+			<Abstract type="html">the server has removed a host, which was added previously</Abstract>
+			<DeclaredIn>ETConnectServerNotifications.h</DeclaredIn>
+			
+			<Declaration>- (void)ETConnectServerDidRemoveHost:(NSNotification *)note</Declaration>
+			
+			
+			<Anchor>//api/name/ETConnectServerDidRemoveHost:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ETConnectServerNotificationsDelegate/ETConnectServerDidUpdateHost:</TokenIdentifier>
+			<Abstract type="html">the server has updated the services offered by a host</Abstract>
+			<DeclaredIn>ETConnectServerNotifications.h</DeclaredIn>
+			
+			<Declaration>- (void)ETConnectServerDidUpdateHost:(NSNotification *)note</Declaration>
+			
+			
+			<Anchor>//api/name/ETConnectServerDidUpdateHost:</Anchor>
+            
+		</Token>
+		
+        
+	</File>
+</Tokens>

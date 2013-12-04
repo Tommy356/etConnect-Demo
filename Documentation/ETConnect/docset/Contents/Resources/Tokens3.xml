@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EIDistantObject.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EIDistantObject</TokenIdentifier>
+			<Abstract type="html">A Distant Object is a placeholder for a Proxy provided by a remote host. Typically, you won&apos;t create
+instances of this class directly, but use the routines provided by the EIConnection class to either publish
+local objects or connect to remote objects published by other hosts.</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIDistantObject/proxyWithLocal:connection:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a proxy associated with aConnection
+which will hold a reference to the local object anObject.</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+			
+			<Declaration>+ (EIDistantObject *)proxyWithLocal:(id)anObject connection:(EIConnection *)aConnection</Declaration>
+			
+			
+			<Anchor>//api/name/proxyWithLocal:connection:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EIDistantObject/proxyWithTarget:connection:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a proxy for a target object.</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+			
+			<Declaration>+ (EIDistantObject *)proxyWithTarget:(unsigned)anObject connection:(EIConnection *)aConnection</Declaration>
+			
+			
+			<Anchor>//api/name/proxyWithTarget:connection:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIDistantObject/connectionForProxy</TokenIdentifier>
+			<Abstract type="html">returns the EIConnection the proxy is connected to</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+			
+			<Declaration>- (EIConnection *)connectionForProxy</Declaration>
+			
+			
+			<Anchor>//api/name/connectionForProxy</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIDistantObject/setProtocolForProxy:</TokenIdentifier>
+			<Abstract type="html">Sets a protocol for a proxy retrieved from a remote host.</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+			
+			<Declaration>- (void)setProtocolForProxy:(Protocol *)aProtocol</Declaration>
+			
+			
+			<Anchor>//api/name/setProtocolForProxy:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIDistantObject/setPlatformType:</TokenIdentifier>
+			<Abstract type="html">Platform encoding: returns a combination of the values defined above
+The platform types are used to differentiate between the coding of values (i.e. NSInteger/NSUInteger)
+which have different sizes on 32/64 bit platforms. The following definitions are available:</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ETServerPlatformType platformType</Declaration>
+			
+			
+			<Anchor>//api/name/platformType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIDistantObject/platformType</TokenIdentifier>
+			<Abstract type="html">Platform encoding: returns a combination of the values defined above
+The platform types are used to differentiate between the coding of values (i.e. NSInteger/NSUInteger)
+which have different sizes on 32/64 bit platforms. The following definitions are available:</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) ETServerPlatformType platformType</Declaration>
+			
+			
+			<Anchor>//api/name/platformType</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EIDistantObject/setProxyName:</TokenIdentifier>
+			<Abstract type="html">Optional property to assign a name to a well known proxy.</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *proxyName</Declaration>
+			
+			
+			<Anchor>//api/name/proxyName</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EIDistantObject/proxyName</TokenIdentifier>
+			<Abstract type="html">Optional property to assign a name to a well known proxy.</Abstract>
+			<DeclaredIn>EIDistantObject.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *proxyName</Declaration>
+			
+			
+			<Anchor>//api/name/proxyName</Anchor>
+            
+		</Token>
+		
+        
+	</File>
+</Tokens>

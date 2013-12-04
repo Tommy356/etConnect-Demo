@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/EIConnectionServerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/EIConnectionServerDelegate</TokenIdentifier>
+			<Abstract type="html">The protocol for the EIConnectionServer delegate</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/EIConnectionServerDelegate/eiConnectionServer:didAddHost:</TokenIdentifier>
+			<Abstract type="html">notifications, when new hosts are detected or dropped</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (void)eiConnectionServer:(EIConnectionServer *)server didAddHost:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/eiConnectionServer:didAddHost:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/EIConnectionServerDelegate/eiConnectionServer:didUpdateHost:</TokenIdentifier>
+			<Abstract type="html">notifications, when hosts publish or remove services</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (void)eiConnectionServer:(EIConnectionServer *)server didUpdateHost:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/eiConnectionServer:didUpdateHost:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/EIConnectionServerDelegate/eiConnectionServer:didPublish:</TokenIdentifier>
+			<Abstract type="html">notifications when own service has been published</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (void)eiConnectionServer:(EIConnectionServer *)server didPublish:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/eiConnectionServer:didPublish:</Anchor>
+            
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/EIConnectionServerDelegate/eiConnectionServer:didNotPublish:</TokenIdentifier>
+			<Abstract type="html">notifications when own service has been published</Abstract>
+			<DeclaredIn>EIConnectionServer.h</DeclaredIn>
+			
+			<Declaration>- (void)eiConnectionServer:(EIConnectionServer *)server didNotPublish:(NSString *)hostName</Declaration>
+			
+			
+			<Anchor>//api/name/eiConnectionServer:didNotPublish:</Anchor>
+            
+		</Token>
+		
+        
+	</File>
+</Tokens>

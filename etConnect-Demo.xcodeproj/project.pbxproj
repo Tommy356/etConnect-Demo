@@ -18,6 +18,61 @@
 		AF401C13184A70FE0026171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF401C12184A70FE0026171A /* Images.xcassets */; };
 		AF6B9A30184F30B500926842 /* ETBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9A2E184F30B500926842 /* ETBase.framework */; };
 		AF6B9A31184F30B500926842 /* ETConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9A2F184F30B500926842 /* ETConnect.framework */; };
+		AF6B9A79184F53E000926842 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A36184F53E000926842 /* Info.plist */; };
+		AF6B9A7A184F53E000926842 /* docSet.dsidx in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A38184F53E000926842 /* docSet.dsidx */; };
+		AF6B9A7B184F53E000926842 /* docSet.mom in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A39184F53E000926842 /* docSet.mom */; };
+		AF6B9A7C184F53E000926842 /* docSet.skidx in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A3A184F53E000926842 /* docSet.skidx */; };
+		AF6B9A7D184F53E000926842 /* docSet.toc in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A3B184F53E000926842 /* docSet.toc */; };
+		AF6B9A7E184F53E000926842 /* EIConnection.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A3E184F53E000926842 /* EIConnection.html */; };
+		AF6B9A7F184F53E000926842 /* EIConnectionServer.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A3F184F53E000926842 /* EIConnectionServer.html */; };
+		AF6B9A80184F53E000926842 /* EIDistantObject.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A40184F53E000926842 /* EIDistantObject.html */; };
+		AF6B9A81184F53E000926842 /* EINetConnection.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A41184F53E000926842 /* EINetConnection.html */; };
+		AF6B9A82184F53E000926842 /* ETConnectServer.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A42184F53E000926842 /* ETConnectServer.html */; };
+		AF6B9A83184F53E000926842 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A44184F53E000926842 /* styles.css */; };
+		AF6B9A84184F53E000926842 /* stylesPrint.css in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A45184F53E000926842 /* stylesPrint.css */; };
+		AF6B9A85184F53E000926842 /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A46184F53E000926842 /* hierarchy.html */; };
+		AF6B9A86184F53E000926842 /* button_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A48184F53E000926842 /* button_bar_background.png */; };
+		AF6B9A87184F53E000926842 /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A49184F53E000926842 /* disclosure.png */; };
+		AF6B9A88184F53E000926842 /* disclosure_open.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A4A184F53E000926842 /* disclosure_open.png */; };
+		AF6B9A89184F53E000926842 /* library_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A4B184F53E000926842 /* library_background.png */; };
+		AF6B9A8A184F53E000926842 /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A4C184F53E000926842 /* title_background.png */; };
+		AF6B9A8B184F53E000926842 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A4D184F53E000926842 /* index.html */; };
+		AF6B9A8C184F53E000926842 /* EIConnectionDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A4F184F53E000926842 /* EIConnectionDelegate.html */; };
+		AF6B9A8D184F53E000926842 /* EIConnectionServerDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A50184F53E000926842 /* EIConnectionServerDelegate.html */; };
+		AF6B9A8E184F53E000926842 /* EINetConnectionDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A51184F53E000926842 /* EINetConnectionDelegate.html */; };
+		AF6B9A8F184F53E000926842 /* EINetConnectionInStreamDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A52184F53E000926842 /* EINetConnectionInStreamDelegate.html */; };
+		AF6B9A90184F53E000926842 /* ETConnectServerNotificationsDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A53184F53E000926842 /* ETConnectServerNotificationsDelegate.html */; };
+		AF6B9A91184F53E000926842 /* Nodes.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A54184F53E000926842 /* Nodes.xml */; };
+		AF6B9A92184F53E000926842 /* Tokens1.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A55184F53E000926842 /* Tokens1.xml */; };
+		AF6B9A93184F53E000926842 /* Tokens10.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A56184F53E000926842 /* Tokens10.xml */; };
+		AF6B9A94184F53E000926842 /* Tokens2.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A57184F53E000926842 /* Tokens2.xml */; };
+		AF6B9A95184F53E000926842 /* Tokens3.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A58184F53E000926842 /* Tokens3.xml */; };
+		AF6B9A96184F53E000926842 /* Tokens4.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A59184F53E000926842 /* Tokens4.xml */; };
+		AF6B9A97184F53E000926842 /* Tokens5.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A5A184F53E000926842 /* Tokens5.xml */; };
+		AF6B9A98184F53E000926842 /* Tokens6.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A5B184F53E000926842 /* Tokens6.xml */; };
+		AF6B9A99184F53E000926842 /* Tokens7.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A5C184F53E000926842 /* Tokens7.xml */; };
+		AF6B9A9A184F53E000926842 /* Tokens8.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A5D184F53E000926842 /* Tokens8.xml */; };
+		AF6B9A9B184F53E000926842 /* Tokens9.xml in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A5E184F53E000926842 /* Tokens9.xml */; };
+		AF6B9A9C184F53E000926842 /* docset-installed.txt in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A5F184F53E000926842 /* docset-installed.txt */; };
+		AF6B9A9D184F53E000926842 /* EIConnection.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A62184F53E000926842 /* EIConnection.html */; };
+		AF6B9A9E184F53E000926842 /* EIConnectionServer.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A63184F53E000926842 /* EIConnectionServer.html */; };
+		AF6B9A9F184F53E000926842 /* EIDistantObject.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A64184F53E000926842 /* EIDistantObject.html */; };
+		AF6B9AA0184F53E000926842 /* EINetConnection.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A65184F53E000926842 /* EINetConnection.html */; };
+		AF6B9AA1184F53E000926842 /* ETConnectServer.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A66184F53E000926842 /* ETConnectServer.html */; };
+		AF6B9AA2184F53E000926842 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A68184F53E000926842 /* styles.css */; };
+		AF6B9AA3184F53E000926842 /* stylesPrint.css in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A69184F53E000926842 /* stylesPrint.css */; };
+		AF6B9AA4184F53E000926842 /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A6A184F53E000926842 /* hierarchy.html */; };
+		AF6B9AA5184F53E000926842 /* button_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A6C184F53E000926842 /* button_bar_background.png */; };
+		AF6B9AA6184F53E000926842 /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A6D184F53E000926842 /* disclosure.png */; };
+		AF6B9AA7184F53E000926842 /* disclosure_open.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A6E184F53E000926842 /* disclosure_open.png */; };
+		AF6B9AA8184F53E000926842 /* library_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A6F184F53E000926842 /* library_background.png */; };
+		AF6B9AA9184F53E000926842 /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A70184F53E000926842 /* title_background.png */; };
+		AF6B9AAA184F53E000926842 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A71184F53E000926842 /* index.html */; };
+		AF6B9AAB184F53E000926842 /* EIConnectionDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A73184F53E000926842 /* EIConnectionDelegate.html */; };
+		AF6B9AAC184F53E000926842 /* EIConnectionServerDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A74184F53E000926842 /* EIConnectionServerDelegate.html */; };
+		AF6B9AAD184F53E000926842 /* EINetConnectionDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A75184F53E000926842 /* EINetConnectionDelegate.html */; };
+		AF6B9AAE184F53E000926842 /* EINetConnectionInStreamDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A76184F53E000926842 /* EINetConnectionInStreamDelegate.html */; };
+		AF6B9AAF184F53E000926842 /* ETConnectServerNotificationsDelegate.html in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9A77184F53E000926842 /* ETConnectServerNotificationsDelegate.html */; };
 		AFDB61CC184DE70C00B1C6E9 /* ESRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB61CB184DE70C00B1C6E9 /* ESRemoteObject.m */; };
 		AFDB61FC184E0EC300B1C6E9 /* eiShare Icon_0029.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F3184E0EC300B1C6E9 /* eiShare Icon_0029.png */; };
 		AFDB61FD184E0EC300B1C6E9 /* eiShare Icon_0057.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F4184E0EC300B1C6E9 /* eiShare Icon_0057.png */; };
@@ -51,6 +106,61 @@
 		AF401C19184A70FE0026171A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AF6B9A2E184F30B500926842 /* ETBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETBase.framework; sourceTree = "<group>"; };
 		AF6B9A2F184F30B500926842 /* ETConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETConnect.framework; sourceTree = "<group>"; };
+		AF6B9A36184F53E000926842 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6B9A38184F53E000926842 /* docSet.dsidx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docSet.dsidx; sourceTree = "<group>"; };
+		AF6B9A39184F53E000926842 /* docSet.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = docSet.mom; sourceTree = "<group>"; };
+		AF6B9A3A184F53E000926842 /* docSet.skidx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docSet.skidx; sourceTree = "<group>"; };
+		AF6B9A3B184F53E000926842 /* docSet.toc */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = docSet.toc; sourceTree = "<group>"; };
+		AF6B9A3E184F53E000926842 /* EIConnection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIConnection.html; sourceTree = "<group>"; };
+		AF6B9A3F184F53E000926842 /* EIConnectionServer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIConnectionServer.html; sourceTree = "<group>"; };
+		AF6B9A40184F53E000926842 /* EIDistantObject.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIDistantObject.html; sourceTree = "<group>"; };
+		AF6B9A41184F53E000926842 /* EINetConnection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EINetConnection.html; sourceTree = "<group>"; };
+		AF6B9A42184F53E000926842 /* ETConnectServer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = ETConnectServer.html; sourceTree = "<group>"; };
+		AF6B9A44184F53E000926842 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		AF6B9A45184F53E000926842 /* stylesPrint.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		AF6B9A46184F53E000926842 /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = hierarchy.html; sourceTree = "<group>"; };
+		AF6B9A48184F53E000926842 /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		AF6B9A49184F53E000926842 /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		AF6B9A4A184F53E000926842 /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		AF6B9A4B184F53E000926842 /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		AF6B9A4C184F53E000926842 /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		AF6B9A4D184F53E000926842 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = index.html; sourceTree = "<group>"; };
+		AF6B9A4F184F53E000926842 /* EIConnectionDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIConnectionDelegate.html; sourceTree = "<group>"; };
+		AF6B9A50184F53E000926842 /* EIConnectionServerDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIConnectionServerDelegate.html; sourceTree = "<group>"; };
+		AF6B9A51184F53E000926842 /* EINetConnectionDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EINetConnectionDelegate.html; sourceTree = "<group>"; };
+		AF6B9A52184F53E000926842 /* EINetConnectionInStreamDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EINetConnectionInStreamDelegate.html; sourceTree = "<group>"; };
+		AF6B9A53184F53E000926842 /* ETConnectServerNotificationsDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = ETConnectServerNotificationsDelegate.html; sourceTree = "<group>"; };
+		AF6B9A54184F53E000926842 /* Nodes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Nodes.xml; sourceTree = "<group>"; };
+		AF6B9A55184F53E000926842 /* Tokens1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens1.xml; sourceTree = "<group>"; };
+		AF6B9A56184F53E000926842 /* Tokens10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens10.xml; sourceTree = "<group>"; };
+		AF6B9A57184F53E000926842 /* Tokens2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens2.xml; sourceTree = "<group>"; };
+		AF6B9A58184F53E000926842 /* Tokens3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens3.xml; sourceTree = "<group>"; };
+		AF6B9A59184F53E000926842 /* Tokens4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens4.xml; sourceTree = "<group>"; };
+		AF6B9A5A184F53E000926842 /* Tokens5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens5.xml; sourceTree = "<group>"; };
+		AF6B9A5B184F53E000926842 /* Tokens6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens6.xml; sourceTree = "<group>"; };
+		AF6B9A5C184F53E000926842 /* Tokens7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens7.xml; sourceTree = "<group>"; };
+		AF6B9A5D184F53E000926842 /* Tokens8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens8.xml; sourceTree = "<group>"; };
+		AF6B9A5E184F53E000926842 /* Tokens9.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tokens9.xml; sourceTree = "<group>"; };
+		AF6B9A5F184F53E000926842 /* docset-installed.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "docset-installed.txt"; sourceTree = "<group>"; };
+		AF6B9A62184F53E000926842 /* EIConnection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIConnection.html; sourceTree = "<group>"; };
+		AF6B9A63184F53E000926842 /* EIConnectionServer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIConnectionServer.html; sourceTree = "<group>"; };
+		AF6B9A64184F53E000926842 /* EIDistantObject.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIDistantObject.html; sourceTree = "<group>"; };
+		AF6B9A65184F53E000926842 /* EINetConnection.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EINetConnection.html; sourceTree = "<group>"; };
+		AF6B9A66184F53E000926842 /* ETConnectServer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = ETConnectServer.html; sourceTree = "<group>"; };
+		AF6B9A68184F53E000926842 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		AF6B9A69184F53E000926842 /* stylesPrint.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		AF6B9A6A184F53E000926842 /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = hierarchy.html; sourceTree = "<group>"; };
+		AF6B9A6C184F53E000926842 /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		AF6B9A6D184F53E000926842 /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		AF6B9A6E184F53E000926842 /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		AF6B9A6F184F53E000926842 /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		AF6B9A70184F53E000926842 /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		AF6B9A71184F53E000926842 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = index.html; sourceTree = "<group>"; };
+		AF6B9A73184F53E000926842 /* EIConnectionDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIConnectionDelegate.html; sourceTree = "<group>"; };
+		AF6B9A74184F53E000926842 /* EIConnectionServerDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EIConnectionServerDelegate.html; sourceTree = "<group>"; };
+		AF6B9A75184F53E000926842 /* EINetConnectionDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EINetConnectionDelegate.html; sourceTree = "<group>"; };
+		AF6B9A76184F53E000926842 /* EINetConnectionInStreamDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = EINetConnectionInStreamDelegate.html; sourceTree = "<group>"; };
+		AF6B9A77184F53E000926842 /* ETConnectServerNotificationsDelegate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = ETConnectServerNotificationsDelegate.html; sourceTree = "<group>"; };
 		AFC1D504184A72EB0043204A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AFC1D505184A72EB0043204A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		AFDB61CA184DE70C00B1C6E9 /* ESRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRemoteObject.h; sourceTree = "<group>"; };
@@ -91,6 +201,7 @@
 			children = (
 				AFC1D504184A72EB0043204A /* LICENSE */,
 				AFC1D505184A72EB0043204A /* README.md */,
+				AF6B9A32184F53BE00926842 /* Documentation */,
 				AF401C00184A70FE0026171A /* etConnect-Demo */,
 				AF401BF9184A70FE0026171A /* Frameworks */,
 				AF401BF8184A70FE0026171A /* Products */,
@@ -146,6 +257,188 @@
 				AF401C08184A70FE0026171A /* etConnect-Demo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF6B9A32184F53BE00926842 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A33184F53E000926842 /* ETConnect */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		AF6B9A33184F53E000926842 /* ETConnect */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A34184F53E000926842 /* docset */,
+				AF6B9A5F184F53E000926842 /* docset-installed.txt */,
+				AF6B9A60184F53E000926842 /* html */,
+				AF6B9A78184F53E000926842 /* publish */,
+			);
+			path = ETConnect;
+			sourceTree = "<group>";
+		};
+		AF6B9A34184F53E000926842 /* docset */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A35184F53E000926842 /* Contents */,
+			);
+			path = docset;
+			sourceTree = "<group>";
+		};
+		AF6B9A35184F53E000926842 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A36184F53E000926842 /* Info.plist */,
+				AF6B9A37184F53E000926842 /* Resources */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		AF6B9A37184F53E000926842 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A38184F53E000926842 /* docSet.dsidx */,
+				AF6B9A39184F53E000926842 /* docSet.mom */,
+				AF6B9A3A184F53E000926842 /* docSet.skidx */,
+				AF6B9A3B184F53E000926842 /* docSet.toc */,
+				AF6B9A3C184F53E000926842 /* Documents */,
+				AF6B9A54184F53E000926842 /* Nodes.xml */,
+				AF6B9A55184F53E000926842 /* Tokens1.xml */,
+				AF6B9A56184F53E000926842 /* Tokens10.xml */,
+				AF6B9A57184F53E000926842 /* Tokens2.xml */,
+				AF6B9A58184F53E000926842 /* Tokens3.xml */,
+				AF6B9A59184F53E000926842 /* Tokens4.xml */,
+				AF6B9A5A184F53E000926842 /* Tokens5.xml */,
+				AF6B9A5B184F53E000926842 /* Tokens6.xml */,
+				AF6B9A5C184F53E000926842 /* Tokens7.xml */,
+				AF6B9A5D184F53E000926842 /* Tokens8.xml */,
+				AF6B9A5E184F53E000926842 /* Tokens9.xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF6B9A3C184F53E000926842 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A3D184F53E000926842 /* Classes */,
+				AF6B9A43184F53E000926842 /* css */,
+				AF6B9A46184F53E000926842 /* hierarchy.html */,
+				AF6B9A47184F53E000926842 /* img */,
+				AF6B9A4D184F53E000926842 /* index.html */,
+				AF6B9A4E184F53E000926842 /* Protocols */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		AF6B9A3D184F53E000926842 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A3E184F53E000926842 /* EIConnection.html */,
+				AF6B9A3F184F53E000926842 /* EIConnectionServer.html */,
+				AF6B9A40184F53E000926842 /* EIDistantObject.html */,
+				AF6B9A41184F53E000926842 /* EINetConnection.html */,
+				AF6B9A42184F53E000926842 /* ETConnectServer.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AF6B9A43184F53E000926842 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A44184F53E000926842 /* styles.css */,
+				AF6B9A45184F53E000926842 /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		AF6B9A47184F53E000926842 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A48184F53E000926842 /* button_bar_background.png */,
+				AF6B9A49184F53E000926842 /* disclosure.png */,
+				AF6B9A4A184F53E000926842 /* disclosure_open.png */,
+				AF6B9A4B184F53E000926842 /* library_background.png */,
+				AF6B9A4C184F53E000926842 /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		AF6B9A4E184F53E000926842 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A4F184F53E000926842 /* EIConnectionDelegate.html */,
+				AF6B9A50184F53E000926842 /* EIConnectionServerDelegate.html */,
+				AF6B9A51184F53E000926842 /* EINetConnectionDelegate.html */,
+				AF6B9A52184F53E000926842 /* EINetConnectionInStreamDelegate.html */,
+				AF6B9A53184F53E000926842 /* ETConnectServerNotificationsDelegate.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AF6B9A60184F53E000926842 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A61184F53E000926842 /* Classes */,
+				AF6B9A67184F53E000926842 /* css */,
+				AF6B9A6A184F53E000926842 /* hierarchy.html */,
+				AF6B9A6B184F53E000926842 /* img */,
+				AF6B9A71184F53E000926842 /* index.html */,
+				AF6B9A72184F53E000926842 /* Protocols */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		AF6B9A61184F53E000926842 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A62184F53E000926842 /* EIConnection.html */,
+				AF6B9A63184F53E000926842 /* EIConnectionServer.html */,
+				AF6B9A64184F53E000926842 /* EIDistantObject.html */,
+				AF6B9A65184F53E000926842 /* EINetConnection.html */,
+				AF6B9A66184F53E000926842 /* ETConnectServer.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AF6B9A67184F53E000926842 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A68184F53E000926842 /* styles.css */,
+				AF6B9A69184F53E000926842 /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		AF6B9A6B184F53E000926842 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A6C184F53E000926842 /* button_bar_background.png */,
+				AF6B9A6D184F53E000926842 /* disclosure.png */,
+				AF6B9A6E184F53E000926842 /* disclosure_open.png */,
+				AF6B9A6F184F53E000926842 /* library_background.png */,
+				AF6B9A70184F53E000926842 /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		AF6B9A72184F53E000926842 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AF6B9A73184F53E000926842 /* EIConnectionDelegate.html */,
+				AF6B9A74184F53E000926842 /* EIConnectionServerDelegate.html */,
+				AF6B9A75184F53E000926842 /* EINetConnectionDelegate.html */,
+				AF6B9A76184F53E000926842 /* EINetConnectionInStreamDelegate.html */,
+				AF6B9A77184F53E000926842 /* ETConnectServerNotificationsDelegate.html */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AF6B9A78184F53E000926842 /* publish */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = publish;
 			sourceTree = "<group>";
 		};
 		AFDB61F2184E0E6700B1C6E9 /* Resources */ = {
@@ -220,19 +513,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFDB6204184E0EC300B1C6E9 /* eiShare Icon_1024.png in Resources */,
+				AF6B9AA8184F53E000926842 /* library_background.png in Resources */,
+				AF6B9A89184F53E000926842 /* library_background.png in Resources */,
+				AF6B9AA4184F53E000926842 /* hierarchy.html in Resources */,
+				AF6B9A82184F53E000926842 /* ETConnectServer.html in Resources */,
+				AF6B9AAA184F53E000926842 /* index.html in Resources */,
+				AF6B9A97184F53E000926842 /* Tokens5.xml in Resources */,
 				AFDB61FC184E0EC300B1C6E9 /* eiShare Icon_0029.png in Resources */,
+				AF6B9AA3184F53E000926842 /* stylesPrint.css in Resources */,
+				AF6B9A86184F53E000926842 /* button_bar_background.png in Resources */,
+				AF6B9A9A184F53E000926842 /* Tokens8.xml in Resources */,
+				AF6B9A98184F53E000926842 /* Tokens6.xml in Resources */,
+				AF6B9A88184F53E000926842 /* disclosure_open.png in Resources */,
+				AF6B9A83184F53E000926842 /* styles.css in Resources */,
+				AF6B9A9B184F53E000926842 /* Tokens9.xml in Resources */,
+				AF6B9AA9184F53E000926842 /* title_background.png in Resources */,
+				AF6B9A95184F53E000926842 /* Tokens3.xml in Resources */,
+				AF6B9A92184F53E000926842 /* Tokens1.xml in Resources */,
+				AF6B9AA2184F53E000926842 /* styles.css in Resources */,
+				AF6B9AA5184F53E000926842 /* button_bar_background.png in Resources */,
 				AFDB6201184E0EC300B1C6E9 /* eiShare Icon_0120 transparent.png in Resources */,
+				AF6B9A8A184F53E000926842 /* title_background.png in Resources */,
+				AF6B9A93184F53E000926842 /* Tokens10.xml in Resources */,
 				AFDB6203184E0EC300B1C6E9 /* eiShare Icon_0512.png in Resources */,
 				AFDB61FD184E0EC300B1C6E9 /* eiShare Icon_0057.png in Resources */,
+				AF6B9A80184F53E000926842 /* EIDistantObject.html in Resources */,
+				AF6B9A8B184F53E000926842 /* index.html in Resources */,
+				AF6B9AA7184F53E000926842 /* disclosure_open.png in Resources */,
+				AF6B9A7D184F53E000926842 /* docSet.toc in Resources */,
+				AF6B9A87184F53E000926842 /* disclosure.png in Resources */,
+				AF6B9A96184F53E000926842 /* Tokens4.xml in Resources */,
+				AF6B9A9C184F53E000926842 /* docset-installed.txt in Resources */,
+				AF6B9A7C184F53E000926842 /* docSet.skidx in Resources */,
 				AF401C13184A70FE0026171A /* Images.xcassets in Resources */,
+				AF6B9AA6184F53E000926842 /* disclosure.png in Resources */,
+				AF6B9A9D184F53E000926842 /* EIConnection.html in Resources */,
 				AFDB6202184E0EC300B1C6E9 /* eiShare Icon_0120.png in Resources */,
 				AFDB6207184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png in Resources */,
+				AF6B9AAE184F53E000926842 /* EINetConnectionInStreamDelegate.html in Resources */,
+				AF6B9A8E184F53E000926842 /* EINetConnectionDelegate.html in Resources */,
+				AF6B9A8C184F53E000926842 /* EIConnectionDelegate.html in Resources */,
+				AF6B9A7A184F53E000926842 /* docSet.dsidx in Resources */,
+				AF6B9AA0184F53E000926842 /* EINetConnection.html in Resources */,
+				AF6B9AAD184F53E000926842 /* EINetConnectionDelegate.html in Resources */,
+				AF6B9A99184F53E000926842 /* Tokens7.xml in Resources */,
+				AF6B9A94184F53E000926842 /* Tokens2.xml in Resources */,
+				AF6B9A81184F53E000926842 /* EINetConnection.html in Resources */,
+				AF6B9A9F184F53E000926842 /* EIDistantObject.html in Resources */,
+				AF6B9A9E184F53E000926842 /* EIConnectionServer.html in Resources */,
+				AF6B9A79184F53E000926842 /* Info.plist in Resources */,
 				AF401C05184A70FE0026171A /* InfoPlist.strings in Resources */,
 				AFDB6208184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png in Resources */,
 				AFDB61FE184E0EC300B1C6E9 /* eiShare Icon_0058.png in Resources */,
+				AF6B9A84184F53E000926842 /* stylesPrint.css in Resources */,
+				AF6B9AAB184F53E000926842 /* EIConnectionDelegate.html in Resources */,
+				AF6B9A91184F53E000926842 /* Nodes.xml in Resources */,
+				AF6B9AA1184F53E000926842 /* ETConnectServer.html in Resources */,
+				AF6B9A8F184F53E000926842 /* EINetConnectionInStreamDelegate.html in Resources */,
+				AF6B9A7F184F53E000926842 /* EIConnectionServer.html in Resources */,
 				AFDB61FF184E0EC300B1C6E9 /* eiShare Icon_0080.png in Resources */,
+				AF6B9AAC184F53E000926842 /* EIConnectionServerDelegate.html in Resources */,
+				AF6B9A90184F53E000926842 /* ETConnectServerNotificationsDelegate.html in Resources */,
 				AF401C0E184A70FE0026171A /* Main.storyboard in Resources */,
 				AFDB6200184E0EC300B1C6E9 /* eiShare Icon_0114.png in Resources */,
+				AF6B9A7E184F53E000926842 /* EIConnection.html in Resources */,
+				AF6B9AAF184F53E000926842 /* ETConnectServerNotificationsDelegate.html in Resources */,
+				AF6B9A85184F53E000926842 /* hierarchy.html in Resources */,
+				AF6B9A7B184F53E000926842 /* docSet.mom in Resources */,
+				AF6B9A8D184F53E000926842 /* EIConnectionServerDelegate.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
