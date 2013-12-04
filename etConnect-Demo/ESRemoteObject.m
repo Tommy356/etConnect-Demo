@@ -35,6 +35,12 @@
 - (void) sayHello:(NSString*)strMsg
 {
 #if TARGET_OS_IPHONE==1
+    /* if we're currently displaying an alert, cancel it ... */
+    if ( self.alert ){
+        [timer invalidate];
+        timer = nil;
+        [self.alert dismissWithClickedButtonIndex:0 animated:YES];
+    }
     /** Show the alert ... */
     self.alert = [[UIAlertView alloc] initWithTitle:@"etConnect-Demo"
                                        message:strMsg 
