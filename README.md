@@ -18,6 +18,8 @@ may call the methods of the 'vended' object.
 While OSX provided the required functionality since a while, Distributed Objects have not been available for iOS devices. The etConnect
 framework makes this functionality available and allows to implement DO's on both platforms, allowing you to design classes, that
 interact seamlessly on all platforms. 
+About etConnect:
+----------------
 
 Other than the original approach using the NSConnection/NSDistantObject classes found on OSX, etConnect provides similiar
 functionality on both platforms in a mre straigfoward approach and a redesigned archtitecture, which allows customization and
@@ -43,7 +45,10 @@ may be simulated in iOS simulator). I tried to keep the project as simple as pos
 however, at a first glance you might walk through the following classes:
 
 <b>ESAppDelegate</b>
---------------------
+Upon startup time, we'll start up a shared instance of the ETConnectServer class, which will
+    (1) publish the device on the current domain, so other clients apps can find it, and
+    (2) start monitoring the current domain for other devices running the etConnect Demo App.    
+
 
 
 
