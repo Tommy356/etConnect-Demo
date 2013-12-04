@@ -76,14 +76,28 @@ This is a sample implementation of an object 'vended' over etConnect. Currently,
 Ping-Pong and Alert methods; however it's a good starting point to discover, what etConnect can do for you.
 Check out the code, it's documented.
 
-<b>One word about protocols:</b></br>
+<b>One Word about Protocols:</b></br>
 
 In general, it's a good practice to define a protocol for all methods you intend to access with remote calls.
 Having (and assigning) a protocol has two benefits:
 
 (1) It reduces the network traffic, as for unknown methods distant objects will always query the remote side to match and code the required data when calling a method,
+
 (2) Once doing cross platform calls (32 -> 64 bit or vice versa) the coding of some Cocoa values (i.e. NSInteger, NSUInteger) are defined differently.
-To assure correct value coding,   
+To assure correct value coding, <b>etConnect</b> will refuse remote calls on cross-platform calls without protocols. Just to illustrate:
+
+This will work (without protocol), when called from 64-bit OSX to 32-bit iOS:
+
+    NSNumber* someNumber = [NSNumber numberWithInt:4711];
+    [someRemoteProxy setNumber:someNumber]; 
+
+This will not work (without protocol), when called from 64-bit OSX to 32-bit iOS:
+
+    NSInteger someNumber = 4711;
+    [someRemoteProxy setNumber:someNumber]; 
+
+
+
 
 
 Notes:
