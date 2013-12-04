@@ -44,7 +44,7 @@ Just check out the complete project and compile it. To make most use of it, you'
 may be simulated in iOS simulator). I tried to keep the project as simple as possible and the sourcesd are well documented; 
 however, at a first glance you might walk through the following classes:
 
-<b>ESAppDelegate</b>
+<b>ESAppDelegate:</b></br>
 Upon startup time, we'll start up a shared instance of the ETConnectServer class, which will
     (1) publish the device on the current domain, so other clients apps can find it, and
     (2) start monitoring the current domain for other devices running the etConnect Demo App.    
