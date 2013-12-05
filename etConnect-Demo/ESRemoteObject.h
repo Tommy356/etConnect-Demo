@@ -29,11 +29,16 @@
 #if TARGET_OS_IPHONE==1
 <ESRemoteObjectProtocol,UIAlertViewDelegate>
 {
-    //UIAlertView* alert;
     NSTimer* timer;
 }
 @property (nonatomic, retain) UIAlertView* alert;
 #else
 <ESRemoteObjectProtocol>
+{
+    NSTimer* timer;
+}
+/* required to show alerts, must be set by owner */
+@property (nonatomic, retain) NSWindow* window;
+@property (nonatomic, retain) NSAlert* alert;
 #endif
 @end

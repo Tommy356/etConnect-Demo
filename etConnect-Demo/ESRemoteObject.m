@@ -23,15 +23,6 @@
  *  It will just display an alert (and set up a timer to cancel it, in case nobody
  *  presses a button).
  */
-- (void) timerProc:(NSTimer*)t
-{
-    if ( self.alert ) {
-        [timer invalidate];
-        timer = nil;
-    }
-    [self.alert dismissWithClickedButtonIndex:0 animated:YES];
-}
-
 - (void) sayHello:(NSString*)strMsg
 {
 #if TARGET_OS_IPHONE==1
@@ -43,10 +34,10 @@
     }
     /** Show the alert ... */
     self.alert = [[UIAlertView alloc] initWithTitle:@"etConnect-Demo"
-                                       message:strMsg 
-                                      delegate:self
-                             cancelButtonTitle:@"OK"
-                             otherButtonTitles:nil, nil];
+                                            message:strMsg 
+                                           delegate:self
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil, nil];
     
     /*
      *  Show the alert:
@@ -59,19 +50,29 @@
     timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(timerProc:) userInfo:nil repeats:NO];
 #else
     /** Show the alert ... */
-    NSAlert *alert = [[NSAlert alloc] init];// autorelease];
+    NSAlert *alert = [[NSAlert alloc] init];
     [alert addButtonWithTitle:@"OK"];
     [alert addButtonWithTitle:@"Cancel"];
     [alert setMessageText:strMsg];
-    [alert setInformativeText:@"EIConnect Test Message."];
+    [alert setInformativeText:@"etConnect-Demo"];
     [alert setAlertStyle:NSWarningAlertStyle];
     [alert beginSheetModalForWindow:[self window]
-                      modalDelegate:nil
-                     didEndSelector:nil //@selector(alertDidEnd:returnCode:contextInfo:)
+                      modalDelegate:self
+                     didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:)
                         contextInfo:nil];
+    timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(timerProc:) userInfo:nil repeats:NO];
+    
+    self.alert = alert;
+    [alert release];
 #endif
 }
 
+/*
+ *  Time & Alert close routines for both, iOS and OSX
+ *
+ *  The alert will close automatically after a couple of seconds...
+ */
+#if TARGET_OS_IPHONE==1
 - (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     self.alert = nil;
@@ -81,6 +82,34 @@
     }
 }
 
+- (void) timerProc:(NSTimer*)t
+{
+    if ( self.alert ) {
+        [timer invalidate];
+        timer = nil;
+    }
+    [self.alert dismissWithClickedButtonIndex:0 animated:YES];
+}
+#else
+- (void) alertDidEnd:(NSAlert*)alert returnCode:(NSInteger)returnCode contextInfo:(void*)contextInfo
+{
+    NSLog(@"Alert did end!");
+    self.alert = nil;
+    if ( timer ) {
+        [timer invalidate];
+        timer = nil;
+    }
+}
+
+- (void) timerProc:(NSTimer*)t
+{
+    NSLog(@"Timer close alert!");
+    if ( self.alert ) 
+    {
+        [NSApp endSheet:_alert.window];        
+    }
+}
+#endif // TARGET_OS_IPHONE==1
 
 #pragma mark - iPhone Ping Pong
     
