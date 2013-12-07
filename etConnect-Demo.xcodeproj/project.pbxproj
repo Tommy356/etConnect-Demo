@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF24B6B01852FD8D00271590 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9AE8185059C800926842 /* MainMenu.xib */; };
+		AF24B6B31852FE7D00271590 /* ETConnect-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFB24DB61850733500643B96 /* ETConnect-OSX.framework */; };
+		AF24B6B41852FE7D00271590 /* ETBase-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF6B9B3D18505D9D00926842 /* ETBase-OSX.framework */; };
 		AF401BFB184A70FE0026171A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFA184A70FE0026171A /* Foundation.framework */; };
 		AF401BFD184A70FE0026171A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFC184A70FE0026171A /* CoreGraphics.framework */; };
 		AF401BFF184A70FE0026171A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFE184A70FE0026171A /* UIKit.framework */; };
@@ -54,6 +56,20 @@
 		AFDB6208184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB6206184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png */; };
 		AFDB620B184E1FC800B1C6E9 /* ESDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB620A184E1FC800B1C6E9 /* ESDetailViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF24B6B21852FE7100271590 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				AF24B6B31852FE7D00271590 /* ETConnect-OSX.framework in CopyFiles */,
+				AF24B6B41852FE7D00271590 /* ETBase-OSX.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AF401BF7184A70FE0026171A /* etConnect-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "etConnect-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -372,6 +388,7 @@
 				AF6B9ACE185059C800926842 /* Sources */,
 				AF6B9ACF185059C800926842 /* Frameworks */,
 				AF6B9AD0185059C800926842 /* Resources */,
+				AF24B6B21852FE7100271590 /* CopyFiles */,
 			);
 			buildRules = (
 			);
