@@ -6,6 +6,11 @@ Demo App for iOS and OSX, demonstrating the basic usage of Distributed Objects u
 
 The project contains the binaries of the etConnect framework (ver. alpha 0.9) and the sources to build an iOS version and it's OSX counterpart.
 
+History:
+----------------
+2013/12/06  Added the etConnect OSX demo App and the frtameworks required. 
+
+
 About etConnect:
 ----------------
 The etConnect framework is (loosely) based on Distributed Objects, a mechanism taking advantage of Objective-C++'s built-in capability
@@ -107,7 +112,7 @@ some more possible applications to the Demo App over time - you're well invited,
 
 Next Steps:
 ------------
-I'll add the OSX app + framework soon.
+I'll enable the bluetooth options for both platforms.
 
 
 Notes for Building & Compiling:

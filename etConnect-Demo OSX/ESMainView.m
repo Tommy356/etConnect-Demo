@@ -51,69 +51,50 @@
 }
 */
 
-/** switch server on/off */
-- (IBAction) btnPublishClicked:(NSButton*)sender
+/*
+ *  Depending on the state of tghe switch, we'll either publish ('vend') a remote object
+ *  or stop publishing it.
+ */
+- (IBAction)btnPublishClicked:(NSButton *)sender 
 {
-    NSButton*       btn = sender;
-    ESRemoteObject* testObject = nil;
-    
-    NSLog(@"Publish clicked for %@!",btn);
-    NSLog(@"Publish clicked for %@!",_btnPublish);
-    NSLog(@"Publish state: %ld",(long)btn.state);
-    
-    /*
-     testObject = [[DODTestObject alloc] init];
-     testObject.window = self.window;
-     [testObject showAlert:@"Service published!"];
-     testObject = nil;
-     return;
-     */
-    
-    if ( btn.state && _remoteService == nil )
+    if ( sender.state )
     {
-        NSLog(@"Switch remote service on!");
-        NSLog(@"OLD Connections: %@",[EIConnection allConnections]);
+        NSLog(@"Publishing ...");
         
-        testObject = [[ESRemoteObject alloc] init];
-        testObject.window = self.window;
-        
-        [EIConnection setDebug:5];
-        
-        EIConnection* rs = [EIConnection serviceConnectionWithName:DEMO_SERVICE_NAME
-                                                        rootObject:testObject];
-        
-        if ( rs != nil )
-        {
-            NSLog(@"Remote Service has been published!");
-            self.remoteService = rs;
-            self.testObject = testObject;
-            NSLog(@"NEW Connections: %@",[EIConnection allConnections]);
-            
-        } else {
-            NSLog(@"Remote Service could not be published!");
-            self.remoteService = nil;
-            btn.state = 0;
+        /*
+         *  Create an instance of an -ESRemoteObject (which will serve as sample root object)
+         *  and vend it, by creating en EIConnection with this instance as root.
+         */
+        ESRemoteObject* localRoot = [[ESRemoteObject alloc] init];
+        EIConnection* connection = [EIConnection startVending:DEMO_SERVICE_NAME rootObject:localRoot];
+        /* 
+         *  once published successfully, keep a (retained) reference to the connection
+         *  and the root object
+         */
+        if ( connection ) {
+            self.publishedConnection = connection;
+            self.publishedRoot = localRoot;
         }
-        
-        [testObject release];
-        
-    } else if ( !btn.state && _remoteService != nil )
-    {
-        
-        NSLog(@"Switch remote service off!");
-        [self.remoteService stopVending];
-        NSLog(@"Invalidated!");
-        //[self.remoteService release];
-        self.remoteService = nil;
-        NSLog(@"Released.... ");
-        NSLog(@"Connections: %@",[EIConnection allConnections]);
-        
-        //[self.testObject release];
-        self.testObject = nil;
         
     } else {
         
-        NSLog(@"Strange!");
+        NSLog(@"Stop Publishing ...");
+        
+        /*
+         *  IMPORTANT:
+         *  We NEED to inform the connection explicitely, that it should stop vending, 
+         *  before we may release it.
+         *  So, remember to call 'stopVending' always, before releasing a published 
+         *  connection, otherwise you'll produce memory leaks as the connection will never
+         *  be released.
+         */
+        [self.publishedConnection stopVending];
+        
+        /*
+         *  After stopping the 'vend', just release the references and we're done.
+         */
+        self.publishedRoot = nil;
+        self.publishedConnection = nil;
     }
 }
 

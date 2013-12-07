@@ -23,8 +23,8 @@
 
 @property (nonatomic, retain) IBOutlet NSTableView* tvHosts;
 
-@property (nonatomic, retain) EIConnection* remoteService;
-@property (nonatomic, retain) ESRemoteObject* testObject;
+@property (nonatomic, retain) EIConnection* publishedConnection;
+@property (nonatomic, retain) ESRemoteObject* publishedRoot;
 @property (nonatomic, retain) NSArray* hosts;
 @property (nonatomic, retain) NSString* selectedHost;
 
