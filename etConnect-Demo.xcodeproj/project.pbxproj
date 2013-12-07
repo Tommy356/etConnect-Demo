@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF24B6B01852FD8D00271590 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9AE8185059C800926842 /* MainMenu.xib */; };
-		AF24B6B31852FE7D00271590 /* ETConnect-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AFB24DB61850733500643B96 /* ETConnect-OSX.framework */; };
-		AF24B6B41852FE7D00271590 /* ETBase-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF6B9B3D18505D9D00926842 /* ETBase-OSX.framework */; };
+		AF24B6B71853011E00271590 /* ETBase-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF24B6B51853011E00271590 /* ETBase-OSX.framework */; };
 		AF401BFB184A70FE0026171A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFA184A70FE0026171A /* Foundation.framework */; };
 		AF401BFD184A70FE0026171A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFC184A70FE0026171A /* CoreGraphics.framework */; };
 		AF401BFF184A70FE0026171A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFE184A70FE0026171A /* UIKit.framework */; };
@@ -19,6 +18,9 @@
 		AF401C0E184A70FE0026171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF401C0C184A70FE0026171A /* Main.storyboard */; };
 		AF401C11184A70FE0026171A /* ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C10184A70FE0026171A /* ESViewController.m */; };
 		AF401C13184A70FE0026171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF401C12184A70FE0026171A /* Images.xcassets */; };
+		AF456DE0185302D0002544A8 /* ETConnect-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF456DDF185302D0002544A8 /* ETConnect-OSX.framework */; };
+		AF456DE1185302DC002544A8 /* ETConnect-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF456DDF185302D0002544A8 /* ETConnect-OSX.framework */; };
+		AF456DE2185302E2002544A8 /* ETBase-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF24B6B51853011E00271590 /* ETBase-OSX.framework */; };
 		AF6B9A30184F30B500926842 /* ETBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9A2E184F30B500926842 /* ETBase.framework */; };
 		AF6B9A31184F30B500926842 /* ETConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9A2F184F30B500926842 /* ETConnect.framework */; };
 		AF6B9AD4185059C800926842 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9AD3185059C800926842 /* Cocoa.framework */; };
@@ -27,7 +29,6 @@
 		AF6B9AE4185059C800926842 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9AE2185059C800926842 /* Credits.rtf */; };
 		AF6B9AE7185059C800926842 /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B9AE6185059C800926842 /* ESAppDelegate.m */; };
 		AF6B9AEC185059C800926842 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9AEB185059C800926842 /* Images.xcassets */; };
-		AF6B9B3F18505D9D00926842 /* ETBase-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9B3D18505D9D00926842 /* ETBase-OSX.framework */; };
 		AF6B9B4118505F0900926842 /* ESRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB61CB184DE70C00B1C6E9 /* ESRemoteObject.m */; };
 		AF86BE891852020000CFBEA6 /* etDemo Icon_0120 transparent_off.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB6205184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png */; };
 		AF86BE8A1852020000CFBEA6 /* etDemo Icon_0120 transparent_on.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB6206184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png */; };
@@ -41,7 +42,6 @@
 		AF86BE921852020000CFBEA6 /* eiShare Icon_0512.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61FA184E0EC300B1C6E9 /* eiShare Icon_0512.png */; };
 		AF86BE931852020000CFBEA6 /* eiShare Icon_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61FB184E0EC300B1C6E9 /* eiShare Icon_1024.png */; };
 		AFB24DB2185061BD00643B96 /* ESMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB24DB1185061BD00643B96 /* ESMainView.m */; };
-		AFB24DB81850734A00643B96 /* ETConnect-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB24DB61850733500643B96 /* ETConnect-OSX.framework */; };
 		AFDB61CC184DE70C00B1C6E9 /* ESRemoteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDB61CB184DE70C00B1C6E9 /* ESRemoteObject.m */; };
 		AFDB61FC184E0EC300B1C6E9 /* eiShare Icon_0029.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F3184E0EC300B1C6E9 /* eiShare Icon_0029.png */; };
 		AFDB61FD184E0EC300B1C6E9 /* eiShare Icon_0057.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDB61F4184E0EC300B1C6E9 /* eiShare Icon_0057.png */; };
@@ -64,14 +64,15 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				AF24B6B31852FE7D00271590 /* ETConnect-OSX.framework in CopyFiles */,
-				AF24B6B41852FE7D00271590 /* ETBase-OSX.framework in CopyFiles */,
+				AF456DE2185302E2002544A8 /* ETBase-OSX.framework in CopyFiles */,
+				AF456DE1185302DC002544A8 /* ETConnect-OSX.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF24B6B51853011E00271590 /* ETBase-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETBase-OSX.framework"; sourceTree = "<group>"; };
 		AF401BF7184A70FE0026171A /* etConnect-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "etConnect-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF401BFA184A70FE0026171A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF401BFC184A70FE0026171A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +88,7 @@
 		AF401C10184A70FE0026171A /* ESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESViewController.m; sourceTree = "<group>"; };
 		AF401C12184A70FE0026171A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF401C19184A70FE0026171A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF456DDF185302D0002544A8 /* ETConnect-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETConnect-OSX.framework"; sourceTree = "<group>"; };
 		AF6B9A2E184F30B500926842 /* ETBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETBase.framework; sourceTree = "<group>"; };
 		AF6B9A2F184F30B500926842 /* ETConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETConnect.framework; sourceTree = "<group>"; };
 		AF6B9AB3184F544300926842 /* EIConnection.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = EIConnection.html; sourceTree = "<group>"; };
@@ -122,10 +124,8 @@
 		AF6B9AE6185059C800926842 /* ESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
 		AF6B9AE9185059C800926842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AF6B9AEB185059C800926842 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AF6B9B3D18505D9D00926842 /* ETBase-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETBase-OSX.framework"; sourceTree = "<group>"; };
 		AFB24DB0185061BD00643B96 /* ESMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESMainView.h; sourceTree = "<group>"; };
 		AFB24DB1185061BD00643B96 /* ESMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESMainView.m; sourceTree = "<group>"; };
-		AFB24DB61850733500643B96 /* ETConnect-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETConnect-OSX.framework"; sourceTree = "<group>"; };
 		AFC1D504184A72EB0043204A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AFC1D505184A72EB0043204A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		AFDB61CA184DE70C00B1C6E9 /* ESRemoteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRemoteObject.h; sourceTree = "<group>"; };
@@ -162,9 +162,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFB24DB81850734A00643B96 /* ETConnect-OSX.framework in Frameworks */,
+				AF456DE0185302D0002544A8 /* ETConnect-OSX.framework in Frameworks */,
 				AF6B9AD4185059C800926842 /* Cocoa.framework in Frameworks */,
-				AF6B9B3F18505D9D00926842 /* ETBase-OSX.framework in Frameworks */,
+				AF24B6B71853011E00271590 /* ETBase-OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +196,8 @@
 		AF401BF9184A70FE0026171A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFB24DB61850733500643B96 /* ETConnect-OSX.framework */,
-				AF6B9B3D18505D9D00926842 /* ETBase-OSX.framework */,
+				AF456DDF185302D0002544A8 /* ETConnect-OSX.framework */,
+				AF24B6B51853011E00271590 /* ETBase-OSX.framework */,
 				AF6B9A2E184F30B500926842 /* ETBase.framework */,
 				AF6B9A2F184F30B500926842 /* ETConnect.framework */,
 				AF401BFA184A70FE0026171A /* Foundation.framework */,
