@@ -23,6 +23,8 @@
 #define EIServiceDictKey        @"serviceDict"
 #define EIDeviceDictKey         @"deviceDict"
 
+#import "ETConnectServerNotifications.h"
+
 @class ETConnectServer;
 @protocol TCPServerDelegate;
 

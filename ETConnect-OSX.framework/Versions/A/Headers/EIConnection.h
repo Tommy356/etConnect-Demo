@@ -1,15 +1,14 @@
 //
 //  EIConnection.h
-//  EIConnectionIOS
+//
+//  etConnect Framework
 //
 //  Created by Thomas Krautter on 06.10.13.
 //  Copyright (c) 2013 Thomas Krautter. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
 #import "ETConnectTypes.h"
-
 
 @class NSMutableData, EIDistantObject, NSException, NSData;
 @class NSPort, NSRunLoop, NSDictionary, NSArray;
@@ -25,53 +24,21 @@
 /*
  *	Keys for the NSDictionary returned by [EIConnection -statistics]
  */
-/* These in OPENSTEP 4.2 */
-/**
- *  Key for dictionary returned by [EIConnection-statistics]: number of
- *  messages replied to so far by the remote connection.
+extern NSString* const NSConnectionRepliesReceived;
+extern NSString* const NSConnectionRepliesSent;
+extern NSString* const NSConnectionRequestsReceived;
+extern NSString* const NSConnectionRequestsSent;
+extern NSString* const NSConnectionLocalCount;
+extern NSString* const NSConnectionProxyCount;
+
+/*
+ *  ETConnectionTypes - define the nature of a connection:
  */
-#  define GS_EXPORT  extern
-
-GS_EXPORT NSString* const NSConnectionRepliesReceived;
-
-/**
- *  Key for dictionary returned by [EIConnection-statistics]: number of
- *  messages sent so far to the remote connection.
- */
-GS_EXPORT NSString* const NSConnectionRepliesSent;
-
-/**
- *  Key for dictionary returned by [EIConnection-statistics]: number of
- *  messages received so far from the remote connection.
- */
-GS_EXPORT NSString* const NSConnectionRequestsReceived;
-
-/**
- *  Key for dictionary returned by [EIConnection-statistics]: number of
- *  messages sent so far to the remote connection.
- */
-GS_EXPORT NSString* const NSConnectionRequestsSent;
-/* These Are GNUstep extras */
-
-/**
- *  GNUstep-specific key for dictionary returned by [EIConnection-statistics]:
- *  number of local objects currently in use remotely.
- */
-GS_EXPORT NSString* const NSConnectionLocalCount;   /* Objects sent out */
-
-/**
- *  GNUstep-specific key for dictionary returned by [EIConnection-statistics]:
- *  number of remote objects currently in use.
- */
-GS_EXPORT NSString* const NSConnectionProxyCount;   /* Objects received */
-
-#define USE_DEBUG_NAMES
-
 typedef NS_ENUM(UInt32,ETConnectionTypes)
 {
     /* undefined */
     ETConnectionTypeUndefined = 0,
-    /* Root connection */
+    /* Root connection for locally published objects */
     ETConnectionTypeRoot,
     /* Service connection */
     ETConnectionTypeService,
@@ -120,9 +87,10 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
 #pragma mark - VENDING SERVICES
 /** @name Vending Objects */
 
-/**
- *  we might implemenent a clone protocol, which allows a 'duplicate' root
- *  object once a connection is made - given, this does not work with root class ...
+/** Starts vending an object
+ *
+ *  To call this successful, the shared instance of ETConnectServer must have been started
+ *  with at least poublishing mode set.
  *  
  @param name: a unique name, which will be used to announce the vending service oin the current domain
  @param root: an instance of an NSObject-based class, which will serve as the root object for the service
@@ -131,6 +99,10 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
 + (id)startVending:(NSString *)name rootObject:(id)root;
 
 /** Stops vending an object. 
+ *
+ *  Calling this method will also immediately close all connections to remote clients and cancel all
+ *  possibly outstanding requests.
+ *  This method needs to be called <b>obligatory</b>, before a service connection is released.
  *
  *  @returns: TRUE, if the vending has been stopped, FALSE, if an error occured.
  */
@@ -141,18 +113,15 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
 /**
  * Returns a connection initialised using -initWithReceivePort:sendPort:<br />
  * Both ports must be of the same type.
+ * DEPRECATED - Do not use any more.
  */
 + (EIConnection*)connectionWithReceivePort:(NSPort*)r sendPort:(NSPort*)s;
 
 /**
- * <p>Returns an EIConnection object whose send port is that of the
+ * Returns an EIConnection object whose send port is that of the
  * EIConnection registered under the name n on the host h
- * </p>
  * <p>This method calls +connectionWithRegisteredName:host:usingNameServer:
  * using the default system name server.
- * </p>
- * <p>Use [ETConnectServer] for connections to remote hosts.
- * </p>
  */
 + (EIConnection*)connectionWithRegisteredName:(NSString*)n host:(NSString*)h;
 
@@ -179,26 +148,53 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
                                                         host:(NSString*)h
                                              usingNameServer:(ETConnectServer*)s;
 
-
+/** Creates a service connection with a specified root object and a specified name.
+ *
+ * Deprecated: you should use 'startVending:root' instead.
+ *
+ @param name: a unique name, which will be used to announce the vending service oin the current domain
+ @param root: an instance of an NSObject-based class, which will serve as the root object for the service
+ @returns a new EIConnection instance, responsible to handle & dispatch incoming connection requests and route them to the root object specified
+ */
 + (id)serviceConnectionWithName:(NSString *)name
                      rootObject:(id)root;
 
+/** Creates a service connection with a specified root object and a specified name using a
+ *  specified instance of ETConnectServer.
+ *
+ * Deprecated: you should use 'startVending:root' instead.
+ *
+ @param name: a unique name, which will be used to announce the vending service oin the current domain
+ @param root: an instance of an NSObject-based class, which will serve as the root object for the service
+ @param usingNameServer: an instance of ETConnectServer
+ @returns a new EIConnection instance, responsible to handle & dispatch incoming connection requests and route them to the root object specified
+ */
 + (id)serviceConnectionWithName:(NSString *)name
                      rootObject:(id)root
                 usingNameServer:(ETConnectServer *)server;
 
-
-
-/**
- *  initializes a new child connection for a vended object ...
+/** Initializes a new child connection for a vended object.
+ *
+ * This routine is used internally, to instantiate new EIConnection objects for remote
+ * client requests. There is rarely any need to call this from within an application.
+ *
+ @param parent: the parent connection (must be a service connection) hosting a vended root object.
+ @param netConnection: the net connection responsible to handle incoming requests and outgoing responses
+ @returns a new EIConnection instance responsible to handle incoming requests. 
  */
 - (id) initWithParent:(EIConnection*)parent andNetConnection:(EINetConnection*)netConnection;
 
 /**
- *  called by EINetConnection, if a new port connect message has been received. The EINetConnection
- *  expects a child connection to be created, which will act as message handler for
+ *  called by EINetConnection, if a new port connect message has been received. 
+ *
+ *  The EINetConnection expects a child connection to be created, which will act as message handler for
  *  incoming messages. The netConnection passed will be responsible toi handle all traffic
- *  for this EIConnection.
+ *  for this EIConnection. This routine is called from the net transport layer for parent connections,
+ *  which are vending services.
+ *  This routine will call initWithParent:andNetConnection
+ *
+ @param netConnection: the net connection responsible to handle incoming requests and outgoing responses
+ @returns a new EIConnection instance responsible to handle incoming requests. 
  */
 - (EIConnection*) connectRequest:(EINetConnection*)netConnection;
 
@@ -216,20 +212,26 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
 @property (nonatomic, retain) id connectionRootObject;
 @property (nonatomic, retain) NSMutableArray* childConnections;
 
-#pragma mark Coding Layer
-
-#pragma mark Management Layer
-
 
 #pragma mark UNSORTED ENTRIES:
-- (void)addRequestMode:(NSString*)mode;
-- (void)addRunLoop:(NSRunLoop*)loop;
+/** Returns a dictionary with some statistical information about an EIConnection instance.
+ */
 - (NSDictionary*)statistics;
 
 #pragma mark NOTIFICATION HANDLING:
 
 #pragma mark INIT & DEALLOC
+/** Invalidates an existing EIConnection instance.
+ *
+ *  Internal management only; there should be no reason, to call this routine externally. To
+ *  Release a service connection, call 'stopVending' and release the reference to the EIConnection.
+ */
 - (void)invalidate;
+
+/** Returns TRUE, if an EIConnection is valid, FALSE, if a connection is shutting down due to local
+ *  or remote requests.
+ *
+ */
 - (BOOL)isValid;
 
 #pragma mark INSTANCE PROPERTIES
@@ -239,21 +241,13 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
  */
 @property (nonatomic, retain) id rootObject;
 
-/** The delegate for this connection.
- */
+/** The delegate for this connection. */
 @property (nonatomic, retain) id<EIConnectionDelegate> delegate;
-
-/** TRUE, if the connection is enabled to serve multple threads.
- */
+/** TRUE, if the connection is enabled to serve multple threads. */
 @property (nonatomic, assign) BOOL multipleThreadsEnabled;
 @property (nonatomic, assign) ETServerPlatformType platformType;
-
-#ifdef USE_DEBUG_NAMES
-/** An (optional) name for a connection. Clients may use this property to identify
- *  connections.
- */
+/** An (optional) name for a connection. Clients may use this property to identify connections. */
 @property (nonatomic, retain) NSString* connName;
-#endif //#ifdef USE_DEBUG_NAMES
 
 /** The type of the connection.
  *
@@ -266,54 +260,35 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
  */
 @property (nonatomic, assign) ETConnectionTypes connType;
 
-//@property (nonatomic, assign) NSTimeInterval requestTimeout;
-//@property (nonatomic, assign) NSTimeInterval replyTimeout;
-
 #pragma mark PROXY STUFF
+/**
+ * Returns the proxy for the root object of the remote EIConnection.<br />
+ * Generally you will wish to call [EIDistantObject-setProtocolForProxy:]
+ * immediately after obtaining such a root proxy.
+ */
 - (EIDistantObject*)rootProxy;
 
 #pragma mark CLASS METHODS
 
 /**
- * Returns an array containing all the EIConnection objects known to
+ * Returns an array containing all EIConnection objects known to
  * the system. These connections will be valid at the time that the
  * array was created, but may be invalidated by other threads
  * before you get to examine the array.
  */
 + (NSArray*)allConnections;
+
 + (void) dumpAll;
 
 /**
- * <p>
- *   Returns an EIConnection object whose send port is that of the
- *   EIConnection registered under <em>name</em> on <em>host</em>.
- * </p>
- * <p>
- *   The nameserver <em>server</em> is used to look up the send
- *   port to be used for the connection.<br />
- *   Use [ETConnectServer+sharedInstance]
- *   for connections to remote hosts.
- * </p>
- * <p>
- *   If <em>host</em> is <code>nil</code> or an empty string,
- *   the host is taken to be the local machine.<br />
- *   If it is an asterisk ('*') then the nameserver checks all
- *   hosts on the local subnet (unless the nameserver is one
- *   that only manages local ports).<br />
- *   In the GNUstep implementation, the local host is searched before
- *   any other hosts.<br />
- *   NB. if the nameserver does not support connections to remote hosts
- *   (the default situation) the host argument should be omitted.
- * </p>
- * <p>
- *   If no EIConnection can be found for <em>name</em> and
- *   <em>host</em>host, the method returns <code>nil</code>.
- * </p>
- * <p>
- *   The returned object has the default EIConnection of the
- *   current thread as its parent (it has the same receive port
- *   as the default connection).
- * </p>
+ *   Returns an EIConnection object which is registered under <em>name</em> on <em>host</em>.
+ *
+ *   The connect server <em>server</em> is used to look up the host to be used for the connection.
+ *   Use [ETConnectServer sharedInstance] for connections to remote hosts.
+ *
+ *   If <em>host</em> is <code>nil</code> or an empty string, the host is taken to be the local machine.<br />
+ *   If it is an asterisk ('*') then the nameserver checks all hosts on the local subnet (unless the nameserver is one
+ *   that only manages local ports).
  */
 + (EIConnection*)connectionWithRegisteredName:(NSString*)n
                                          host:(NSString*)h
@@ -321,15 +296,13 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
 
 /**
  * Sets the EIConnection configuration so that multiple threads may
- * use the connection to send requests to the remote connection.<br />
- * This option is inherited by child connections.<br />
- * NB. A connection with multiple threads enabled will run slower than
- * a normal connection.
+ * use the connection to send requests to the remote connection. This option is inherited by child connections.
+ * A connection with multiple threads enabled will run slower than a normal connection.
  */
 - (void)enableMultipleThreads;
 
-/**
- * Return the current conversation ... not implemented in GNUstep
+/*
+ * Backward compatibiulity - not implemented any more.
  */
 + (id)currentConversation;
 
@@ -339,16 +312,20 @@ typedef NS_ENUM(UInt32,ETConnectionTypes)
 - (void)connectionIsInvalid:(EINetConnection*)netConnection;
 
 /** Debug only:
- *  sets/gets the common debug level for all connection objects...
+ *  sets the common debug level for all connection objects...
  */
 + (int) setDebug:(int)val;
+
+/** Debug only:
+ *  returns the common debug level for all connection objects...
+ */
 + (int) getDebug;
 
 @end
 
 @interface EIConnection (MessageHandling)
 /*
- *  an incoming net message is dispatched from an EINetConnection
+ *  An incoming net message is dispatched from an EINetConnection
  */
 - (void)handleNetMessage:(EINetMessage*)msg;
 @end
