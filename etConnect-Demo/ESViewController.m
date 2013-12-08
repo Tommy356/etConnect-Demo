@@ -11,6 +11,9 @@
 //  - allows to switch bluetotth support on and off,
 //  - allows to publish and unpublish a demo service
 //  - switches to a detailed view fore active devices (see ESDetailViewController)
+//
+//  History:    Added bluetooth switch functionality,
+//              Added a bluetooth icon, if a BT peer has been found
 
 #import "ESViewController.h"
 
@@ -53,6 +56,12 @@
      *  table view...
      */
     self.hosts = [NSArray array];
+    
+    /*
+     *  Set the status of the bluetooth switch. If bluetooth has been anabled by supplying the
+     *  peerToPeer flag on startup, it's on by default, off otherwise.
+     */
+    _swBluetooth.on = [[ETConnectServer sharedInstance] bluetoothEnabled];
 }
 
 - (void)didReceiveMemoryWarning
@@ -133,6 +142,7 @@
      *  For the current release of the framework, this is disabled, as there is still
      *  optimization work going on.
      */
+    [[ETConnectServer sharedInstance] setBluetoothEnabled:sender.on];
 }
     
 /*
@@ -208,10 +218,26 @@
     NSString* strHost = [_hosts objectAtIndex:indexPath.row];
     
     cell.textLabel.text = strHost;
-    
-    cell.imageView.image = [[ETConnectServer sharedInstance] host:strHost providesService:DEMO_SERVICE_NAME] ?
+
+    UIImage* image  = [[ETConnectServer sharedInstance] host:strHost providesService:DEMO_SERVICE_NAME] ?
         [UIImage imageNamed:@"etDemo Icon_0120 transparent_on.png"] :
         [UIImage imageNamed:@"etDemo Icon_0120 transparent_off.png"];
+    
+    /*
+     *  Check the connection type to this device; if it's a bluetooth connection, add
+     *  a bluetooth icon ...
+     */
+    ETHostConnectionTypes ct = [[ETConnectServer sharedInstance] hostConnectionType:strHost];
+    if ( ct & ETHostConnectionBluetooth ){
+        UIImage* iconBT = [UIImage imageNamed:@"icon_bluetooth_0256.png"];
+        UIGraphicsBeginImageContext(image.size);
+        [image  drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+        [iconBT drawInRect:CGRectMake(0, image.size.height/4, image.size.width/2, image.size.height/2)];
+        image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    }
+    
+    cell.imageView.image = image;
     
     return cell;
 }

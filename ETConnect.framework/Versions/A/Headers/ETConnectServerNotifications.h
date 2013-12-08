@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 eitap Technologies GmbH. All rights reserved.
 //
 
+#if TARGET_OS_IPHONE==1
 #import <ETBase/ETNotificationManager.h>
-
+#else
+#import <ETBase-OSX/ETNotificationManager.h>
+#endif
 
 @interface ETConnectServerNotifications : ETNotifications
 

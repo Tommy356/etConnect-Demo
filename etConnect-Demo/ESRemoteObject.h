@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE==1
 #import <ETConnect/ETConnect.h>
+#else
+#import <ETConnect-OSX/ETConnect.h>
+#endif
 
 #define DEMO_SERVICE_NAME   @"ESRemoteObject"
 

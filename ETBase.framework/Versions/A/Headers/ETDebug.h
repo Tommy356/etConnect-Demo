@@ -12,7 +12,7 @@
 #define DEBUG_SHOW_FULLPATH NO
 #define DEBUG_SHOW_THREAD   YES
 
-#if DEBUG
+#if _DEBUG
 #define debug(format,...) [[ETDebugOutput sharedDebug] output:__FILE__ lineNumber:__LINE__ input:(format), ##__VA_ARGS__]
 #else
 #define debug(format,...)
@@ -20,7 +20,7 @@
 
 #define NSLog(format,...) [[ETDebugOutput sharedDebug] output:__FILE__ lineNumber:__LINE__ input:(format), ##__VA_ARGS__]
 
-#if DEBUG
+#if _DEBUG
 #define ETSAssert(cond,format,...)  [[ETDebugOutput sharedDebug] assert:(cond) file:__FILE__ lineNumber:__LINE__ input:(format), ##__VA_ARGS__]
 #else
 #define ETSAssert(format,...)

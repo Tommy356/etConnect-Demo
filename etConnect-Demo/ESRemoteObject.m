@@ -23,7 +23,7 @@
  *  It will just display an alert (and set up a timer to cancel it, in case nobody
  *  presses a button).
  */
-- (void) sayHello:(NSString*)strMsg
+- (void) sayHelloMT:(NSString*)strMsg
 {
 #if TARGET_OS_IPHONE==1
     /* if we're currently displaying an alert, cancel it ... */
@@ -39,14 +39,7 @@
                                   cancelButtonTitle:@"OK"
                                   otherButtonTitles:nil, nil];
     
-    /*
-     *  Show the alert:
-     *  On iOS 7, 'show' would work; however, on iOS 6 we need to call this on the main thread,
-     *  remote calls might come in in different threads.
-     *
-     *  [self.alert show]; // -> not in iOS 6.x 
-     */
-    [self.alert performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:NO];
+    [self.alert show];
     timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(timerProc:) userInfo:nil repeats:NO];
 #else
     /** Show the alert ... */
@@ -65,6 +58,11 @@
     self.alert = alert;
     [alert release];
 #endif
+}
+
+- (void) sayHello:(NSString*)strMsg
+{
+    [self performSelectorOnMainThread:@selector(sayHelloMT:) withObject:strMsg waitUntilDone:NO];
 }
 
 /*

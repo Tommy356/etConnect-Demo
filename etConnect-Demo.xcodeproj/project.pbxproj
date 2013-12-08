@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AF24B6B01852FD8D00271590 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9AE8185059C800926842 /* MainMenu.xib */; };
-		AF24B6B71853011E00271590 /* ETBase-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF24B6B51853011E00271590 /* ETBase-OSX.framework */; };
 		AF401BFB184A70FE0026171A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFA184A70FE0026171A /* Foundation.framework */; };
 		AF401BFD184A70FE0026171A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFC184A70FE0026171A /* CoreGraphics.framework */; };
 		AF401BFF184A70FE0026171A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF401BFE184A70FE0026171A /* UIKit.framework */; };
@@ -18,11 +17,14 @@
 		AF401C0E184A70FE0026171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF401C0C184A70FE0026171A /* Main.storyboard */; };
 		AF401C11184A70FE0026171A /* ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C10184A70FE0026171A /* ESViewController.m */; };
 		AF401C13184A70FE0026171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF401C12184A70FE0026171A /* Images.xcassets */; };
-		AF456DE0185302D0002544A8 /* ETConnect-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF456DDF185302D0002544A8 /* ETConnect-OSX.framework */; };
-		AF456DE1185302DC002544A8 /* ETConnect-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF456DDF185302D0002544A8 /* ETConnect-OSX.framework */; };
-		AF456DE2185302E2002544A8 /* ETBase-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF24B6B51853011E00271590 /* ETBase-OSX.framework */; };
-		AF6B9A30184F30B500926842 /* ETBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9A2E184F30B500926842 /* ETBase.framework */; };
-		AF6B9A31184F30B500926842 /* ETConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9A2F184F30B500926842 /* ETConnect.framework */; };
+		AF44F44F185314D40024172B /* icon_bluetooth_0256.png in Resources */ = {isa = PBXBuildFile; fileRef = AF44F44E185314D40024172B /* icon_bluetooth_0256.png */; };
+		AF44F450185314D40024172B /* icon_bluetooth_0256.png in Resources */ = {isa = PBXBuildFile; fileRef = AF44F44E185314D40024172B /* icon_bluetooth_0256.png */; };
+		AF44F486185472350024172B /* ETBase-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44F484185472350024172B /* ETBase-OSX.framework */; };
+		AF44F487185472350024172B /* ETConnect-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44F485185472350024172B /* ETConnect-OSX.framework */; };
+		AF44F48A185472640024172B /* ETBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44F488185472640024172B /* ETBase.framework */; };
+		AF44F48C185475E30024172B /* ETBase-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF44F484185472350024172B /* ETBase-OSX.framework */; };
+		AF44F48D185475E80024172B /* ETConnect-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF44F485185472350024172B /* ETConnect-OSX.framework */; };
+		AF44F48F1854783A0024172B /* ETConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44F48E1854783A0024172B /* ETConnect.framework */; };
 		AF6B9AD4185059C800926842 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9AD3185059C800926842 /* Cocoa.framework */; };
 		AF6B9ADE185059C800926842 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9ADC185059C800926842 /* InfoPlist.strings */; };
 		AF6B9AE0185059C800926842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B9ADF185059C800926842 /* main.m */; };
@@ -64,15 +66,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				AF456DE2185302E2002544A8 /* ETBase-OSX.framework in CopyFiles */,
-				AF456DE1185302DC002544A8 /* ETConnect-OSX.framework in CopyFiles */,
+				AF44F48D185475E80024172B /* ETConnect-OSX.framework in CopyFiles */,
+				AF44F48C185475E30024172B /* ETBase-OSX.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AF24B6B51853011E00271590 /* ETBase-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETBase-OSX.framework"; sourceTree = "<group>"; };
 		AF401BF7184A70FE0026171A /* etConnect-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "etConnect-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF401BFA184A70FE0026171A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF401BFC184A70FE0026171A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,9 +89,11 @@
 		AF401C10184A70FE0026171A /* ESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESViewController.m; sourceTree = "<group>"; };
 		AF401C12184A70FE0026171A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF401C19184A70FE0026171A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AF456DDF185302D0002544A8 /* ETConnect-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETConnect-OSX.framework"; sourceTree = "<group>"; };
-		AF6B9A2E184F30B500926842 /* ETBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETBase.framework; sourceTree = "<group>"; };
-		AF6B9A2F184F30B500926842 /* ETConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETConnect.framework; sourceTree = "<group>"; };
+		AF44F44E185314D40024172B /* icon_bluetooth_0256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_bluetooth_0256.png; path = "../../../../pr-projects/eiShare/eiShare/Resources/OtherIcons/icon_bluetooth_0256.png"; sourceTree = "<group>"; };
+		AF44F484185472350024172B /* ETBase-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETBase-OSX.framework"; sourceTree = "<group>"; };
+		AF44F485185472350024172B /* ETConnect-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETConnect-OSX.framework"; sourceTree = "<group>"; };
+		AF44F488185472640024172B /* ETBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETBase.framework; sourceTree = "<group>"; };
+		AF44F48E1854783A0024172B /* ETConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETConnect.framework; sourceTree = "<group>"; };
 		AF6B9AB3184F544300926842 /* EIConnection.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = EIConnection.html; sourceTree = "<group>"; };
 		AF6B9AB4184F544300926842 /* EIConnectionServer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = EIConnectionServer.html; sourceTree = "<group>"; };
 		AF6B9AB5184F544300926842 /* EIDistantObject.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = EIDistantObject.html; sourceTree = "<group>"; };
@@ -150,11 +153,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6B9A30184F30B500926842 /* ETBase.framework in Frameworks */,
+				AF44F48A185472640024172B /* ETBase.framework in Frameworks */,
 				AF401BFD184A70FE0026171A /* CoreGraphics.framework in Frameworks */,
 				AF401BFF184A70FE0026171A /* UIKit.framework in Frameworks */,
 				AF401BFB184A70FE0026171A /* Foundation.framework in Frameworks */,
-				AF6B9A31184F30B500926842 /* ETConnect.framework in Frameworks */,
+				AF44F48F1854783A0024172B /* ETConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +165,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF456DE0185302D0002544A8 /* ETConnect-OSX.framework in Frameworks */,
+				AF44F487185472350024172B /* ETConnect-OSX.framework in Frameworks */,
 				AF6B9AD4185059C800926842 /* Cocoa.framework in Frameworks */,
-				AF24B6B71853011E00271590 /* ETBase-OSX.framework in Frameworks */,
+				AF44F486185472350024172B /* ETBase-OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +199,10 @@
 		AF401BF9184A70FE0026171A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AF456DDF185302D0002544A8 /* ETConnect-OSX.framework */,
-				AF24B6B51853011E00271590 /* ETBase-OSX.framework */,
-				AF6B9A2E184F30B500926842 /* ETBase.framework */,
-				AF6B9A2F184F30B500926842 /* ETConnect.framework */,
+				AF44F48E1854783A0024172B /* ETConnect.framework */,
+				AF44F488185472640024172B /* ETBase.framework */,
+				AF44F484185472350024172B /* ETBase-OSX.framework */,
+				AF44F485185472350024172B /* ETConnect-OSX.framework */,
 				AF401BFA184A70FE0026171A /* Foundation.framework */,
 				AF401BFC184A70FE0026171A /* CoreGraphics.framework */,
 				AF401BFE184A70FE0026171A /* UIKit.framework */,
@@ -346,6 +349,7 @@
 		AFDB61F2184E0E6700B1C6E9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AF44F44E185314D40024172B /* icon_bluetooth_0256.png */,
 				AFDB6205184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png */,
 				AFDB6206184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png */,
 				AFDB61F3184E0EC300B1C6E9 /* eiShare Icon_0029.png */,
@@ -440,6 +444,7 @@
 				AFDB61FD184E0EC300B1C6E9 /* eiShare Icon_0057.png in Resources */,
 				AF401C13184A70FE0026171A /* Images.xcassets in Resources */,
 				AFDB6202184E0EC300B1C6E9 /* eiShare Icon_0120.png in Resources */,
+				AF44F44F185314D40024172B /* icon_bluetooth_0256.png in Resources */,
 				AFDB6207184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png in Resources */,
 				AF401C05184A70FE0026171A /* InfoPlist.strings in Resources */,
 				AFDB6208184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png in Resources */,
@@ -465,6 +470,7 @@
 				AF86BE8A1852020000CFBEA6 /* etDemo Icon_0120 transparent_on.png in Resources */,
 				AF86BE8C1852020000CFBEA6 /* eiShare Icon_0057.png in Resources */,
 				AF6B9AE4185059C800926842 /* Credits.rtf in Resources */,
+				AF44F450185314D40024172B /* icon_bluetooth_0256.png in Resources */,
 				AF86BE901852020000CFBEA6 /* eiShare Icon_0120 transparent.png in Resources */,
 				AF86BE921852020000CFBEA6 /* eiShare Icon_0512.png in Resources */,
 				AF86BE931852020000CFBEA6 /* eiShare Icon_1024.png in Resources */,
@@ -677,7 +683,9 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
 					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"/Developer/Projects/pr-public-projects/etConnect-Demo",
 				);
@@ -707,6 +715,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"/Developer/Projects/pr-public-projects/etConnect-Demo",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

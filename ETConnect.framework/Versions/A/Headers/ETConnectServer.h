@@ -122,8 +122,8 @@ typedef NS_OPTIONS(UInt16, ETHostConnectionTypes)
 
 #pragma mark - PUBLISHING -
 - (void) setup;
-- (void) setBlutoothEnabled:(BOOL)blutoothEnabled;
-- (BOOL) blutoothEnabled;
+- (void) setBluetoothEnabled:(BOOL)bluetoothEnabled;
+- (BOOL) bluetoothEnabled;
 
 #pragma mark - ETConnectServer additions:
 

@@ -8,7 +8,7 @@ The project contains the binaries of the etConnect framework (ver. alpha 0.9) an
 
 History:
 ----------------
-2013/12/06  Added the etConnect OSX demo App and the frtameworks required. 
+2013/12/06  Added the etConnect OSX demo App and the frameworks required. 
 
 
 About etConnect:

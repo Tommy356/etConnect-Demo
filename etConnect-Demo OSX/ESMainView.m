@@ -72,6 +72,7 @@
          *  and the root object
          */
         if ( connection ) {
+            localRoot.window = self.window;
             self.publishedConnection = connection;
             self.publishedRoot = localRoot;
         }
