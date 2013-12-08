@@ -17,14 +17,14 @@
 		AF401C0E184A70FE0026171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF401C0C184A70FE0026171A /* Main.storyboard */; };
 		AF401C11184A70FE0026171A /* ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF401C10184A70FE0026171A /* ESViewController.m */; };
 		AF401C13184A70FE0026171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF401C12184A70FE0026171A /* Images.xcassets */; };
-		AF44F44F185314D40024172B /* icon_bluetooth_0256.png in Resources */ = {isa = PBXBuildFile; fileRef = AF44F44E185314D40024172B /* icon_bluetooth_0256.png */; };
-		AF44F450185314D40024172B /* icon_bluetooth_0256.png in Resources */ = {isa = PBXBuildFile; fileRef = AF44F44E185314D40024172B /* icon_bluetooth_0256.png */; };
 		AF44F486185472350024172B /* ETBase-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44F484185472350024172B /* ETBase-OSX.framework */; };
 		AF44F487185472350024172B /* ETConnect-OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44F485185472350024172B /* ETConnect-OSX.framework */; };
 		AF44F48A185472640024172B /* ETBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44F488185472640024172B /* ETBase.framework */; };
 		AF44F48C185475E30024172B /* ETBase-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF44F484185472350024172B /* ETBase-OSX.framework */; };
 		AF44F48D185475E80024172B /* ETConnect-OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF44F485185472350024172B /* ETConnect-OSX.framework */; };
 		AF44F48F1854783A0024172B /* ETConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44F48E1854783A0024172B /* ETConnect.framework */; };
+		AF44F4911854805C0024172B /* icon_bluetooth_0256.png in Resources */ = {isa = PBXBuildFile; fileRef = AF44F4901854805C0024172B /* icon_bluetooth_0256.png */; };
+		AF44F4921854805C0024172B /* icon_bluetooth_0256.png in Resources */ = {isa = PBXBuildFile; fileRef = AF44F4901854805C0024172B /* icon_bluetooth_0256.png */; };
 		AF6B9AD4185059C800926842 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B9AD3185059C800926842 /* Cocoa.framework */; };
 		AF6B9ADE185059C800926842 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF6B9ADC185059C800926842 /* InfoPlist.strings */; };
 		AF6B9AE0185059C800926842 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B9ADF185059C800926842 /* main.m */; };
@@ -89,11 +89,11 @@
 		AF401C10184A70FE0026171A /* ESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESViewController.m; sourceTree = "<group>"; };
 		AF401C12184A70FE0026171A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF401C19184A70FE0026171A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AF44F44E185314D40024172B /* icon_bluetooth_0256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_bluetooth_0256.png; path = "../../../../pr-projects/eiShare/eiShare/Resources/OtherIcons/icon_bluetooth_0256.png"; sourceTree = "<group>"; };
 		AF44F484185472350024172B /* ETBase-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETBase-OSX.framework"; sourceTree = "<group>"; };
 		AF44F485185472350024172B /* ETConnect-OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ETConnect-OSX.framework"; sourceTree = "<group>"; };
 		AF44F488185472640024172B /* ETBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETBase.framework; sourceTree = "<group>"; };
 		AF44F48E1854783A0024172B /* ETConnect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ETConnect.framework; sourceTree = "<group>"; };
+		AF44F4901854805C0024172B /* icon_bluetooth_0256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_bluetooth_0256.png; sourceTree = "<group>"; };
 		AF6B9AB3184F544300926842 /* EIConnection.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = EIConnection.html; sourceTree = "<group>"; };
 		AF6B9AB4184F544300926842 /* EIConnectionServer.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = EIConnectionServer.html; sourceTree = "<group>"; };
 		AF6B9AB5184F544300926842 /* EIDistantObject.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; path = EIDistantObject.html; sourceTree = "<group>"; };
@@ -349,7 +349,7 @@
 		AFDB61F2184E0E6700B1C6E9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AF44F44E185314D40024172B /* icon_bluetooth_0256.png */,
+				AF44F4901854805C0024172B /* icon_bluetooth_0256.png */,
 				AFDB6205184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png */,
 				AFDB6206184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png */,
 				AFDB61F3184E0EC300B1C6E9 /* eiShare Icon_0029.png */,
@@ -438,13 +438,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFDB6204184E0EC300B1C6E9 /* eiShare Icon_1024.png in Resources */,
+				AF44F4911854805C0024172B /* icon_bluetooth_0256.png in Resources */,
 				AFDB61FC184E0EC300B1C6E9 /* eiShare Icon_0029.png in Resources */,
 				AFDB6201184E0EC300B1C6E9 /* eiShare Icon_0120 transparent.png in Resources */,
 				AFDB6203184E0EC300B1C6E9 /* eiShare Icon_0512.png in Resources */,
 				AFDB61FD184E0EC300B1C6E9 /* eiShare Icon_0057.png in Resources */,
 				AF401C13184A70FE0026171A /* Images.xcassets in Resources */,
 				AFDB6202184E0EC300B1C6E9 /* eiShare Icon_0120.png in Resources */,
-				AF44F44F185314D40024172B /* icon_bluetooth_0256.png in Resources */,
 				AFDB6207184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_off.png in Resources */,
 				AF401C05184A70FE0026171A /* InfoPlist.strings in Resources */,
 				AFDB6208184E1CB300B1C6E9 /* etDemo Icon_0120 transparent_on.png in Resources */,
@@ -463,6 +463,7 @@
 				AF86BE8B1852020000CFBEA6 /* eiShare Icon_0029.png in Resources */,
 				AF86BE8D1852020000CFBEA6 /* eiShare Icon_0058.png in Resources */,
 				AF86BE8F1852020000CFBEA6 /* eiShare Icon_0114.png in Resources */,
+				AF44F4921854805C0024172B /* icon_bluetooth_0256.png in Resources */,
 				AF6B9ADE185059C800926842 /* InfoPlist.strings in Resources */,
 				AF6B9AEC185059C800926842 /* Images.xcassets in Resources */,
 				AF86BE891852020000CFBEA6 /* etDemo Icon_0120 transparent_off.png in Resources */,
@@ -470,7 +471,6 @@
 				AF86BE8A1852020000CFBEA6 /* etDemo Icon_0120 transparent_on.png in Resources */,
 				AF86BE8C1852020000CFBEA6 /* eiShare Icon_0057.png in Resources */,
 				AF6B9AE4185059C800926842 /* Credits.rtf in Resources */,
-				AF44F450185314D40024172B /* icon_bluetooth_0256.png in Resources */,
 				AF86BE901852020000CFBEA6 /* eiShare Icon_0120 transparent.png in Resources */,
 				AF86BE921852020000CFBEA6 /* eiShare Icon_0512.png in Resources */,
 				AF86BE931852020000CFBEA6 /* eiShare Icon_1024.png in Resources */,
